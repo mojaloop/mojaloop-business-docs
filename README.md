@@ -2,7 +2,7 @@
 
 This repository contains the **Community Business Documents** for the mojaloop project.
 
-Current documents in this repository
+## **Current documents within this repository**
 
 - [Platform Operating Guideline](documents/platform-operating-guideline.md)
 - [Scheme Business Rules](documents/scheme-business-rules.md)
