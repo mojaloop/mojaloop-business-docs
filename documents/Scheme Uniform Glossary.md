@@ -44,7 +44,6 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | Agent Till | An agent till is a provider-issued registered "line", either a special SIM card or a POS machine, used to perform enrollment, cash-in and cash-out transactions for clients. National law dictates which financial service providers can issue agent tills. |
 | Agent-Initiated Cash-In | A Use Case defined in the API Specifications document |
 | Agent-Initiated Cash-Out | A Use Case defined in the API Specifications document |
-| Agent-Initiated Cash-Out | A Use Case defined in the API Specifications document |
 | Aggregator | A specialized form of a merchant services provider, who typically handles payments transactions for a large number of small merchants. Scheme rules often specify what aggregators are allowed to do. |
 | Alias | A Payee Identifier that is mapped to a Payee DFSP and Transaction Account Number |
 | Anti-Money Laundering (AML) | Anti-Money Laundering refers to Applicable Law and, to the extent expressly adopted by the Scheme, good practice guidance, t regarding mitigation of money laundering risks. |
