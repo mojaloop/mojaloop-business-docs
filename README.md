@@ -6,10 +6,10 @@ broadly useful than that, though they were created to complement and guide the p
 
 Current documents in this repository
 
-- [Platform Operating Guideline](documents/platform-operating-guideline.md)
-- [Scheme Business Rules](documents/scheme-business-rules.md)
 - [Scheme Key Choices](documents/scheme-key-choices.md)
+- [Scheme Business Rules](documents/scheme-business-rules.md)
 - [Scheme Participation Agreement](documents/scheme-participation-agreement.md)
+- [Platform Operating Guideline](documents/platform-operating-guideline.md)
 - [Scheme Uniform Glossary](documents/scheme-uniform-glossary.md)
 
 **Notes**:
