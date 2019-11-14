@@ -2,7 +2,7 @@
 
 | **Version** | **Author** | **Date** | **Change Description** |
 |---|---|---|---|
-| 03.0 | Carol Coye Benson (Glenbrook) | October 2019 | |
+| 3.0 | Carol Coye Benson (Glenbrook) | October 2019 | |
 
 ## **About the Mojaloop Community Business Document Project**
 
@@ -26,11 +26,11 @@ The following documents are part of the project:
 
 # Table Of Content
 
-[1. Participation Application and Agreement](#1-participation-application-and-agreement)
+[1 - Participation Application and Agreement](#1-participation-application-and-agreement)
     
-[1.1 Applicable Law](#1.1-applicable-law)
+[1.1 - Applicable Law](#1.1-applicable-law)
 
-[1.2 Signature Block: Applicant and Scheme](#1.2-signature-block:-applicant-and-scheme)
+[1.2 - Signature Block: Applicant and Scheme](#1.2-signature-block:-applicant-and-scheme)
 
 # 1. Participation Application and Agreement
 

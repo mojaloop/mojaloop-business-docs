@@ -2,7 +2,7 @@
 
 | **Version** | **Author** | **Date** | **Change Description** |
 |---|---|---|---|
-| 1.0 | Carol Coye Benson (Glenbrook) | October 2019 |
+| 1.0 | Carol Coye Benson (Glenbrook) | October 2019 | |
 
 **About the Mojaloop Community Business Document Project**
 
