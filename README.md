@@ -1,4 +1,7 @@
 # Mojaloop Business Documents
+[![Git Commit](https://img.shields.io/github/last-commit/mojaloop/mojaloop-business-docs.svg?style=flat)](https://github.com/mojaloop/mojaloop-business-docs/commits/master)
+[![Git Releases](https://img.shields.io/github/release/mojaloop/mojaloop-business-docs.svg?style=flat)](https://github.com/mojaloop/mojaloop-business-docs/releases)
+[![CircleCI](https://circleci.com/gh/mojaloop/mojaloop-business-docs.svg?style=svg)](https://circleci.com/gh/mojaloop/mojaloop-business-docs)
 
 This repository contains the **Community Business Documents** for the mojaloop project.
 
