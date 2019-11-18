@@ -1,8 +1,13 @@
+---
+showToc: false
+---
 # Scheme Participation Agreement Template
 
-| **Version** | **Author** | **Date** | **Change Description** |
-|---|---|---|---|
-| 3.0 | Carol Coye Benson (Glenbrook) | October 2019 | |
+- Version: 3.0 
+    - Author: Carol Coye Benson (Glenbrook) 
+    - Date: October 2019
+    - Description: 
+---
 
 ## **About the Mojaloop Community Business Document Project**
 

@@ -1,9 +1,13 @@
+---
+showToc: false
+---
 # Platform Operating Guideline Template
 
-
-| **Version** | **Author** | **Date** | **Change Description** |
-|---|---|---|---|
-| 2.0 | Carol Coye Benson (Glenbrook) <br>Michael Richards (ModusBox)</br> | October 2019 | |
+- Version: 2.0 
+    - Author: Carol Coye Benson (Glenbrook), Michael Richards (ModusBox)  
+    - Date: October 2019
+    - Description: 
+---
 
 ## **About the Mojaloop Community Business Document Project**
 

@@ -1,10 +1,15 @@
+---
+showToc: false
+---
 # Scheme Business Rules Template
 
-| **Version** | **Author** | **Date** | **Change Description** |
-|---|---|---|---|
-| 4.0 | Carol Coye Benson (Glenbrook) | October 2019 | |
+- Version: 4.0 
+    - Author: Carol Coye Benson (Glenbrook)
+    - Date: October 2019
+    - Description:     
+---
 
-**About the Mojaloop Community Business Document Project**
+## **About the Mojaloop Community Business Document Project**
 
 This document is part of the Mojaloop Community Business Document Project. The project is intended to support entities (countries, regions, associations of providers or commercial enterprises) implementing new payments systems using Mojaloop code. These entities will also need write Business Rules that participants in the system will follow.
 
@@ -24,7 +29,7 @@ The following documents are part of the project:
 
 - Uniform Glossary
 
-**Introduction**
+## **Introduction**
 
 Payments Schemes around the world are in the process of implementation, or considering implementation, of Mojaloop-based payments systems. Mojaloop is open-source software for financial services companies, government regulators, and others taking on the challenges of interoperability and financial inclusion. The Bill & Melinda Gates Foundation has provided funding and support for Mojaloop through The Level One Project, a vision for digital financial markets based on principles of interoperability, collaboration, and inclusion.
 
@@ -34,7 +39,7 @@ Before Business Rules are written, Schemes need to make major business decisions
 
 Scheme Business Rules Template
 
-**Table of Contents**
+## **Table of Contents**
 
 [1 - About These Scheme Business Rules](#1.-about-these-scheme-business-rules)
 
@@ -68,7 +73,7 @@ Scheme Business Rules Template
 
 [16 - Appendix: Risk Management, Security, Privacy, and Service Standards](#16.-appendix:-risk-management-security-privacy-and-service-standards)
 
-**A Guide to This Document**
+## **A Guide to This Document**
 
 Section Headings and bulleted entries underneath section headings are actual proposed wording, or suggested sections for a rules document. Text in italics are comments which can be used when a scheme drafts the actual language of a rules document.
 
