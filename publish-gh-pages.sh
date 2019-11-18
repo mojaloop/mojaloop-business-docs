@@ -10,7 +10,7 @@ echo "Build gitbook"
 npm run gitbook:build
 
 echo "Checking out gh-pages"
-git checkout gh-pages
+git checkout -b gh-pages
 
 echo "Copying..."
 git pull mojaloop gh-pages --rebase
