@@ -1,10 +1,15 @@
+---
+showToc: false
+---
 # Uniform Glossary Template
 
-| **Version** | **Author** | **Date** | **Change Description** |
-|---|---|---|---|
-| 1.0 | Carol Coye Benson (Glenbrook) | October 2019 | |
+- Version: 1.0 
+    - Author: Carol Coye Benson (Glenbrook)
+    - Date: October 2019
+    - Description: 
+---
 
-**About the Mojaloop Community Business Document Project**
+## **About the Mojaloop Community Business Document Project**
 
 This document is part of the Mojaloop Community Business Document Project. The project is intended to support entities (countries, regions, associations of providers or commercial enterprises) implementing new payments systems using Mojaloop code. These entities will also need write Business Rules that participants in the system will follow.
 
@@ -24,11 +29,11 @@ The following documents are part of the project:
 
 - Uniform Glossary
 
-**Introduction**
+## **Introduction**
 
 This is a glossary of terms used in the Mojaloop Business Community Document Project, and contains other terms related to business topics. A more detailed technical glossary is available as part of the Open API for FSP Interoperability Specification.
 
-## Uniform Glossary Template
+# Uniform Glossary Template
 
 | **Term** | **Definition** |
 | --- | --- | 

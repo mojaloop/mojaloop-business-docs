@@ -1,10 +1,15 @@
+---
+showToc: false
+---
 # Scheme Key Choices
 
-| **Version** | **Author** | **Date** | **Change Description** |
-|---|---|---|---|
-| 5.0 | Carol Coye Benson (Glenbrook) | October 2019 |
+- Version: 5.0 
+    - Author: Carol Coye Benson (Glenbrook)
+    - Date: October 2019
+    - Description: 
+---
 
-**About the Mojaloop Community Business Document Project**
+## **About the Mojaloop Community Business Document Project**
 
 This document is part of the Mojaloop Community Business Document Project. The project is intended to support entities (countries, regions, associations of providers or commercial enterprises) implementing new payments systems using Mojaloop code. These entities will also need write Business Rules that participants in the system will follow.
 
@@ -24,7 +29,7 @@ The following documents are part of the project:
 
 - Uniform Glossary
 
-**Introduction**
+## **Introduction**
 
 Payments Schemes around the world are in the process of implementing, or considering implementation, of Mojaloop-based payments systems. Mojaloop is open-source software for financial services companies, government regulators, and others taking on the challenges of interoperability and financial inclusion. Mojaloop is based on the specification "Open API for FSP Interoperability Specification", which was developed to provide an open API specification for mobile money interoperability.
 
@@ -34,7 +39,7 @@ Schemes implementing Mojaloop will need to make a number of business choices abo
 
 Although this document is written as a contribution to the Mojaloop community, the issues described here are pertinent to any Level One aligned payments system, regardless of the technical implementation chosen.
 
-**Choices Described in this Document**
+## **Choices Described in this Document**
 
 [1 - Choice: Ownership of Scheme](#1.-choice:-ownership-of-scheme)
 
