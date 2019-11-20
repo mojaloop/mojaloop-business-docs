@@ -68,7 +68,7 @@ defaults_publish_to_gh_pages: &defaults_publish_to_gh_pages
     git add .
 
     echo "Staging generated UML & Images..."
-#    git add -f assets/images/*/*.*
+    git add -f assets/images/**.*
 
     echo "Commiting changes..."
     git commit -a -m "Updating release to $GITHUB_TAG"
