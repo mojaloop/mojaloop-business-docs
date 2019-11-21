@@ -1,6 +1,3 @@
----
-showToc: false
----
 # Scheme Business Rules Template
 
 - Version: 4.0 
@@ -38,40 +35,6 @@ Schemes implementing Mojaloop will need to write Business Rules which govern the
 Before Business Rules are written, Schemes need to make major business decisions about how the system and its ecosystem partners will work. These decisions are described in a separate document within the Mojaloop Community Business Document Project, "Scheme Key Choices". People are encouraged to read that document first.
 
 Scheme Business Rules Template
-
-## **Table of Contents**
-
-[1 - About These Scheme Business Rules](#1.-about-these-scheme-business-rules)
-
-[2 - Scheme Goals](#2.-scheme-goals)
-
-[3 - Participation in Scheme](#3.-participation-in-scheme)
-
-[4 - Scheme Business Rules](#4.-scheme-business-rules)
-
-[5 - Responsibilities and Obligations of the Scheme](#5.-responsibilities-and-obligations-of-the-scheme)
-
-[6 - Participant Responsibilities and Obligations of Participants](#6.-participant-responsibilities-and-obligations-of-participants)
-
-[7 - Liability - Allocation of Responsibilities](#7.-liability---allocation-of-responsibilities)
-
-[8 - Security, Risk Management, and Data Confidentiality](#8.-security-risk-management-and-data-confidentiality)
-
-[9 - Scheme Platform and Services](#9.-scheme-platform-and-services)
-
-[10 - Exception Management](#10.-exception-management)
-
-[11 - Appendix: Associated Documents](#11.-appendix:-associated-documents)
-
-[12 - Appendix: Onboarding and Exit Processes](#12.-appendix:-onboarding-and-exit-processes)
-
-[13 - Appendix: Scheme Services](#13.-appendix:-scheme-services)
-
-[14 - Appendix: Scheme Supported Use Cases](#14.-appendix:-scheme-supported-use-cases)
-
-[15 - Appendix: Scheme Fee Schedule](#15.-appendix:-scheme-fee-schedule)
-
-[16 - Appendix: Risk Management, Security, Privacy, and Service Standards](#16.-appendix:-risk-management-security-privacy-and-service-standards)
 
 ## **A Guide to This Document**
 

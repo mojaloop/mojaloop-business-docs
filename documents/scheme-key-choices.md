@@ -1,6 +1,3 @@
----
-showToc: false
----
 # Scheme Key Choices
 
 - Version: 5.0 
@@ -38,38 +35,6 @@ The Bill & Melinda Gates Foundation has provided funding and support for Mojaloo
 Schemes implementing Mojaloop will need to make a number of business choices about the design of the system. These choices, when made, will affect both the technical implementation of Mojaloop and the Business Rules which the Scheme will write, and which Participant DFSPs will agree to follow. This document describes and discusses some of the most significant of these choices. Where appropriate, recommendations for best practices are made to align with the Level One Project (L1P) Design Principles.
 
 Although this document is written as a contribution to the Mojaloop community, the issues described here are pertinent to any Level One aligned payments system, regardless of the technical implementation chosen.
-
-## **Choices Described in this Document**
-
-[1 - Choice: Ownership of Scheme](#1.-choice:-ownership-of-scheme)
-
-[2 - Choice: Participation in the Scheme](#2.-choice:-participation-in-the-scheme)
-
-[3 - Choice: Relationship of Scheme to Platform](#3.-choice:-relationship-of-scheme-to-platform)
-
-[4 - Choice: Scope of Scheme Rules and Scheme Rules Authority](#4.-choice:-scope-of-scheme-rules-and-scheme-rules-authority)
-
-[5 - Choice: Use Cases](#5.-choice:-use-cases)
-
-[6 - Choice: QR Codes](#6.-choice:-qr-codes)
-
-[7 - Choice: Payments Addressing](#7.-choice:-payments-addressing)
-
-[8 - Choice: Interparticipant Settlement](#8.-choice:-interparticipant-settlement)
-
-[9 - Choice: Tiered Access](#9.-choice:-tiered-access)
-
-[10 - Choice: Scheme Fees and End User Pricing](#10.-choice:-scheme-fees-and-end-user-pricing)
-
-[11 - Choice: Brand Management](#11.-choice:-brand-management)
-
-[12 - Choice: Scheme Connections to Other Schemes](#12.-choice:-scheme-connections-to-other-schemes)
-
-[13 - Choice: Scheme Use by Other FSP's](#13.-choice:-scheme-use-by-other-fsp's)
-
-[14 - Choice: Scheme Risk Management Standards](#14.-choice:-scheme-risk-management-standards)
-
-[15 - Choice: Exception Management](#15.-choice:-exception-management)
 
 ## 1. Choice: Ownership of Scheme
 

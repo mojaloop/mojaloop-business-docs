@@ -1,6 +1,3 @@
----
-showToc: false
----
 # Scheme Participation Agreement Template
 
 - Version: 3.0 
@@ -28,14 +25,6 @@ The following documents are part of the project:
 - Exception Management Operating Guideline Template
 
 - Uniform Glossary
-
-# Table Of Content
-
-[1 - Participation Application and Agreement](#1-participation-application-and-agreement)
-    
-[1.1 - Applicable Law](#1.1-applicable-law)
-
-[1.2 - Signature Block: Applicant and Scheme](#1.2-signature-block:-applicant-and-scheme)
 
 # 1. Participation Application and Agreement
 
