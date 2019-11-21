@@ -36,6 +36,68 @@ This document is a template for such a Platform Operating Guideline. Many provis
 
 The Business Rules template that is part of this project can be used independent of a scheme's choice of platform. This Platform Operating Guideline is more specific to the use of Mojaloop as a platform.
 
+## **Table of Contents -- Platform Operating Guideline Template**
+
+[1 - About This Document](#1-About-This-Document)
+
+[1.1 - Scheme Services](#1.1-Scheme-Services)
+
+[1.2 - Open API Specification](#1.2-Open-API-Specification)
+
+[1.3 - Scheme Use Cases](#1.3-Scheme-Use-Cases)
+
+[1.4 - Scheme Supported Identifiers](#1.4-Scheme-Supported-Identifiers)
+
+[2 - The Account Lookup Service](#2-The-Account-Lookup-Service)
+
+[2.1 - Description of the Account Lookup Service](#2.1-Description-of-the-Account-Lookup-Service)
+
+[2.2 - Party Request](#2.2-Party-Request)
+
+[2.3 - Parties Query](#2.3-Parties-Query)
+
+[2.4 - Parties Query Response](#2.4-Parties-Query-Response)
+
+[3 - The Quote Service](#3-The-Quote-Service)
+
+[3.1 - Description of the Quote Service](#3.1-Description-of-the-Quote-Service)
+
+[3.2 - Quote Request](#3.2-Quote-Request)
+
+[3.3 - Quote Response](#3.3-Quote-Response)
+
+[4 - The Transfer Service](#4-The-Transfer-Service)
+
+[4.1 - Description of the Transfer Service](#4.1-Description-of-the-Transfer-Service)
+
+[4.2 - Transfer Request](#4.2-Transfer-Request)
+
+[4.3 - Request to Pay](#4.3-Request-to-Pay)
+
+[5 - The Settlement Service](#5-The-Settlement-Service)
+
+[5.1 - Transfer Settlement](#5.1-Transfer-Settlement)
+
+[5.2 - Fee Settlement: Processing Fees](#5.2-Fee-Settlement:-Processing-Fees)
+
+[5.3 - Fee Settlement: Interchange Fees](#5.3-Fee-Settlement:-Interchange-Fees)
+
+[6 - The Scheme Management Service](#6-The-Scheme-Management-Service)
+
+[6.1 - Description of the Scheme Management Service](#6.1-Description-of-the-Scheme-Management-Service)
+
+[6.2 - The Registration Process](#6.2-The-Registration-Process)
+
+[6.3 - DFSP Customer Service](#6.3-DFSP-Customer-Service)
+
+[6.4 - Scheme System Management](#6.4-Scheme-System-Management)
+
+[7 - The Fraud Management Service](#7-The-Fraud-Management-Service)
+
+[8 - Appendix: Scheme Supported Use Cases and System Parameters](#8-Appendix:-Scheme-Supported-Use-Cases-and-System-Parameters)
+
+[9 - Appendix: Merchant Category Codes](#9-Appendix:-Merchant-Category-Codes)
+
 ## 1. About This Document
 
 These Platform Operating Guidelines specify operational and technical requirements for DFSPs and for the Scheme. From time to time the Scheme will issue additional Operational Bulletins, which will describe additional operational features of the Scheme and specify additional requirements of DFSPs.

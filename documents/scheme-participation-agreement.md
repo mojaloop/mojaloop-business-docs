@@ -26,6 +26,14 @@ The following documents are part of the project:
 
 - Uniform Glossary
 
+# Table Of Content
+
+[1 - Participation Application and Agreement](#1-participation-application-and-agreement)
+    
+[1.1 - Applicable Law](#1.1-applicable-law)
+
+[1.2 - Signature Block: Applicant and Scheme](#1.2-signature-block:-applicant-and-scheme)
+
 # 1. Participation Application and Agreement
 
 _<ul>Note: the goal of this document is to have it contain the minimal necessary provisions to evidence a DFSP's application to join the Scheme and abide by its Business Rules. In particular, future changes to the Business Rules should not result in a need to re-sign or amend this agreement.</ul>_
