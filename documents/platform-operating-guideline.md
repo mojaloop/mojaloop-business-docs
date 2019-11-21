@@ -38,65 +38,65 @@ The Business Rules template that is part of this project can be used independent
 
 ## **Table of Contents -- Platform Operating Guideline Template**
 
-[1 - About This Document](#1-About-This-Document)
+[1 - About This Document](#1-about-this-document)
 
-[1.1 - Scheme Services](#1.1-Scheme-Services)
+[1.1 - Scheme Services](#11-scheme-services)
 
-[1.2 - Open API Specification](#1.2-Open-API-Specification)
+[1.2 - Open API Specification](#12-open-api-specification)
 
-[1.3 - Scheme Use Cases](#1.3-Scheme-Use-Cases)
+[1.3 - Scheme Use Cases](#13-scheme-use-cases)
 
-[1.4 - Scheme Supported Identifiers](#1.4-Scheme-Supported-Identifiers)
+[1.4 - Scheme Supported Identifiers](#14-scheme-supported-identifiers)
 
-[2 - The Account Lookup Service](#2-The-Account-Lookup-Service)
+[2 - The Account Lookup Service](#2-the-account-lookup-service)
 
-[2.1 - Description of the Account Lookup Service](#2.1-Description-of-the-Account-Lookup-Service)
+[2.1 - Description of the Account Lookup Service](#21-description-of-the-account-lookup-service)
 
-[2.2 - Party Request](#2.2-Party-Request)
+[2.2 - Party Request](#22-party-request)
 
-[2.3 - Parties Query](#2.3-Parties-Query)
+[2.3 - Parties Query](#23-parties-query)
 
-[2.4 - Parties Query Response](#2.4-Parties-Query-Response)
+[2.4 - Parties Query Response](#24-parties-query-response)
 
-[3 - The Quote Service](#3-The-Quote-Service)
+[3 - The Quote Service](#3-the-quote-service)
 
-[3.1 - Description of the Quote Service](#3.1-Description-of-the-Quote-Service)
+[3.1 - Description of the Quote Service](#31-description-of-the-quote-service)
 
-[3.2 - Quote Request](#3.2-Quote-Request)
+[3.2 - Quote Request](#32-quote-request)
 
-[3.3 - Quote Response](#3.3-Quote-Response)
+[3.3 - Quote Response](#33-quote-response)
 
-[4 - The Transfer Service](#4-The-Transfer-Service)
+[4 - The Transfer Service](#4-the-transfer-service)
 
-[4.1 - Description of the Transfer Service](#4.1-Description-of-the-Transfer-Service)
+[4.1 - Description of the Transfer Service](#41-description-of-the-transfer-service)
 
-[4.2 - Transfer Request](#4.2-Transfer-Request)
+[4.2 - Transfer Request](#42-transfer-request)
 
-[4.3 - Request to Pay](#4.3-Request-to-Pay)
+[4.3 - Request to Pay](#43-request-to-pay)
 
-[5 - The Settlement Service](#5-The-Settlement-Service)
+[5 - The Settlement Service](#5-the-settlement-service)
 
-[5.1 - Transfer Settlement](#5.1-Transfer-Settlement)
+[5.1 - Transfer Settlement](#51-transfer-settlement)
 
-[5.2 - Fee Settlement: Processing Fees](#5.2-Fee-Settlement:-Processing-Fees)
+[5.2 - Fee Settlement: Processing Fees](#52-fee-settlement:-processing-fees)
 
-[5.3 - Fee Settlement: Interchange Fees](#5.3-Fee-Settlement:-Interchange-Fees)
+[5.3 - Fee Settlement: Interchange Fees](#53-fee-settlement:-interchange-fees)
 
-[6 - The Scheme Management Service](#6-The-Scheme-Management-Service)
+[6 - The Scheme Management Service](#6-the-scheme-management-service)
 
-[6.1 - Description of the Scheme Management Service](#6.1-Description-of-the-Scheme-Management-Service)
+[6.1 - Description of the Scheme Management Service](#61-description-of-the-scheme-management-service)
 
-[6.2 - The Registration Process](#6.2-The-Registration-Process)
+[6.2 - The Registration Process](#62-the-registration-process)
 
-[6.3 - DFSP Customer Service](#6.3-DFSP-Customer-Service)
+[6.3 - DFSP Customer Service](#63-dfsp-customer-service)
 
-[6.4 - Scheme System Management](#6.4-Scheme-System-Management)
+[6.4 - Scheme System Management](#64-scheme-system-management)
 
-[7 - The Fraud Management Service](#7-The-Fraud-Management-Service)
+[7 - The Fraud Management Service](#7-the-fraud-management-service)
 
-[8 - Appendix: Scheme Supported Use Cases and System Parameters](#8-Appendix:-Scheme-Supported-Use-Cases-and-System-Parameters)
+[8 - Appendix: Scheme Supported Use Cases and System Parameters](#8-appendix:-scheme-supported-use-cases-and-system-parameters)
 
-[9 - Appendix: Merchant Category Codes](#9-Appendix:-Merchant-Category-Codes)
+[9 - Appendix: Merchant Category Codes](#9-appendix:-merchant-category-codes)
 
 ## 1. About This Document
 
@@ -227,7 +227,7 @@ The Scheme may wish to provide some mechanism for porting a Scheme ID from one D
 
 The following sections describe each service and the obligations and responsibilities of stakeholders. Each service consists of processes: most of the processes are linked to specific API calls specified in the "Open API Specification" section of this document.
 
-## 2.The Account Lookup Service
+## 2. The Account Lookup Service
 
 ### 2.1 Description of the Account Lookup Service 
 
@@ -517,7 +517,7 @@ following sections:_
 
 7. _Real-time Transaction Interception Options_
 
-8. Appendix: Scheme Supported Use Cases and System Parameters
+## 8. Appendix: Scheme Supported Use Cases and System Parameters
 
 _<ul>This is the same table as appears in the Business Rules document, but it has added the systemic codes necessary for the Platform to recognize a transaction as belonging to a given use case or secondary use case. A scheme would only define Secondary Use Cases if it wanted to write rules and/or specify fees that are unique to that Secondary Use Case</ul>_
 
