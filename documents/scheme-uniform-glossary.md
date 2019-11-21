@@ -1,6 +1,3 @@
----
-showToc: false
----
 # Uniform Glossary Template
 
 - Version: 1.0 

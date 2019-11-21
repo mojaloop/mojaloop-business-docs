@@ -1,6 +1,3 @@
----
-showToc: false
----
 # Scheme Business Rules Template
 
 - Version: 4.0 

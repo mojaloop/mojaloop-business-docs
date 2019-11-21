@@ -1,6 +1,3 @@
----
-showToc: false
----
 # Scheme Participation Agreement Template
 
 - Version: 3.0 

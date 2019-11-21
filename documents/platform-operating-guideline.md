@@ -1,6 +1,3 @@
----
-showToc: false
----
 # Platform Operating Guideline Template
 
 - Version: 2.0 

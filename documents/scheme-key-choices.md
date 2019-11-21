@@ -1,6 +1,3 @@
----
-showToc: false
----
 # Scheme Key Choices
 
 - Version: 5.0 
