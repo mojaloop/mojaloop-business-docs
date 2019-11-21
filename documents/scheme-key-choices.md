@@ -38,35 +38,35 @@ Although this document is written as a contribution to the Mojaloop community, t
 
 ## **Choices Described in this Document**
 
-[1 - Choice: Ownership of Scheme](#1.-choice:-ownership-of-scheme)
+[1 - Choice: Ownership of Scheme](#1-choice-ownership-of-scheme)
 
-[2 - Choice: Participation in the Scheme](#2.-choice:-participation-in-the-scheme)
+[2 - Choice: Participation in the Scheme](#2-choice-participation-in-the-scheme)
 
-[3 - Choice: Relationship of Scheme to Platform](#3.-choice:-relationship-of-scheme-to-platform)
+[3 - Choice: Relationship of Scheme to Platform](#3-choice-relationship-of-scheme-to-platform)
 
-[4 - Choice: Scope of Scheme Rules and Scheme Rules Authority](#4.-choice:-scope-of-scheme-rules-and-scheme-rules-authority)
+[4 - Choice: Scope of Scheme Rules and Scheme Rules Authority](#4-choice-scope-of-scheme-rules-and-scheme-rules-authority)
 
-[5 - Choice: Use Cases](#5.-choice:-use-cases)
+[5 - Choice: Use Cases](#5-choice-use-cases)
 
-[6 - Choice: QR Codes](#6.-choice:-qr-codes)
+[6 - Choice: QR Codes](#6-choice-qr-codes)
 
-[7 - Choice: Payments Addressing](#7.-choice:-payments-addressing)
+[7 - Choice: Payments Addressing](#7-choice-payments-addressing)
 
-[8 - Choice: Interparticipant Settlement](#8.-choice:-interparticipant-settlement)
+[8 - Choice: Interparticipant Settlement](#8-choice-interparticipant-settlement)
 
-[9 - Choice: Tiered Access](#9.-choice:-tiered-access)
+[9 - Choice: Tiered Access](#9-choice-tiered-access)
 
-[10 - Choice: Scheme Fees and End User Pricing](#10.-choice:-scheme-fees-and-end-user-pricing)
+[10 - Choice: Scheme Fees and End User Pricing](#10-choice-scheme-fees-and-end-user-pricing)
 
-[11 - Choice: Brand Management](#11.-choice:-brand-management)
+[11 - Choice: Brand Management](#11-choice-brand-management)
 
-[12 - Choice: Scheme Connections to Other Schemes](#12.-choice:-scheme-connections-to-other-schemes)
+[12 - Choice: Scheme Connections to Other Schemes](#12-choice-scheme-connections-to-other-schemes)
 
-[13 - Choice: Scheme Use by Other FSP's](#13.-choice:-scheme-use-by-other-fsp's)
+[13 - Choice: Scheme Use by Other FSP's](#13-choice-scheme-use-by-other-fsps)
 
-[14 - Choice: Scheme Risk Management Standards](#14.-choice:-scheme-risk-management-standards)
+[14 - Choice: Scheme Risk Management Standards](#14-choice-scheme-risk-management-standards)
 
-[15 - Choice: Exception Management](#15.-choice:-exception-management)
+[15 - Choice: Exception Management](#15-choice-exception-management)
 
 ## 1. Choice: Ownership of Scheme
 
@@ -342,7 +342,7 @@ Mojaloop as a technology is designed to allow system-to-system connectivity. Sch
 
 The relevant L1P principles here are low cost and "openness". The Mojaloop code in particular has the potential to turn cross-border transactions from ones that are governed by complex relationships (as in the case of traditional correspondent banking) into ones which are competed for in an open, interconnected marketplace. Schemes will need to evaluate the merits of this (arguably promoting lower costs) with the risks of dominance by major institutions. Scheme-to-scheme business arrangements may have a beneficial "level the playing field" characteristics. Hybrid relationships are also possible. This is an evolving area of the payment industry, and one where considerable variety of arrangements are both possible and likely.
 
-## 13 Choice: Scheme Use by Other FSP's
+## 13. Choice: Scheme Use by Other FSP's
 
 A successful L1P aligned scheme will be used by many enterprises -- merchants, billers, government agencies, etc. as well as individual people. There will also be a wide range of other FSPs (Financial Services providers) which are not DFSP's: in other words, which do not hold customer transaction accounts. This includes payments services providers: aggregators, merchant services providers, various DFSP processors, etc., all of which may want to connect to and use the scheme.
 
