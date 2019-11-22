@@ -280,36 +280,36 @@
 <p>This document is a template for such a Platform Operating Guideline. Many provisions in it, however, will vary depending on what choices the Scheme has made: some of these choices are described in the &quot;Scheme Key Choices&quot; document which is a part of this project.</p>
 <p>The Business Rules template that is part of this project can be used independent of a scheme&apos;s choice of platform. This Platform Operating Guideline is more specific to the use of Mojaloop as a platform.</p>
 <h2 id="table-of-contents----platform-operating-guideline-template"><strong>Table of Contents -- Platform Operating Guideline Template</strong></h2>
-<p><a href="#1-About-This-Document">1 - About This Document</a></p>
-<p><a href="#1.1-Scheme-Services">1.1 - Scheme Services</a></p>
-<p><a href="#1.2-Open-API-Specification">1.2 - Open API Specification</a></p>
-<p><a href="#1.3-Scheme-Use-Cases">1.3 - Scheme Use Cases</a></p>
-<p><a href="#1.4-Scheme-Supported-Identifiers">1.4 - Scheme Supported Identifiers</a></p>
-<p><a href="#2-The-Account-Lookup-Service">2 - The Account Lookup Service</a></p>
-<p><a href="#2.1-Description-of-the-Account-Lookup-Service">2.1 - Description of the Account Lookup Service</a></p>
-<p><a href="#2.2-Party-Request">2.2 - Party Request</a></p>
-<p><a href="#2.3-Parties-Query">2.3 - Parties Query</a></p>
-<p><a href="#2.4-Parties-Query-Response">2.4 - Parties Query Response</a></p>
-<p><a href="#3-The-Quote-Service">3 - The Quote Service</a></p>
-<p><a href="#3.1-Description-of-the-Quote-Service">3.1 - Description of the Quote Service</a></p>
-<p><a href="#3.2-Quote-Request">3.2 - Quote Request</a></p>
-<p><a href="#3.3-Quote-Response">3.3 - Quote Response</a></p>
-<p><a href="#4-The-Transfer-Service">4 - The Transfer Service</a></p>
-<p><a href="#4.1-Description-of-the-Transfer-Service">4.1 - Description of the Transfer Service</a></p>
-<p><a href="#4.2-Transfer-Request">4.2 - Transfer Request</a></p>
-<p><a href="#4.3-Request-to-Pay">4.3 - Request to Pay</a></p>
-<p><a href="#5-The-Settlement-Service">5 - The Settlement Service</a></p>
-<p><a href="#5.1-Transfer-Settlement">5.1 - Transfer Settlement</a></p>
-<p><a href="#5.2-Fee-Settlement:-Processing-Fees">5.2 - Fee Settlement: Processing Fees</a></p>
-<p><a href="#5.3-Fee-Settlement:-Interchange-Fees">5.3 - Fee Settlement: Interchange Fees</a></p>
-<p><a href="#6-The-Scheme-Management-Service">6 - The Scheme Management Service</a></p>
-<p><a href="#6.1-Description-of-the-Scheme-Management-Service">6.1 - Description of the Scheme Management Service</a></p>
-<p><a href="#6.2-The-Registration-Process">6.2 - The Registration Process</a></p>
-<p><a href="#6.3-DFSP-Customer-Service">6.3 - DFSP Customer Service</a></p>
-<p><a href="#6.4-Scheme-System-Management">6.4 - Scheme System Management</a></p>
-<p><a href="#7-The-Fraud-Management-Service">7 - The Fraud Management Service</a></p>
-<p><a href="#8-Appendix:-Scheme-Supported-Use-Cases-and-System-Parameters">8 - Appendix: Scheme Supported Use Cases and System Parameters</a></p>
-<p><a href="#9-Appendix:-Merchant-Category-Codes">9 - Appendix: Merchant Category Codes</a></p>
+<p><a href="#1-about-this-document">1 - About This Document</a></p>
+<p><a href="#11-scheme-services">1.1 - Scheme Services</a></p>
+<p><a href="#12-open-api-specification">1.2 - Open API Specification</a></p>
+<p><a href="#13-scheme-use-cases">1.3 - Scheme Use Cases</a></p>
+<p><a href="#14-scheme-supported-identifiers">1.4 - Scheme Supported Identifiers</a></p>
+<p><a href="#2-the-account-lookup-service">2 - The Account Lookup Service</a></p>
+<p><a href="#21-description-of-the-account-lookup-service">2.1 - Description of the Account Lookup Service</a></p>
+<p><a href="#22-party-request">2.2 - Party Request</a></p>
+<p><a href="#23-parties-query">2.3 - Parties Query</a></p>
+<p><a href="#24-parties-query-response">2.4 - Parties Query Response</a></p>
+<p><a href="#3-the-quote-service">3 - The Quote Service</a></p>
+<p><a href="#31-description-of-the-quote-service">3.1 - Description of the Quote Service</a></p>
+<p><a href="#32-quote-request">3.2 - Quote Request</a></p>
+<p><a href="#33-quote-response">3.3 - Quote Response</a></p>
+<p><a href="#4-the-transfer-service">4 - The Transfer Service</a></p>
+<p><a href="#41-description-of-the-transfer-service">4.1 - Description of the Transfer Service</a></p>
+<p><a href="#42-transfer-request">4.2 - Transfer Request</a></p>
+<p><a href="#43-request-to-pay">4.3 - Request to Pay</a></p>
+<p><a href="#5-the-settlement-service">5 - The Settlement Service</a></p>
+<p><a href="#51-transfer-settlement">5.1 - Transfer Settlement</a></p>
+<p><a href="#52-fee-settlement:-processing-fees">5.2 - Fee Settlement: Processing Fees</a></p>
+<p><a href="#53-fee-settlement:-interchange-fees">5.3 - Fee Settlement: Interchange Fees</a></p>
+<p><a href="#6-the-scheme-management-service">6 - The Scheme Management Service</a></p>
+<p><a href="#61-description-of-the-scheme-management-service">6.1 - Description of the Scheme Management Service</a></p>
+<p><a href="#62-the-registration-process">6.2 - The Registration Process</a></p>
+<p><a href="#63-dfsp-customer-service">6.3 - DFSP Customer Service</a></p>
+<p><a href="#64-scheme-system-management">6.4 - Scheme System Management</a></p>
+<p><a href="#7-the-fraud-management-service">7 - The Fraud Management Service</a></p>
+<p><a href="#8-appendix:-scheme-supported-use-cases-and-system-parameters">8 - Appendix: Scheme Supported Use Cases and System Parameters</a></p>
+<p><a href="#9-appendix:-merchant-category-codes">9 - Appendix: Merchant Category Codes</a></p>
 <h2 id="1-about-this-document">1. About This Document</h2>
 <p>These Platform Operating Guidelines specify operational and technical requirements for DFSPs and for the Scheme. From time to time the Scheme will issue additional Operational Bulletins, which will describe additional operational features of the Scheme and specify additional requirements of DFSPs.</p>
 <h3 id="11-scheme-services">1.1 Scheme Services</h3>
@@ -432,7 +432,7 @@ aliases, and a separate protocol for resolving them must be specified.</ul></em>
 </ul>
 <p>The Scheme may wish to provide some mechanism for porting a Scheme ID from one DFSP to another.</p>
 <p>The following sections describe each service and the obligations and responsibilities of stakeholders. Each service consists of processes: most of the processes are linked to specific API calls specified in the &quot;Open API Specification&quot; section of this document.</p>
-<h2 id="2the-account-lookup-service">2.The Account Lookup Service</h2>
+<h2 id="2-the-account-lookup-service">2. The Account Lookup Service</h2>
 <h3 id="21-description-of-the-account-lookup-service">2.1 Description of the Account Lookup Service</h3>
 <ul>
 <li><p>The Account Lookup Service allows DFSPs to map specific Identifiers for individual customers to the DFSP that provides a Transaction Account for that customer. Identifiers are used to identify individuals, merchants, billers, government agencies or other enterprises. Any Identifier Type supported by Scheme has a defined Identifier Service, the parameters of which are shown in the section &quot;Scheme Supported Identifiers&quot; of this document.</p>
@@ -746,9 +746,8 @@ following sections:</em></p>
 </li>
 <li><p><em>Real-time Transaction Interception Options</em></p>
 </li>
-<li><p>Appendix: Scheme Supported Use Cases and System Parameters</p>
-</li>
 </ol>
+<h2 id="8-appendix-scheme-supported-use-cases-and-system-parameters">8. Appendix: Scheme Supported Use Cases and System Parameters</h2>
 <p><em><ul>This is the same table as appears in the Business Rules document, but it has added the systemic codes necessary for the Platform to recognize a transaction as belonging to a given use case or secondary use case. A scheme would only define Secondary Use Cases if it wanted to write rules and/or specify fees that are unique to that Secondary Use Case</ul></em></p>
 <p><em><ul>This table is an example of a table of Use Cases and Secondary Use Cases that a scheme might support.</ul></em></p>
 <table>
@@ -930,7 +929,7 @@ following sections:</em></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Platform Operating Guideline","level":"1.1.1","depth":2,"next":{"title":"Scheme Business Rules","level":"1.1.2","depth":2,"path":"documents/scheme-business-rules.md","ref":"documents/scheme-business-rules.md","articles":[]},"previous":{"title":"Business Documents Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Platform Operating Guideline","level":"1.1.1","depth":2,"path":"documents/platform-operating-guideline.md","ref":"documents/platform-operating-guideline.md","articles":[]},{"title":"Scheme Business Rules","level":"1.1.2","depth":2,"path":"documents/scheme-business-rules.md","ref":"documents/scheme-business-rules.md","articles":[]},{"title":"Scheme Key Choices","level":"1.1.3","depth":2,"path":"documents/scheme-key-choices.md","ref":"documents/scheme-key-choices.md","articles":[]},{"title":"Scheme Participation Agreement","level":"1.1.4","depth":2,"path":"documents/scheme-participation-agreement.md","ref":"documents/scheme-participation-agreement.md","articles":[]},{"title":"Scheme Uniform Glossary","level":"1.1.5","depth":2,"path":"documents/scheme-uniform-glossary.md","ref":"documents/scheme-uniform-glossary.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.x.x","theme":"default","variables":{"importedVars":null},"plugins":["swagger","editlink","include","insert-logo","plantuml-svg","collapsible-chapters","back-to-top-button","theme-api","variables","changelog","page-toc"],"pluginsConfig":{"plantuml-svg":{},"editlink":{"label":"Edit This Page","multilingual":true,"base":"https://github.com/mojaloop/mojaloop-business-docs/edit/master"},"theme-gestalt":{"logo":"https://mojaloop.io/images/logo.png","favicon":"https://mojaloop.io/images/logo.png","baseUrl":null,"excludeDefaultStyles":false,"doNotHideChildrenChapters":false},"include":{},"search":{},"collapsible-chapters":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"swagger":{"file":""},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"uml":{"format":"png","nailgun":false},"changelog":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"back-to-top-button":{},"variables":{"files":{"importedVars":"book_variables.yml"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://mojaloop.io/images/logo.png","style":"background: none; max-height: 140px; max-width: 140px;"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"documents/platform-operating-guideline.md","mtime":"2019-11-21T14:03:22.053Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-21T14:04:14.909Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Platform Operating Guideline","level":"1.1.1","depth":2,"next":{"title":"Scheme Business Rules","level":"1.1.2","depth":2,"path":"documents/scheme-business-rules.md","ref":"documents/scheme-business-rules.md","articles":[]},"previous":{"title":"Business Documents Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Platform Operating Guideline","level":"1.1.1","depth":2,"path":"documents/platform-operating-guideline.md","ref":"documents/platform-operating-guideline.md","articles":[]},{"title":"Scheme Business Rules","level":"1.1.2","depth":2,"path":"documents/scheme-business-rules.md","ref":"documents/scheme-business-rules.md","articles":[]},{"title":"Scheme Key Choices","level":"1.1.3","depth":2,"path":"documents/scheme-key-choices.md","ref":"documents/scheme-key-choices.md","articles":[]},{"title":"Scheme Participation Agreement","level":"1.1.4","depth":2,"path":"documents/scheme-participation-agreement.md","ref":"documents/scheme-participation-agreement.md","articles":[]},{"title":"Scheme Uniform Glossary","level":"1.1.5","depth":2,"path":"documents/scheme-uniform-glossary.md","ref":"documents/scheme-uniform-glossary.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.x.x","theme":"default","variables":{"importedVars":null},"plugins":["swagger","editlink","include","insert-logo","plantuml-svg","collapsible-chapters","back-to-top-button","theme-api","variables","changelog","page-toc"],"pluginsConfig":{"plantuml-svg":{},"editlink":{"label":"Edit This Page","multilingual":true,"base":"https://github.com/mojaloop/mojaloop-business-docs/edit/master"},"theme-gestalt":{"logo":"https://mojaloop.io/images/logo.png","favicon":"https://mojaloop.io/images/logo.png","baseUrl":null,"excludeDefaultStyles":false,"doNotHideChildrenChapters":false},"include":{},"search":{},"collapsible-chapters":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"swagger":{"file":""},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"uml":{"format":"png","nailgun":false},"changelog":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"back-to-top-button":{},"variables":{"files":{"importedVars":"book_variables.yml"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://mojaloop.io/images/logo.png","style":"background: none; max-height: 140px; max-width: 140px;"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"documents/platform-operating-guideline.md","mtime":"2019-11-21T16:52:16.293Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-21T16:53:27.725Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
