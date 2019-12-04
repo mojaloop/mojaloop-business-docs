@@ -32,7 +32,7 @@ Payments Schemes around the world are in the process of implementation, or consi
 
 Schemes implementing Mojaloop will need to write Business Rules which govern the rights and responsibilities of participants in the system. This document provides a template for those Business Rules. The template is structured as a detailed outline: the actual wording of rules will be determined by implementing Schemes and the jurisdictions within which they operate. In many parts of the document, we simply suggest a topic which a Scheme might want to consider writing a rule about: again, the specifics of the rule will vary by Scheme.
 
-Before Business Rules are written, Schemes need to make major business decisions about how the system and its ecosystem partners will work. These decisions are described in a separate document within the Mojaloop Community Business Document Project, "Scheme Key Choices". People are encouraged to read that document first.
+Before Business Rules are written, Schemes need to make major business decisions about how the system and its ecosystem partners will work. These decisions are described in a separate document within the Mojaloop Community Business Document Project, "Scheme Key Choices". People are encouraged to read that document first
 
 Scheme Business Rules Template
 
