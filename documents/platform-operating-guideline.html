@@ -335,15 +335,14 @@
 <p>Some rules and operational specifications vary by Use Cases and Secondary Use Cases supported by Scheme. Scheme recognizes Use Cases and Secondary Use Cases by a combination of required data components and system inference. This is detailed in an Appendix to this document.</p>
 <h3 id="14-scheme-supported-identifiers">1.4 Scheme Supported Identifiers</h3>
 <p>The Scheme supports certain Identifiers, or payment addresses, for use in making Transfers. The Identifier identifies the Payee whose Transaction Account is credited for the Transfer. Supported Scheme Identifiers are listed in an Appendix to the Business Rules.</p>
-<p><em><ul>For each scheme supported identifier, this document should specify what the identifier is and how it is resolved (how it is determined which Payee DFSP is responsible for the transaction account associated with that identifier.</ul></em></p>
-<h4 id="141-example-the-msisdn-identifier">1.4.1 Example: The MSISDN Identifier</h4>
-<p><em><ul>Each scheme will have its own guidelines for each identifier; the provisions below could vary significantly depending on choices made.</ul></em></p>
-<ul>
+<pre><code>_For each scheme supported identifier, this document should specify what the identifier is and how it is resolved (how it is determined which Payee DFSP is responsible for the transaction account associated with that identifier._
+</code></pre><h4 id="141-example-the-msisdn-identifier">1.4.1 Example: The MSISDN Identifier</h4>
+<pre><code>_Each scheme will have its own guidelines for each identifier; the provisions below could vary significantly depending on choices made._
+</code></pre><ul>
 <li><p>MSISDN&apos;s are mobile numbers which are globally unique. MSISDN&apos;s are the Transaction Account Identifier for DFPSs who are Mobile Network Operators and who are providing Transaction Accounts to their customers.</p>
 </li>
 <li><p>Use of the MSISDN as a Payee Identifier is limited to Transaction Accounts provided by DFSPs who are the Mobile Network Operator responsible for that MSISDN.</p>
-<p>  <em><ul>Note: if MSISDN&apos;s are used for other Transaction Accounts, they are
-aliases, and a separate protocol for resolving them must be specified.</ul></em></p>
+<p>  <em>Note: if MSISDN&apos;s are used for other Transaction Accounts, they are aliases, and a separate protocol for resolving them must be specified.</em></p>
 </li>
 <li><p>A Party Request for an MSISDN is resolved by a MSISDN directory service determined by the Scheme. The Scheme may specify directory service maintenance obligations for Mobile Network Operator DFSPs from time to time.</p>
 </li>
@@ -748,149 +747,149 @@ following sections:</em></p>
 </li>
 </ol>
 <h2 id="8-appendix-scheme-supported-use-cases-and-system-parameters">8. Appendix: Scheme Supported Use Cases and System Parameters</h2>
-<p><em><ul>This is the same table as appears in the Business Rules document, but it has added the systemic codes necessary for the Platform to recognize a transaction as belonging to a given use case or secondary use case. A scheme would only define Secondary Use Cases if it wanted to write rules and/or specify fees that are unique to that Secondary Use Case</ul></em></p>
-<p><em><ul>This table is an example of a table of Use Cases and Secondary Use Cases that a scheme might support.</ul></em></p>
+<p><em>This is the same table as appears in the Business Rules document, but it has added the systemic codes necessary for the Platform to recognize a transaction as belonging to a given use case or secondary use case. A scheme would only define Secondary Use Cases if it wanted to write rules and/or specify fees that are unique to that Secondary Use Case</em></p>
+<p><em>This table is an example of a table of Use Cases and Secondary Use Cases that a scheme might support.</em></p>
 <table>
 <thead>
 <tr>
-<th>Use Case Code</th>
-<th>Use Case</th>
-<th>Secondary User Case</th>
-<th>Required Data Elements</th>
-<th>Other Methods of Use Case Determination</th>
+<th style="text-align:left">Use Case Code</th>
+<th style="text-align:left">Use Case</th>
+<th style="text-align:left">Secondary User Case</th>
+<th style="text-align:left">Required Data Elements</th>
+<th style="text-align:left">Other Methods of Use Case Determination</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1.0</td>
-<td>P2P</td>
-<td>Person to Person</td>
-<td>API Setting <br>Scenario=Transfer<br> <br>Initiator = Payer<br> <br>Initiator Type = Consumer<br> <br>Recipient Type = Consumer<br></td>
-<td></td>
+<td style="text-align:left">1.0</td>
+<td style="text-align:left">P2P</td>
+<td style="text-align:left">Person to Person</td>
+<td style="text-align:left">API Setting <br>Scenario=Transfer<br> <br>Initiator = Payer<br> <br>Initiator Type = Consumer<br> <br>Recipient Type = Consumer<br></td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>1.1</td>
-<td>P2P</td>
-<td>Wallet to wallet</td>
-<td>Transaction Account Type for Payer DFSP is Wallet and for Payee DFSP is Wallet</td>
+<td style="text-align:left">1.1</td>
+<td style="text-align:left">P2P</td>
+<td style="text-align:left">Wallet to wallet</td>
+<td style="text-align:left">Transaction Account Type for Payer DFSP is Wallet and for Payee DFSP is Wallet</td>
 </tr>
 <tr>
-<td>1.2</td>
-<td>P2P</td>
-<td>Bank to bank</td>
-<td>Transaction Account Type for Payer DFSP is Bank and for Payee DFSP is Wallet</td>
+<td style="text-align:left">1.2</td>
+<td style="text-align:left">P2P</td>
+<td style="text-align:left">Bank to bank</td>
+<td style="text-align:left">Transaction Account Type for Payer DFSP is Bank and for Payee DFSP is Wallet</td>
 </tr>
 <tr>
-<td>1.3</td>
-<td>P2P</td>
-<td>Wallet to bank</td>
-<td>Transaction Account Type for Payer DFSP is Wallet and for Payee DFSP is Bank</td>
+<td style="text-align:left">1.3</td>
+<td style="text-align:left">P2P</td>
+<td style="text-align:left">Wallet to bank</td>
+<td style="text-align:left">Transaction Account Type for Payer DFSP is Wallet and for Payee DFSP is Bank</td>
 </tr>
 <tr>
-<td>1.4</td>
-<td>P2P</td>
-<td>Bank to Wallet</td>
-<td>Transaction Account Type for Payer DFSP is Bank and for Payee DFSP is Wallet.</td>
+<td style="text-align:left">1.4</td>
+<td style="text-align:left">P2P</td>
+<td style="text-align:left">Bank to Wallet</td>
+<td style="text-align:left">Transaction Account Type for Payer DFSP is Bank and for Payee DFSP is Wallet.</td>
 </tr>
 <tr>
-<td>2.0</td>
-<td>Bulk Payment</td>
-<td></td>
-<td>API Settings <br>Scenario=Transfer<br> <br>Initiator = Payer<br> <br>Recipient Type = Consumer<br></td>
+<td style="text-align:left">2.0</td>
+<td style="text-align:left">Bulk Payment</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">API Settings <br>Scenario=Transfer<br> <br>Initiator = Payer<br> <br>Recipient Type = Consumer<br></td>
 </tr>
 <tr>
-<td>2.1</td>
-<td>B2P</td>
-<td>Bank to bank</td>
-<td>Initiator Type = Business</td>
+<td style="text-align:left">2.1</td>
+<td style="text-align:left">B2P</td>
+<td style="text-align:left">Bank to bank</td>
+<td style="text-align:left">Initiator Type = Business</td>
 </tr>
 <tr>
-<td>2.2</td>
-<td>G2P</td>
-<td>Government to Person</td>
-<td>Initiator Type = Government</td>
+<td style="text-align:left">2.2</td>
+<td style="text-align:left">G2P</td>
+<td style="text-align:left">Government to Person</td>
+<td style="text-align:left">Initiator Type = Government</td>
 </tr>
 <tr>
-<td>3.0</td>
-<td>P2B</td>
-<td>Person to Business</td>
-<td>API Settings <br>Scenario=Transfer<br> <br>Initiator = Payer<br> <br>Initiator Type = Consumer<br> <br>Recipient Type = Business<br></td>
+<td style="text-align:left">3.0</td>
+<td style="text-align:left">P2B</td>
+<td style="text-align:left">Person to Business</td>
+<td style="text-align:left">API Settings <br>Scenario=Transfer<br> <br>Initiator = Payer<br> <br>Initiator Type = Consumer<br> <br>Recipient Type = Business<br></td>
 </tr>
 <tr>
-<td>3.1</td>
-<td>P2B</td>
-<td>Till Number Purchase</td>
-<td>Initiator Type = Device</td>
-<td></td>
+<td style="text-align:left">3.1</td>
+<td style="text-align:left">P2B</td>
+<td style="text-align:left">Till Number Purchase</td>
+<td style="text-align:left">Initiator Type = Device</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>3.2</td>
-<td>P2B</td>
-<td>QR code Purchase</td>
-<td>tbd</td>
-<td></td>
+<td style="text-align:left">3.2</td>
+<td style="text-align:left">P2B</td>
+<td style="text-align:left">QR code Purchase</td>
+<td style="text-align:left">tbd</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>3.3</td>
-<td>P2B</td>
-<td>Online Purchase</td>
-<td>Merchant ID Code = tbd</td>
-<td></td>
+<td style="text-align:left">3.3</td>
+<td style="text-align:left">P2B</td>
+<td style="text-align:left">Online Purchase</td>
+<td style="text-align:left">Merchant ID Code = tbd</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>3.4</td>
-<td>P2B</td>
-<td>Bill Payment</td>
-<td></td>
-<td>tbd: a data element in the Quote Request will include the Payer&#x2019;s account number at the biller</td>
+<td style="text-align:left">3.4</td>
+<td style="text-align:left">P2B</td>
+<td style="text-align:left">Bill Payment</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">tbd: a data element in the Quote Request will include the Payer&#x2019;s account number at the biller</td>
 </tr>
 <tr>
-<td>3.5</td>
-<td>P2B</td>
-<td>Person to Business - Other</td>
-<td></td>
-<td></td>
+<td style="text-align:left">3.5</td>
+<td style="text-align:left">P2B</td>
+<td style="text-align:left">Person to Business - Other</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>4.0</td>
-<td>P2G</td>
-<td></td>
-<td>API Settings <br>Scenario=Transfer<br> <br>Initiator = Payer<br> <br>Recipient Type = Government<br></td>
+<td style="text-align:left">4.0</td>
+<td style="text-align:left">P2G</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">API Settings <br>Scenario=Transfer<br> <br>Initiator = Payer<br> <br>Recipient Type = Government<br></td>
 </tr>
 <tr>
-<td>4.1</td>
-<td>P2G</td>
-<td>Person to Government</td>
-<td></td>
-<td></td>
+<td style="text-align:left">4.1</td>
+<td style="text-align:left">P2G</td>
+<td style="text-align:left">Person to Government</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>4.1</td>
-<td>P2G</td>
-<td>Till Number Purchase</td>
-<td>Initiator Type = Device</td>
-<td></td>
+<td style="text-align:left">4.1</td>
+<td style="text-align:left">P2G</td>
+<td style="text-align:left">Till Number Purchase</td>
+<td style="text-align:left">Initiator Type = Device</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>4.2</td>
-<td>P2G</td>
-<td>QR code Purchase</td>
-<td>tbd</td>
-<td></td>
+<td style="text-align:left">4.2</td>
+<td style="text-align:left">P2G</td>
+<td style="text-align:left">QR code Purchase</td>
+<td style="text-align:left">tbd</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>4.3</td>
-<td>P2G</td>
-<td>Online Purchase</td>
-<td>Merchant ID Code = tbd</td>
-<td></td>
+<td style="text-align:left">4.3</td>
+<td style="text-align:left">P2G</td>
+<td style="text-align:left">Online Purchase</td>
+<td style="text-align:left">Merchant ID Code = tbd</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>4.4</td>
-<td>P2G</td>
-<td>Bill Payment</td>
-<td></td>
-<td>tbd: a data element in the Quote Request will include the Payer&#x2019;s account number at the biller</td>
+<td style="text-align:left">4.4</td>
+<td style="text-align:left">P2G</td>
+<td style="text-align:left">Bill Payment</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">tbd: a data element in the Quote Request will include the Payer&#x2019;s account number at the biller</td>
 </tr>
 </tbody>
 </table>
@@ -929,7 +928,7 @@ following sections:</em></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Platform Operating Guideline","level":"1.1.1","depth":2,"next":{"title":"Scheme Business Rules","level":"1.1.2","depth":2,"path":"documents/scheme-business-rules.md","ref":"documents/scheme-business-rules.md","articles":[]},"previous":{"title":"Business Documents Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Platform Operating Guideline","level":"1.1.1","depth":2,"path":"documents/platform-operating-guideline.md","ref":"documents/platform-operating-guideline.md","articles":[]},{"title":"Scheme Business Rules","level":"1.1.2","depth":2,"path":"documents/scheme-business-rules.md","ref":"documents/scheme-business-rules.md","articles":[]},{"title":"Scheme Key Choices","level":"1.1.3","depth":2,"path":"documents/scheme-key-choices.md","ref":"documents/scheme-key-choices.md","articles":[]},{"title":"Scheme Participation Agreement","level":"1.1.4","depth":2,"path":"documents/scheme-participation-agreement.md","ref":"documents/scheme-participation-agreement.md","articles":[]},{"title":"Scheme Uniform Glossary","level":"1.1.5","depth":2,"path":"documents/scheme-uniform-glossary.md","ref":"documents/scheme-uniform-glossary.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.x.x","theme":"default","variables":{"importedVars":null},"plugins":["swagger","editlink","include","insert-logo","plantuml-svg","collapsible-chapters","back-to-top-button","theme-api","variables","changelog","page-toc"],"pluginsConfig":{"plantuml-svg":{},"editlink":{"label":"Edit This Page","multilingual":true,"base":"https://github.com/mojaloop/mojaloop-business-docs/edit/master"},"theme-gestalt":{"logo":"https://mojaloop.io/images/logo.png","favicon":"https://mojaloop.io/images/logo.png","baseUrl":null,"excludeDefaultStyles":false,"doNotHideChildrenChapters":false},"include":{},"search":{},"collapsible-chapters":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"swagger":{"file":""},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"uml":{"format":"png","nailgun":false},"changelog":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"back-to-top-button":{},"variables":{"files":{"importedVars":"book_variables.yml"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://mojaloop.io/images/logo.png","style":"background: none; max-height: 140px; max-width: 140px;"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"documents/platform-operating-guideline.md","mtime":"2019-11-21T16:52:16.293Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-21T16:53:27.725Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Platform Operating Guideline","level":"1.1.1","depth":2,"next":{"title":"Scheme Business Rules","level":"1.1.2","depth":2,"path":"documents/scheme-business-rules.md","ref":"documents/scheme-business-rules.md","articles":[]},"previous":{"title":"Business Documents Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Platform Operating Guideline","level":"1.1.1","depth":2,"path":"documents/platform-operating-guideline.md","ref":"documents/platform-operating-guideline.md","articles":[]},{"title":"Scheme Business Rules","level":"1.1.2","depth":2,"path":"documents/scheme-business-rules.md","ref":"documents/scheme-business-rules.md","articles":[]},{"title":"Scheme Key Choices","level":"1.1.3","depth":2,"path":"documents/scheme-key-choices.md","ref":"documents/scheme-key-choices.md","articles":[]},{"title":"Scheme Participation Agreement","level":"1.1.4","depth":2,"path":"documents/scheme-participation-agreement.md","ref":"documents/scheme-participation-agreement.md","articles":[]},{"title":"Scheme Uniform Glossary","level":"1.1.5","depth":2,"path":"documents/scheme-uniform-glossary.md","ref":"documents/scheme-uniform-glossary.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.x.x","theme":"default","variables":{"importedVars":null},"plugins":["swagger","editlink","include","insert-logo","plantuml-svg","collapsible-chapters","back-to-top-button","theme-api","variables","changelog","page-toc"],"pluginsConfig":{"plantuml-svg":{},"editlink":{"label":"Edit This Page","multilingual":true,"base":"https://github.com/mojaloop/mojaloop-business-docs/edit/master"},"theme-gestalt":{"logo":"https://mojaloop.io/images/logo.png","favicon":"https://mojaloop.io/images/logo.png","baseUrl":null,"excludeDefaultStyles":false,"doNotHideChildrenChapters":false},"include":{},"search":{},"collapsible-chapters":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"swagger":{"file":""},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"uml":{"format":"png","nailgun":false},"changelog":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"back-to-top-button":{},"variables":{"files":{"importedVars":"book_variables.yml"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://mojaloop.io/images/logo.png","style":"background: none; max-height: 140px; max-width: 140px;"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"documents/platform-operating-guideline.md","mtime":"2019-12-13T17:00:45.255Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-13T17:01:27.823Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
