@@ -4,6 +4,7 @@
     - Author: Carol Coye Benson (Glenbrook)
     - Date: October 2019
     - Description: 
+
 ---
 
 ## **About the Mojaloop Community Business Document Project**
@@ -226,15 +227,13 @@ Any scheme implementing credit-push payments needs to specify how the payer and 
 
     - A scheme may also use a broadcast method to determine the DFSP responsible for a given payment address ("do you claim this address"), but needs to develop a protocol to manage conflicts if more than one DFSP "claims" the address.
 
-- It is important to note that the resolution method can different for each type of supported payment address. Some supported payment address types may also be accompanied by particular data sets: for
- example, when a payment is being made in payment of an invoice, the payment address may be some type of alias, and that use of that alias may be tied to accompanying invoice data. Dynamic QR codes, as an example, will create a "request to pay" that may contain the scheme-supported merchant ID (an alias) and accompanying transaction data detail.
+- It is important to note that the resolution method can different for each type of supported payment address. Some supported payment address types may also be accompanied by particular data sets: for example, when a payment is being made in payment of an invoice, the payment address may be some type of alias, and that use of that alias may be tied to accompanying invoice data. Dynamic QR codes, as an example, will create a "request to pay" that may contain the scheme-supported merchant ID (an alias) and accompanying transaction data detail.
 
 The Open API specification and the Mojaloop reference code support a wide range of different address types: mobile number, bank account, national ID, aliases ("Quickshop\@abc"), etc.
 
 ### 7.1 L1P Alignment -- Payments Addressing 
 
-Secure, easy payment addressing relates to two important concepts in Level One: convenience for the end-user and "openness". The latter is particularly important to enable competition and rapid scaling of a
-payment system. As schemes (Level One and otherwise) worldwide struggle to determine how to best solve the question of payments addressing, a few best practices appear to be emerging:
+Secure, easy payment addressing relates to two important concepts in Level One: convenience for the end-user and "openness". The latter is particularly important to enable competition and rapid scaling of a payment system. As schemes (Level One and otherwise) worldwide struggle to determine how to best solve the question of payments addressing, a few best practices appear to be emerging:
 
 - Although the use of the mobile number, in particular, as an address has an obvious appeal, there appears to be a trend to use aliases -- identifiers with no additional meaning. This is demonstrated in India with the UPI system and in Australia's new real-time system, where the identifier is referred to as the PAYID.
 
