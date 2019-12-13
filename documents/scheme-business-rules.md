@@ -4,6 +4,7 @@
     - Author: Carol Coye Benson (Glenbrook)
     - Date: October 2019
     - Description:     
+
 ---
 
 ## **About the Mojaloop Community Business Document Project**
@@ -352,7 +353,6 @@ Section Headings and bulleted entries underneath section headings are actual pro
 - The investigation and report, as well as remedies that may be required will be held confidential to the extent permitted by Applicable Law.
 
 ### 8.2 Risk Management Policies
-------------------------
 
 <ul><i>This section assumes that the development of risk management policies by the Scheme and its participants will be evolving. This section contemplates that some of these policies will (eventually) be in the Rules; others will not</i></ul>
 
@@ -436,8 +436,8 @@ Scheme Services include:
 
 <ul><i>A scheme would only define Secondary Use Cases if it wanted to write rules and/or specify fees that are unique to that Secondary Use Case</i></ul>
 
-| | Use Case | Secondary Use Case |
-| --- | -------- | ------------------ |
+|       | Use Case   | Secondary Use Case          |
+| :---: | :--------: | :-------------------------- |
 | 1.0 | P2P | Person to Person |
 | 1.1 | P2P | Wallet to wallet |
 | 1.2 | P2P | Bank to bank |

@@ -4,6 +4,7 @@
     - Author: Carol Coye Benson (Glenbrook), Michael Richards (ModusBox)  
     - Date: October 2019
     - Description: 
+
 ---
 
 ## **About the Mojaloop Community Business Document Project**
@@ -130,18 +131,17 @@ Some rules and operational specifications vary by Use Cases and Secondary Use Ca
 
 The Scheme supports certain Identifiers, or payment addresses, for use in making Transfers. The Identifier identifies the Payee whose Transaction Account is credited for the Transfer. Supported Scheme Identifiers are listed in an Appendix to the Business Rules.
 
-_<ul>For each scheme supported identifier, this document should specify what the identifier is and how it is resolved (how it is determined which Payee DFSP is responsible for the transaction account associated with that identifier.</ul>_
+    _For each scheme supported identifier, this document should specify what the identifier is and how it is resolved (how it is determined which Payee DFSP is responsible for the transaction account associated with that identifier._
 
 #### 1.4.1 Example: The MSISDN Identifier 
 
-_<ul>Each scheme will have its own guidelines for each identifier; the provisions below could vary significantly depending on choices made.</ul>_
+    _Each scheme will have its own guidelines for each identifier; the provisions below could vary significantly depending on choices made._
 
 - MSISDN's are mobile numbers which are globally unique. MSISDN's are the Transaction Account Identifier for DFPSs who are Mobile Network Operators and who are providing Transaction Accounts to their customers.
 
 - Use of the MSISDN as a Payee Identifier is limited to Transaction Accounts provided by DFSPs who are the Mobile Network Operator responsible for that MSISDN.
 
-    _<ul>Note: if MSISDN's are used for other Transaction Accounts, they are
-aliases, and a separate protocol for resolving them must be specified.</ul>_
+    _Note: if MSISDN's are used for other Transaction Accounts, they are aliases, and a separate protocol for resolving them must be specified._
 
 -   A Party Request for an MSISDN is resolved by a MSISDN directory service determined by the Scheme. The Scheme may specify directory service maintenance obligations for Mobile Network Operator DFSPs from time to time.
 
@@ -519,13 +519,13 @@ following sections:_
 
 ## 8. Appendix: Scheme Supported Use Cases and System Parameters
 
-_<ul>This is the same table as appears in the Business Rules document, but it has added the systemic codes necessary for the Platform to recognize a transaction as belonging to a given use case or secondary use case. A scheme would only define Secondary Use Cases if it wanted to write rules and/or specify fees that are unique to that Secondary Use Case</ul>_
+_This is the same table as appears in the Business Rules document, but it has added the systemic codes necessary for the Platform to recognize a transaction as belonging to a given use case or secondary use case. A scheme would only define Secondary Use Cases if it wanted to write rules and/or specify fees that are unique to that Secondary Use Case_
 
-_<ul>This table is an example of a table of Use Cases and Secondary Use Cases that a scheme might support.</ul>_
+_This table is an example of a table of Use Cases and Secondary Use Cases that a scheme might support._
 
 | Use Case Code | Use Case | Secondary User Case | Required Data Elements | Other Methods of Use Case Determination |
-| --- | --- | --- | --- | --- |
-| 1.0 | P2P | Person to Person | API Setting <br>Scenario=Transfer</br> <br>Initiator = Payer</br> <br>Initiator Type = Consumer</br> <br>Recipient Type = Consumer</br> | |
+| :--- | :----- | :--------- | :-------------------------- | :------------------------------------------- |
+| 1.0  | P2P  | Person to Person | API Setting <br>Scenario=Transfer</br> <br>Initiator = Payer</br> <br>Initiator Type = Consumer</br> <br>Recipient Type = Consumer</br> | |
 | 1.1 | P2P | Wallet to wallet | Transaction Account Type for Payer DFSP is Wallet and for Payee DFSP is Wallet |
 | 1.2 | P2P | Bank to bank | Transaction Account Type for Payer DFSP is Bank and for Payee DFSP is Wallet |
 | 1.3 | P2P | Wallet to bank | Transaction Account Type for Payer DFSP is Wallet and for Payee DFSP is Bank |
