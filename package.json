@@ -1,6 +1,6 @@
 {
   "name": "mojaloop-business-docs",
-  "version": "8.5.3",
+  "version": "8.7.0",
   "description": "Mojaloop Business Documentation GitBook Project",
   "dependencies": {
     "express": "4.17.1",
