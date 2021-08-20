@@ -4,15 +4,15 @@ The Mojaloop Hub operates a number of environments that need managing and mainta
 
 The following procedures need to be in place:
 
-- **Incident management**: Managing incidents that have been reported to the Technical Operations team or that reached the team via alerts or monitoring activities.
+- [**Incident management**](incident_management.md): Managing incidents that have been reported to the Technical Operations team or that reached the team via alerts or monitoring activities.
 
-- **Problem management**: Getting to the root cause of incidents or the potential causes of incidents, and instigating actions to improve or correct the situation at once.
+- [**Problem management**](problem_management.md): Getting to the root cause of incidents or the potential causes of incidents, and instigating actions to improve or correct the situation at once.
 
-- **Change management**: Controlling the lifecycle of all changes, enabling changes to be made with minimum disruption to IT services.
+- [**Change management**](change_management.md): Controlling the lifecycle of all changes, enabling changes to be made with minimum disruption to IT services.
 
-- **Release management**: Managing, planning, scheduling, and controlling a software change through deployment and testing across various environments.
+- [**Release management**](release_management.md): Managing, planning, scheduling, and controllin a software change through deployment and testing across various environments.
 
-- **Defect triage**: Ensuring that all the bugs identified in the client’s Production environment are captured, evaluated, prioritized, and submitted to the Service Desk.
+- [**Defect triage**](defect_triage.md): Ensuring that all the bugs identified in the client’s Production environment are captured, evaluated, prioritized, and submitted to the Service Desk.
 
 A quick overview of the environments managed by the Hub Operator is provided below:
 
@@ -23,3 +23,7 @@ A quick overview of the environments managed by the Hub Operator is provided bel
 - **Staging (STG)**: Pre-production environment that mirrors production as closely as possible. Validation of new releases and DFSP integration.
 
 - **Production (PRD)**: Production environment compatible with production release.
+
+::: tip
+A [Glossary](key_terms_kpis.md) is provided to help clarify common Technical Operations terms used throughout this document. If you encounter a term that needs explaining, it is worth checking the glossary to see if a definition has been provided.
+:::
