@@ -1,9 +1,9 @@
-# Appendix B: Incident management escalation matrix
+# Appendix A: Incident management escalation matrix
 
 This section provides information about key roles to contact when an incident occurs.
 
 ::: tip NOTE
-The incident management escalation matrix provided below acts as an example only. The actual names of roles may be different in your organisation.
+The incident management escalation matrix provided below acts as an example only. The actual names of roles may be different in your organization.
 :::
 
 <table>
