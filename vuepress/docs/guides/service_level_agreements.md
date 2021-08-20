@@ -1,4 +1,4 @@
-# Appendix C: Service Level Agreements
+# Appendix B: Service Level Agreements
 
 The timelines indicated in the following table are example target response times for handling incidents. They can act as a starting point for the Hub Operator to work out their own timelines.
 
