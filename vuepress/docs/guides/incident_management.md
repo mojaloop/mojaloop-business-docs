@@ -383,7 +383,7 @@ This section describes the procedure that a Hub Operator is recommended to imple
 <td></td>
 <td><p><strong>Step 5.1b</strong>:</p>
 <p>Inform stakeholders via secure email.</p></td>
-<td><p>Stakeholders are documented in <a href="incident_management_escalation_matrix.html">Appendix B: Incident management escalation matrix</a>.</p></td>
+<td><p>Stakeholders are documented in <a href="incident_management_escalation_matrix.html">Appendix A: Incident management escalation matrix</a>.</p></td>
 <td><p>L2 ISO</p></td>
 </tr>
 <tr class="odd">
@@ -443,7 +443,7 @@ This section describes the procedure that a Hub Operator is recommended to imple
 <td></td>
 <td><p><strong>Step 6.1b</strong>:</p>
 <p>Communicate with stakeholders via secure email.</p></td>
-<td><p>Stakeholders are documented in <a href="incident_management_escalation_matrix.html">Appendix B: Incident management escalation matrix</a>.</p></td>
+<td><p>Stakeholders are documented in <a href="incident_management_escalation_matrix.html">Appendix A: Incident management escalation matrix</a>.</p></td>
 <td><p>L2 ISO</p></td>
 </tr>
 <tr class="odd">
@@ -669,7 +669,7 @@ The incident management process produces the following outputs. Note that the on
 
 * Resolved or closed incidents. This is the most desired outcome of the incident management process. The closed incident record contains accurate details of the incident attributes and the steps taken for resolution or workaround.
 * Requests for Change (RFC).
-* Resolution metrics (Mean Time Between Failures, Mean Time To Repair, Mean Time To Acknowledge, and Mean Time To Failure). For details on KPIs, see [Appendix A: Definition of key incident management terms and Key Performance Indicators](key_terms_kpis.md).
+* Resolution metrics (Mean Time Between Failures, Mean Time To Repair, Mean Time To Acknowledge, and Mean Time To Failure). For details on KPIs, see the [Glossary](key_terms_kpis.md).
 * Successfully implemented change through the change management process.
 * RCA document complying to the RCA template.
 * Restored service.
