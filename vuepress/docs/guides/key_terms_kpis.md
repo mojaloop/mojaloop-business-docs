@@ -1,11 +1,9 @@
-# Appendix A: Definition of key incident management terms and Key Performance Indicators
+# Glossary
 
-This section provides definitions of:
+This section acts as a glossary of Technical Operations terms and provides definitions of:
 
-* key terms guided by Information Technology Infrastructure Library (ITIL) best practices in incident management
+* key terms guided by Information Technology Infrastructure Library (ITIL) best practices
 * Key Performance Indicators (KPIs), that is, metrics that help determine whether specific incident management goals are met
-
-Any alterations to the below key terms and KPIs should be discussed and agreed by all incident management process stakeholders.
 
 ## Key terms
 
