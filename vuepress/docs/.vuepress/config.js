@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Mojaloop Business Operations Framework',
+  title: 'Mojaloop Business Operations Framework for Hub Operators',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -71,9 +71,26 @@ module.exports = {
           collapsable: true,
           sidebarDepth: 2,
           children: [
-            'settlement_management_introduction'
+            'settlement_management_introduction',
+            'settlement_basic_concepts',
+            'ledgers_in_the_hub',
           ]
-        }
+        },
+        {
+          title: 'Guide to Business Operations Portal',
+          collapsable: true,
+          sidebarDepth: 2,
+          children: [
+            'busops_portal_introduction',
+            'settlement_business_process',
+            'accessing_the_portal',
+            'managing_windows',
+            'checking_settlement_details',
+            'monitoring_dfsp_financial_details',
+            'recording_funds_in_out',
+            'updating_ndc'
+          ]
+        },       
       ]
     }
     /*sidebar: {
