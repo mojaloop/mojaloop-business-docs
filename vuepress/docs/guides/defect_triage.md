@@ -2,20 +2,16 @@
 
 The purpose of the defect triage process is to ensure that all the bugs identified in the Hub Operator's Production environment are captured, evaluated, prioritized, and submitted to the Mojaloop Enterprise Support (MES) Service Desk. 
 
-This process applies to bugs identified in the Production environment, and new features or enhancements are outside its scope. However, to facilitate business conversations, Hub Operators can submit Service Requests describing functional requirements through [the Mojaloop Enterprise Support portal](https://support.modusbox.com) > **Other questions** option. 
+This process applies to bugs identified in the Production environment, and new features or enhancements are outside its scope. However, to facilitate business conversations, Hub Operators can submit Service Requests describing functional requirements through a portal provided by the Support team. 
 
 The Mojaloop Enterprise Support Triage team is responsible for the evaluation and resolution planning of each bug raised in the Hub Operator's Production environment. The Triage team has the following members: 
 
 * Mojaloop Product Manager (core Mojaloop)
-* ModusBox Product Manager (Payment Manager, PortX, and so on)
+* Product Manager of extension or other components involved - Payment Manager, PortX, and so on
 * Hub Technical Subject Matter Expert (Product Delivery, that is Development and QA)
-* ModusBox Operations representative (Technical Operations and Infrastructure)
+* Operations representative (Technical Operations and Infrastructure)
 
 ## Bugs identified in a Hub Operator Production environment
-
-::: tip NOTE
-All communication between the Hub Operator and the Mojaloop Enterprise Support team must be done through [the Mojaloop Enterprise Support Service Desk tool](https://support.modusbox.com).
-:::
 
 *Hub Operator steps:*
 
