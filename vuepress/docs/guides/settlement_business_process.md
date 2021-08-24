@@ -3,7 +3,7 @@
 It is important to define a business process around settlement management. The following high-level process serves as an example that you can customize to the specifics of your organization's needs.
 
 <table>
-<caption><strong>Settlement</strong></caption>
+<caption><strong>Settlement business process</strong></caption>
 <colgroup>
 <col style="width: 14%" />
 <col style="width: 85%" />
@@ -25,11 +25,12 @@ It is important to define a business process around settlement management. The f
 </tr>
 <tr class="odd">
 <td><p>3</p></td>
-<td><p>The Hub Operator emails the DFSP Settlement Report to each DFSP’s nominated contact points.</p></td>
+<td><p>The Hub Operator emails the DFSP Settlement Report to each DFSP's nominated contact points.</p></td>
 </tr>
 <tr class="even">
 <td><p>4</p></td>
-<td><p>DFSPs review their report and reconcile transactions against their own records in a timely manner.</p></td>
+<td><p>DFSPs review their report and reconcile transactions against their own records in a timely manner.</p>
+<p>The report provides information about the DFSP's bilateral settlement position with each DFSP they transacted with (either as a Payer DFSP or Payee DFSP) in the settlement window(s) being settled. It also provides the sum total of the transfer amounts sent and received by the DFSP in the settlement window(s).</p></td>
 </tr>
 <tr class="odd">
 <td><p>5</p></td>
@@ -37,7 +38,7 @@ It is important to define a business process around settlement management. The f
 </tr>
 <tr class="even">
 <td><p>6</p></td>
-<td><p>The Hub Operator notifies settlement bank contact points that settlement can be enacted, sharing the Settlement Bank Report.</p></td>
+<td><p>The Hub Operator notifies settlement bank contact points that settlement can be enacted, sharing the Settlement Bank Report.</p><p>The report acts as payment instructions to the bank, and provides the bilateral settlement position of each DFSP against every other DFSP that transacted in the settlement window(s) being settled. It also provides the sum total of the transfer amounts sent and received by each DFSP.</p></td>
 </tr>
 <tr class="odd">
 <td><p>7</p></td>
@@ -57,7 +58,7 @@ It is important to define a business process around settlement management. The f
 </tr>
 <tr class="odd">
 <td><p>11</p></td>
-<td><p>The Hub Operator retrieves the DFSP Settlement Result Report for each DFSP.</p></td>
+<td><p>The Hub Operator retrieves a DFSP Settlement Result Report for each DFSP.</p></td>
 </tr>
 <tr class="even">
 <td><p>12</p></td>
