@@ -60,7 +60,6 @@ module.exports = {
             'change_management',
             'release_management',
             'defect_triage',
-            'ticket_creation',
             'key_terms_kpis',
             'incident_management_escalation_matrix',
             'service_level_agreements'
@@ -77,7 +76,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Guide to Business Operations Portal',
+          title: 'Guide to Finance Portal v2 (Business Operations portal)',
           collapsable: true,
           sidebarDepth: 2,
           children: [
@@ -90,7 +89,15 @@ module.exports = {
             'recording_funds_in_out',
             'updating_ndc'
           ]
-        },       
+        },
+        {  
+          title: 'Roled Based Access Control',
+          collapsable: true,
+          sidebarDepth: 2,
+          children: [
+            'Role-based-access-control'
+          ]
+        }      
       ]
     }
     /*sidebar: {
