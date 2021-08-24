@@ -54,15 +54,15 @@ module.exports = {
           collapsable: true,
           sidebarDepth: 2,
           children: [
-            'tech_ops_introduction',
-            'incident_management',
-            'problem_management',
-            'change_management',
-            'release_management',
-            'defect_triage',
-            'key_terms_kpis',
-            'incident_management_escalation_matrix',
-            'service_level_agreements'
+            'tech-ops-introduction',
+            'incident-management',
+            'problem-management',
+            'change-management',
+            'release-management',
+            'defect-triage',
+            'key-terms-kpis',
+            'incident-management-escalation-matrix',
+            'service-level-agreements'
           ]
         },
         {
@@ -70,24 +70,24 @@ module.exports = {
           collapsable: true,
           sidebarDepth: 2,
           children: [
-            'settlement_management_introduction',
-            'settlement_basic_concepts',
-            'ledgers_in_the_hub',
+            'settlement-management-introduction',
+            'settlement-basic-concepts',
+            'ledgers-in-the-hub',
           ]
         },
         {
-          title: 'Guide to Finance Portal v2 (Business Operations portal)',
+          title: 'Guide to Finance Portal v2',
           collapsable: true,
           sidebarDepth: 2,
           children: [
-            'busops_portal_introduction',
-            'settlement_business_process',
-            'accessing_the_portal',
-            'managing_windows',
-            'checking_settlement_details',
-            'monitoring_dfsp_financial_details',
-            'recording_funds_in_out',
-            'updating_ndc'
+            'busops-portal-introduction',
+            'settlement-business-process',
+            'accessing-the-portal',
+            'managing-windows',
+            'checking-settlement-details',
+            'monitoring-dfsp-financial-details',
+            'recording-funds-in-out',
+            'updating-ndc'
           ]
         },
         {  
