@@ -48,14 +48,14 @@ The following table lists all available functionalities, the navigation paths wh
 <td><p>✓</p></td>
 <td><p>✓</p></td>
 </tr>
-<tr class="even">
+<!--<tr class="even">
 <td><p>Download settlement reports</p></td>
 <td><p><strong>Settlement</strong> &gt; <strong>Settlements</strong><br />
 <br />
 <strong>NOTE:</strong> This feature will be added in a future version of the portal.</p></td>
 <td><p>✓</p></td>
 <td><p>✓</p></td>
-</tr>
+</tr>-->
 <tr class="odd">
 <td><p><a href="monitoring_dfsp_financial_details.html">View DFSP financial details</a></p></td>
 <td><p><strong>Participants</strong> &gt; <strong>DFSP Financial Positions</strong></p></td>
