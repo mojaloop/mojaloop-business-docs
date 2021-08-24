@@ -65,7 +65,7 @@ Bugs and hotfixes are handled in the following way:
 
 ## Environments and QA strategy
 
-In order to validate the deployment of the Mojaloop release against the latest other products, a temporary environment is required to be set up. This allows the Mojaloop Support team (a team dedicated to providing operative services to operators of a Mojaloop Hub) to carry out the deployment and testing of Mojaloop releases against the latest versions of other products. 
+In order to validate the deployment of the Mojaloop release against the latest other products, a temporary environment is required to be set up. This allows the Mojaloop Support team (a team dedicated to running Support services for the technical operations of a Mojaloop Hub) to carry out the deployment and testing of Mojaloop releases against the latest versions of other products. 
 
 ::: tip NOTE
 The temporary environment that the Mojaloop Support team use for validation should follow a standard infrastructure. This standard infrastructure may differ from the infrastructure that the Hub Operator uses. The Operator must either ensure they have up-to-date information about the differences at all times, or choose to set up their infrastructure so it is fully in sync with the Mojaloop Support team's infrastructure standards.

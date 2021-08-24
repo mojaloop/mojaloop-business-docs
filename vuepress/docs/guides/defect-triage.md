@@ -1,8 +1,8 @@
 # Defect triage
 
-The purpose of the defect triage process is to ensure that all the bugs identified in the Hub Operator's Production environment are captured, evaluated, prioritized, and submitted to a Mojaloop Support team, a team dedicated to providing operative services to operators of a Mojaloop Hub. 
+The purpose of the defect triage process is to ensure that all the bugs identified in the Hub Operator's Production environment are captured, evaluated, prioritized, and submitted to a Mojaloop Support team, a team dedicated to running Support services for the technical operations of a Mojaloop Hub. This team can be insourced or outsourced (or even part insourced and part outsourced), depending on the level of expertise or capacity within your organization. If you decide to outsource this function, there are organizations within the Mojaloop community that do provide different levels of Support as a service. (For more information and referrals, contact the Mojaloop Foundation.)
 
-The proposed process applies to bugs identified in the Production environment, and new features or enhancements are outside its scope. However, to facilitate business conversations, Hub Operators can submit Service Requests describing functional requirements to the Support team. 
+The process proposed here applies to bugs identified in the Production environment, and new features or enhancements are outside its scope. However, to facilitate business conversations, Hub Operators can submit Service Requests describing functional requirements to the Support team. 
 
 The Mojaloop Support Triage team is responsible for the evaluation and resolution planning of each bug raised in the Hub Operator's Production environment. The Triage team has the following members: 
 
