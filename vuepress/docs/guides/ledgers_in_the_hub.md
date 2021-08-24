@@ -51,7 +51,7 @@ In accounting, a positive net position (more debits) is treated as an asset, whi
 
 A transfer is recorded by the Hub as a debit (DR) on the Payer DFSP side because the transfer reduces the amount that is owed back to that DFSP (reduced liability from the Hub's perspective). So while the Payer DFSP itself will treat the transfer as an increase in their liability in their own system, the Hub treats the transfer as an increase in their asset. 
 
-The same tranfer is recorded by the Hub as a credit (CR) on the Payee DFSP side because the transfer increases the amount owed to that DFSP (increased liability from the Hub's perspective). 
+The same transfer is recorded by the Hub as a credit (CR) on the Payee DFSP side because the transfer increases the amount owed to that DFSP (increased liability from the Hub's perspective). 
 
 Recording a transaction in two accounts as opposing debit and credit entries (of equal amounts) is what we call "double entry" in accounting.
 

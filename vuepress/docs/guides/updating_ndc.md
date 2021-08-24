@@ -12,11 +12,11 @@ To update the Net Debit Cap of a DFSP, complete the following steps:
 ![](/add_withdraw_funds.png) \
 The **Update Participant** window pops up.
 1. Select **Change Net Debit Cap** from the **Action** drop-down menu. \
-<img src="/update_participant.png" width="50%" height="50%" /> \
+<img src="/update_participant.png" width="50%" height="50%" />
 1. Enter the new NDC amount in the **Amount** field. \
-<img src="/action_change_net_debit_cap.png" width="50%" height="50%" /> \
+<img src="/action_change_net_debit_cap.png" width="50%" height="50%" />
 1. Click **Submit**.
 1. On clicking **Submit**, a confirmation window pops up asking you to confirm the action. \
-<img src="/confirm_action_update_ndc.png" width="60%" height="60%" /> \
+<img src="/confirm_action_update_ndc.png" width="60%" height="60%" />
 1. Click **Confirm**. \
 On clicking **Confirm**, the **NDC** value on the **DFSP Financial Positions** page gets updated and displays the new NDC amount.
