@@ -43,8 +43,8 @@ The following additional details are shown:
 
 * **DFSP**: The unique identifier of the DFSP.
 * **Window ID**: The unique identifier of the settlement window being settled.
-* **Debit**: Aggregated debit amount resulting from the transfers that the DFSP engaged in. <question: send transfers or receive transfer?>
-* **Credit**: Aggregated credit amount resulting from the transfers that the DFSP engaged in. <question: send transfers or receive transfer?>
+* **Debit**: Aggregated debit amount resulting from the transfers that the DFSP engaged in.
+* **Credit**: Aggregated credit amount resulting from the transfers that the DFSP engaged in.
 
 To view further details for a DFSP, click **View Net Positions**. The **Multilateral Net Settlement Position** pop-up window is displayed.
 
@@ -52,5 +52,5 @@ To view further details for a DFSP, click **View Net Positions**. The **Multilat
 
 The following additional details are shown:
 
-* **Debit**: List of transfers with transfer amounts that are recorded as a debit for the DFSP. <question: send transfers or receive transfer?> 
-* **Credit**: List of transfers with transfer amounts that are recorded as a credit for the DFSP. <question: send transfers or receive transfer?>
+* **Debit**: List of transfers with transfer amounts that are recorded as a debit for the DFSP.
+* **Credit**: List of transfers with transfer amounts that are recorded as a credit for the DFSP.
