@@ -242,10 +242,10 @@ The following figure provides a summary of the fist step of the change managemen
 
 #### Prerequisites
 
-Prerequisites for changes should be in line with the requirements for releases as described in the [release management process](release_management.md). The following should be clearly captured in the Service Desk tool while preparing the Change Record:
+Prerequisites for changes should be in line with the requirements for releases as described in the [release management process](release-management.md). The following should be clearly captured in the Service Desk tool while preparing the Change Record:
 
 * Handover from relevant team to Operations team, including full review of the following:
-    * Change Ticket or Change Record: Reason for the change including impact, risks, limitations. The categorization matrix for the change can be the same as for incidents. For details on the incident categorization matrix, see [Incident categorization matrix](incident_management.md#incident-categorization-matrix).
+    * Change Ticket or Change Record: Reason for the change including impact, risks, limitations. The categorization matrix for the change can be the same as for incidents. For details on the incident categorization matrix, see [Incident categorization matrix](incident-management.md#incident-categorization-matrix).
     * Change runbook: Steps required to make the change and roll back the change if needed
     * Test results from lower environment: Evidence that the change was tested successfully and causes no regression
     * Test plan for higher environment: What specific tests need to be run to validate the change
@@ -258,8 +258,8 @@ Prerequisites for changes should be in line with the requirements for releases a
 Inputs to the RFC are:
 
 * Service Requests
-* Requests from [Incident Management](incident_management.md) to apply workarounds/fixes
-* Requests from [Incident Management](incident_management.md) to make emergency changes to resolve Severity 1 incidents
+* Requests from [Incident Management](incident-management.md) to apply workarounds/fixes
+* Requests from [Incident Management](incident-management.md) to make emergency changes to resolve Severity 1 incidents
 * New functionality requests from Project Management Office
 * Maintenance requests for change
 

@@ -73,4 +73,4 @@ Once all the participants that engaged in the settlement window have settled the
 This activates the **Settle Selected Windows** button. Click the **Settle Selected Windows** button. \
 \
 ![](/settlement_window_mgmt_settle_button.png)
-1. Check on the [**Settlement Management** page](checking_settlement_details.md) whether or not the settlement window has been settled successfully. Check the state of the relevant settlement, it should say **Settled**.
+1. Check on the [**Settlement Management** page](checking-settlement-details.md) whether or not the settlement window has been settled successfully. Check the state of the relevant settlement, it should say **Settled**.

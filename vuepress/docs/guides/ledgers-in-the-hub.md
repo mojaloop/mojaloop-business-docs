@@ -2,7 +2,7 @@
 
 ## Managing risk
 
-Elements of the settlement process sit outside the control of the Hub, so it is important that there are a number of controls in place to prevent funds disappearing and to ensure there is always liquidity to support operation of the Hub. Other than the [Net Debit Cap](settlement_basic_concepts.md#liquidity-management-net-debit-cap), the Hub employs a number of internal ledgers to manage risk and ensure liquidity. These ledgers are as follows:
+Elements of the settlement process sit outside the control of the Hub, so it is important that there are a number of controls in place to prevent funds disappearing and to ensure there is always liquidity to support operation of the Hub. Other than the [Net Debit Cap](settlement-basic-concepts.md#liquidity-management-net-debit-cap), the Hub employs a number of internal ledgers to manage risk and ensure liquidity. These ledgers are as follows:
 
 <table>
 <colgroup>

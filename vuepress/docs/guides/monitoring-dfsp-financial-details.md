@@ -1,6 +1,6 @@
 # Monitoring DFSP financial details
 
-The **DFSP Financial Positions** page allows you to monitor DFSPs' financial details such as Balance, current [Position](settlement_basic_concepts#position), [Net Debit Cap](settlement_basic_concepts#liquidity-management-net-debit-cap), percentage of NDC used.
+The **DFSP Financial Positions** page allows you to monitor DFSPs' financial details such as Balance, current [Position](settlement-basic-concepts#position), [Net Debit Cap](settlement-basic-concepts#liquidity-management-net-debit-cap), percentage of NDC used.
 
 To access the **DFSP Financial Positions** page, go to **Participants** > **DFSP Financial Positions**.
 

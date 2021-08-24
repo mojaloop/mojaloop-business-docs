@@ -59,13 +59,13 @@ Bugs and hotfixes are handled in the following way:
 
 * All bug fixes (both Mojaloop and other products) are included in the release packages.
 * Likewise, hotfixes are also provided via a release. It is not recommended to deploy hotfixes directly from the specific application package releases, as deploying only a single component of a release (as opposed to deploying the release that includes the updated component) can result in the Hub being out of sync with the application package release.
-* Bugs are tracked, managed, and prioritized as defined in the [defect triage process](defect_triage.md): 
+* Bugs are tracked, managed, and prioritized as defined in the [defect triage process](defect-triage.md): 
     * The Service Desk tool is used for managing all bugs. 
     * A Triage team with representatives from both Mojaloop and other Product Delivery and Product Management teams are involved in analyzing urgency and impact to determine prioritization of bugs, including resolution planning/scheduling and communication back to the Hub Operator.
 
 ## Environments and QA strategy
 
-In order to validate the deployment of the Mojaloop release against the latest other products, a temporary environment is required to be set up. This allows the Mojaloop Support team to carry out the deployment and testing of Mojaloop releases against the latest versions of other products. 
+In order to validate the deployment of the Mojaloop release against the latest other products, a temporary environment is required to be set up. This allows the Mojaloop Support team (a team dedicated to providing operative services to operators of a Mojaloop Hub) to carry out the deployment and testing of Mojaloop releases against the latest versions of other products. 
 
 ::: tip NOTE
 The temporary environment that the Mojaloop Support team use for validation should follow a standard infrastructure. This standard infrastructure may differ from the infrastructure that the Hub Operator uses. The Operator must either ensure they have up-to-date information about the differences at all times, or choose to set up their infrastructure so it is fully in sync with the Mojaloop Support team's infrastructure standards.
@@ -73,7 +73,7 @@ The temporary environment that the Mojaloop Support team use for validation shou
 
 Following the successful deployment and validation of a release on the standard infrastructure and architecture, and after successfully running the latest version of Mojaloop and other products, the release is approved and can be scheduled for deployment into the Hub Operator's (potentially bespoke) Development environment. 
 
-The QA strategy employed by the Mojaloop and other product delivery teams ensures that new code of each and every service component has undergone comprehensive testing before it gets released. The QA strategy of the Mojaloop Support team, on the other hand, should focus on validating the deployability of the integrated service components, guaranteeing that there is a working Mojaloop Switch, which then can be deployed in a Hub Operator's environment.
+The QA strategy employed by the Mojaloop and other Product Delivery teams ensures that new code of each and every service component has undergone comprehensive testing before it gets released. The QA strategy of the Mojaloop Support team, on the other hand, should focus on validating the deployability of the integrated service components, guaranteeing that there is a working Mojaloop Switch, which then can be deployed in a Hub Operator's environment.
 
 ## Release process
 

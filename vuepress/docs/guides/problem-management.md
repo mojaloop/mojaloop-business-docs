@@ -21,7 +21,7 @@ A problem is declared by the relevant service management stakeholder in the foll
 
 In any of the scenarios above, or any other scenario that the Problem Manager may deem applicable, a problem record will be opened and the problem management process kicked off.
 
-If a problem turns out to be caused by a defect in the product, a bug is raised in accordance with the [defect triage process](defect_triage.md).
+If a problem turns out to be caused by a defect in the product, a bug is raised in accordance with the [defect triage process](defect-triage.md).
 
 ## Categorizing and prioritizing problems
 

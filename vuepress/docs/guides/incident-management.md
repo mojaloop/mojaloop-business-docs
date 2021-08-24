@@ -1,6 +1,6 @@
 # Incident management
 
-The main objective of incident management is to restore normal service operation as quickly as possible and to minimize the impact on business operations, thus ensuring that the best possible levels of service quality and availability are maintained. "Normal service operation" is defined here as service operation within [service level agreements (SLAs)](service_level_agreements.md).
+The main objective of incident management is to restore normal service operation as quickly as possible and to minimize the impact on business operations, thus ensuring that the best possible levels of service quality and availability are maintained. "Normal service operation" is defined here as service operation within [service level agreements (SLAs)](service-level-agreements.md).
 
 This is achieved through a robust, well-aligned incident management process and guided by a Service Desk system that helps capture all issues, and track turnaround time (TAT) from the time an issue is reported to time of resolution and closure.
 
@@ -367,7 +367,7 @@ This section describes the procedure that a Hub Operator is recommended to imple
 <td><p><strong>Step 4.2c</strong>:</p>
 <p>L2 ISO to review and verify incident severity and categorization.</p></td>
 <td><ul>
-<li><p>For incident severity definitions, see the <a href="incident_management.html#incident-categorization-matrix">categorization matrix</a>.</p></li>
+<li><p>For incident severity definitions, see the <a href="incident-management.html#incident-categorization-matrix">categorization matrix</a>.</p></li>
 <li><p>Proceed to Step 5.</p></li>
 </ul></td>
 <td><p>L2 ISO</p></td>
@@ -383,7 +383,7 @@ This section describes the procedure that a Hub Operator is recommended to imple
 <td></td>
 <td><p><strong>Step 5.1b</strong>:</p>
 <p>Inform stakeholders via secure email.</p></td>
-<td><p>Stakeholders are documented in <a href="incident_management_escalation_matrix.html">Appendix A: Incident management escalation matrix</a>.</p></td>
+<td><p>Stakeholders are documented in <a href="incident-management-escalation-matrix.html">Appendix A: Incident management escalation matrix</a>.</p></td>
 <td><p>L2 ISO</p></td>
 </tr>
 <tr class="odd">
@@ -443,7 +443,7 @@ This section describes the procedure that a Hub Operator is recommended to imple
 <td></td>
 <td><p><strong>Step 6.1b</strong>:</p>
 <p>Communicate with stakeholders via secure email.</p></td>
-<td><p>Stakeholders are documented in <a href="incident_management_escalation_matrix.html">Appendix A: Incident management escalation matrix</a>.</p></td>
+<td><p>Stakeholders are documented in <a href="incident-management-escalation-matrix.html">Appendix A: Incident management escalation matrix</a>.</p></td>
 <td><p>L2 ISO</p></td>
 </tr>
 <tr class="odd">
@@ -658,7 +658,7 @@ This is the owner of the process followed for managing incidents. This role also
 * Accountable for the overall quality of the process. Oversees the management of and compliance with the procedures, data models, policies, and technologies associated with the process.
 * Owns the process and supporting documentation for the process from a strategic and tactical perspective.
 * Ensures the incident management process aligns with other organization policies, for example, HR Policy, Security Policy, Level One Guiding Principles, and so on.
-* Defines [key performance indicators (KPIs)](key_terms_kpis.md) and aligns them with critical success factors (CSFs), and ensures that these objectives are realized.
+* Defines [key performance indicators (KPIs)](key-terms-kpis.md) and aligns them with critical success factors (CSFs), and ensures that these objectives are realized.
 * Designs, documents, reviews, and improves processes.
 * Establishes continuous service improvement (CSI) and ensures the procedures, policies, roles, technology, and other aspects of the incident management process are reviewed and improved upon.
 * Stays informed about industry best practices and incorporates them into the incident management process.
@@ -669,7 +669,7 @@ The incident management process produces the following outputs. Note that the on
 
 * Resolved or closed incidents. This is the most desired outcome of the incident management process. The closed incident record contains accurate details of the incident attributes and the steps taken for resolution or workaround.
 * Requests for Change (RFC).
-* Resolution metrics (Mean Time Between Failures, Mean Time To Repair, Mean Time To Acknowledge, and Mean Time To Failure). For details on KPIs, see the [Glossary](key_terms_kpis.md).
+* Resolution metrics (Mean Time Between Failures, Mean Time To Repair, Mean Time To Acknowledge, and Mean Time To Failure). For details on KPIs, see the [Glossary](key-terms-kpis.md).
 * Successfully implemented change through the change management process.
 * RCA document complying to the RCA template.
 * Restored service.

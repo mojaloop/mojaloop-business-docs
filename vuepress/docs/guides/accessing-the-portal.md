@@ -4,7 +4,7 @@ On accessing the portal, you are prompted to log in. Enter your credentials on t
 
 <img src="/portal_login.png" width="50%" height="50%" />
 
-<!--![Business Operations portal login](/portal_login.png)-->
+<!--![Finance Portal login](/portal_login.png)-->
 
 The portal implements role-based access control, meaning that the role you have determines the range of portal functionalities available to you. Currently, the following roles exist:
 
@@ -31,19 +31,19 @@ The following table lists all available functionalities, the navigation paths wh
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="managing_windows.html#closing-a-settlement-window">Close settlement windows</a></p></td>
+<td><p><a href="managing-windows.html#closing-a-settlement-window">Close settlement windows</a></p></td>
 <td><p><strong>Settlement</strong> &gt; <strong>Settlement Windows</strong></p></td>
 <td><p>✓</p></td>
 <td><p>✓</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="managing_windows.html#settling-a-settlement-window">Settle settlement windows</a></p></td>
+<td><p><a href="managing-windows.html#settling-a-settlement-window">Settle settlement windows</a></p></td>
 <td><p><strong>Settlement</strong> &gt; <strong>Settlement Windows</strong></p></td>
 <td><p>✓</p></td>
 <td><p>✓</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="checking_settlement_details.html">View settlement details</a></p></td>
+<td><p><a href="checking-settlement-details.html">View settlement details</a></p></td>
 <td><p><strong>Settlement</strong> &gt; <strong>Settlements</strong></p></td>
 <td><p>✓</p></td>
 <td><p>✓</p></td>
@@ -57,19 +57,19 @@ The following table lists all available functionalities, the navigation paths wh
 <td><p>✓</p></td>
 </tr>-->
 <tr class="odd">
-<td><p><a href="monitoring_dfsp_financial_details.html">View DFSP financial details</a></p></td>
+<td><p><a href="monitoring-dfsp-financial-details.html">View DFSP financial details</a></p></td>
 <td><p><strong>Participants</strong> &gt; <strong>DFSP Financial Positions</strong></p></td>
 <td><p>✓</p></td>
 <td><p>✓</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="recording_funds_in_out.html">Record deposits to or withdrawals from DFSPs' liquidity accounts</a></p></td>
+<td><p><a href="recording-funds-in-out.html">Record deposits to or withdrawals from DFSPs' liquidity accounts</a></p></td>
 <td><p><strong>Participants</strong> &gt; <strong>DFSP Financial Positions</strong></p></td>
 <td><p>✓</p></td>
 <td><p>✓</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="updating_ndc.html">Update a DFSP’s Net Debit Cap</a></p></td>
+<td><p><a href="updating-ndc.html">Update a DFSP’s Net Debit Cap</a></p></td>
 <td><p><strong>Participants</strong> &gt; <strong>DFSP Financial Positions</strong></p></td>
 <td><p>✓</p></td>
 <td><p>x</p></td>

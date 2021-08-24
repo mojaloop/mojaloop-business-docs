@@ -17,7 +17,7 @@ It is important to define a business process around settlement management. The f
 <tbody>
 <tr class="odd">
 <td><p>1</p></td>
-<td><p>The Hub Operator <a href="managing_windows.html#closing-a-settlement-window">closes the settlement window using the Business Operations portal</a>.</p></td>
+<td><p>The Hub Operator <a href="managing-windows.html#closing-a-settlement-window">closes the settlement window using the Finance Portal</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>2</p></td>
@@ -50,11 +50,11 @@ It is important to define a business process around settlement management. The f
 </tr>
 <tr class="odd">
 <td><p>9</p></td>
-<td><p>The Hub Operator <a href="managing_windows.html#settling-a-settlement-window">settles the settlement window using the Business Operations portal</a>.</p></td>
+<td><p>The Hub Operator <a href="managing-windows.html#settling-a-settlement-window">settles the settlement window using the Finance Portal</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>10</p></td>
-<td><p>The Hub Operator <a href="monitoring_dfsp_financial_details.html">verifies DFSP liquidity account balances against the balances shown in the portal</a>, and updates them if necessary, using the <a href="recording_funds_in_out.html">"add/withdraw funds" functionality of the portal</a>. Note that this may cause the DFSP’s NDC to be recalculated, potentially causing the DFSP’s outbound transactions to be declined by the Hub.</p></td>
+<td><p>The Hub Operator <a href="monitoring-dfsp-financial-details.html">verifies DFSP liquidity account balances against the balances shown in the portal</a>, and updates them if necessary, using the <a href="recording-funds-in-out.html">"add/withdraw funds" functionality of the portal</a>. Note that this may cause the DFSP’s NDC to be recalculated, potentially causing the DFSP’s outbound transactions to be declined by the Hub.</p></td>
 </tr>
 <tr class="odd">
 <td><p>11</p></td>
