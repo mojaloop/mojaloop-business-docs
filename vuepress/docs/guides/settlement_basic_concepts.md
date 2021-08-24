@@ -34,13 +34,13 @@ The Hub supports two settlement models:
 
 Deferred Net Settlement means the following:
     
-* a group of transfers is settled together
+* a group of transfers is settled together (see [Settlement window](#settlement-window))
 * each participant settles with the scheme for the net of its transfers that are included in the settlement (multilateral settlement)
 * settlement is actioned after a period of delay
 
 Continuous Gross Settlement means the following:
 
-* settlement is executed after each transfer is completed
+* settlement is executed after each transfer is completed (therefore, [settlement windows](#settlement-window) do not exist in this model)
 * each participant settles separately with the other participants and the scheme is not a party to the settlement (bilateral settlement)
 
 ## Settlement window
@@ -57,6 +57,10 @@ A settlement window can have the following states:
 * `SETTLED`: The settlement bank has confirmed that all the participant DFSPs that engaged in transfers in the settlement window have settled their payments, and the Hub Operator has settled the window.
 
 Closing a settlement window automatically opens the next one.
+
+::: tip NOTE
+There are no settlement windows in the Continuous Gross Settlement model.
+:::
 
 ## Liquidity management (Net Debit Cap)
 
@@ -86,16 +90,20 @@ The Multilateral Net Settlement Position is calculated when a settlement window 
 
 ## Settlement reports
 
-To facilitate DFSP reconciliation and settlement at the settlement bank, the following settlement reports are provided:
+To facilitate DFSP reconciliation and settlement at the settlement bank, the Hub provides various settlement reports.
 
 <question: do we want to talk about reports?>
 
 ## Business Operations portal
 
-The [Business Operations portal](busops_portal_introduction.md) is a web portal used by the Hub Operator to manage settlement-related processes on a daily basis. The portal provides functionality to:
+The [Business Operations portal](busops_portal_introduction.md) (commonly referred to as "Finance Portal v2") is a web portal used by the Hub Operator to manage settlement-related processes on a daily basis. The portal provides functionality to:
 
 * monitor details such as the balance, [Position](#position), [Net Debit Cap](#liquidity-management-net-debit-cap) of DFSPs
 * update a DFSP's [Net Debit Cap](#liquidity-management-net-debit-cap)
 * manage settlement windows
-* download reports <question: shall we remove this?>
+<!--* download reports-->
 * record deposits to or withdrawals from DFSPs' liquidity accounts
+
+::: tip NOTE
+The Business Operations portal currently only supports settlement processes that rely on the Deferred Net Settlement model.
+:::
