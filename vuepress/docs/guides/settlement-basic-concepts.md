@@ -94,9 +94,9 @@ To facilitate DFSP reconciliation and settlement at the settlement bank, the Hub
 
 <question: do we want to talk about reports?>
 
-## Business Operations portal
+## Finance Portal
 
-The [Business Operations portal](busops-portal-introduction.md) (commonly referred to as "Finance Portal v2") is a web portal used by the Hub Operator to manage settlement-related processes on a daily basis. The portal provides functionality to:
+The [Finance Portal](busops-portal-introduction.md) (commonly referred to as "Finance Portal v2") is a web portal used by the Hub Operator to manage settlement-related processes on a daily basis. The portal provides functionality to:
 
 * monitor details such as the balance, [Position](#position), [Net Debit Cap](#liquidity-management-net-debit-cap) of DFSPs
 * update a DFSP's [Net Debit Cap](#liquidity-management-net-debit-cap)
@@ -105,5 +105,5 @@ The [Business Operations portal](busops-portal-introduction.md) (commonly referr
 * record deposits to or withdrawals from DFSPs' liquidity accounts
 
 ::: tip NOTE
-The Business Operations portal currently only supports settlement processes that rely on the Deferred Net Settlement model.
+The Finance Portal currently only supports settlement processes that rely on the Deferred Net Settlement model.
 :::
