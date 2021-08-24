@@ -572,6 +572,12 @@ When writing a Security Incident Report, it is good practice to use a template c
 
 This section provides generic guidelines on the proposed roles and responsibilities within the incident management process.
 
+::: tip NOTE
+It is convenient to describe the running support for the technical operations of the Mojaloop Hub as levels. This document describes four levels. Levels are convenient because each level of support requires a different degree of knowledge of and access to the system. In other words, levels refer to different roles/Support teams within your organization.
+
+Some of these teams can optionally be outsourced, depending on the level of expertise or capacity within your organization. If you decide to outsource Support functions, there are organizations within the Mojaloop community that do provide different levels of Support as a service. (For more information and referrals, contact the Mojaloop Foundation.)
+:::
+
 ### End user/user/requester/L0
 
 *Role*
