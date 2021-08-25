@@ -10,7 +10,7 @@ The following procedures need to be in place:
 
 - [**Change management**](change-management.md): Controlling the lifecycle of all changes, enabling changes to be made with minimum disruption to IT services.
 
-- [**Release management**](release-management.md): Managing, planning, scheduling, and controllin a software change through deployment and testing across various environments.
+- [**Release management**](release-management.md): Managing, planning, scheduling, and controlling a software change through deployment and testing across various environments.
 
 - [**Defect triage**](defect-triage.md): Ensuring that all the bugs identified in the client’s Production environment are captured, evaluated, prioritized, and submitted to the Service Desk.
 
