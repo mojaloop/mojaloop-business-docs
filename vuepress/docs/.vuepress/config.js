@@ -91,7 +91,7 @@ module.exports = {
           ]
         },
         {  
-          title: 'Roled Based Access Control',
+          title: 'Roled-Based Access Control',
           collapsable: true,
           sidebarDepth: 2,
           children: [
@@ -100,10 +100,6 @@ module.exports = {
         }      
       ]
     }
-    /*sidebar: {
-      '/guides/': getSidebar('Technical Operations Guide', 'Settlement Management Guide'),
-      /'/technical_operations_guide/': getSidebarTechOps('Technical Operations Guide')
-    }*/
   },
 
   /**
@@ -114,39 +110,3 @@ module.exports = {
     '@vuepress/plugin-medium-zoom'
   ]
 }
-
-/*function getSidebar (groupA, groupB) {
-  return [
-    {
-      title: groupA,
-      collapsable: true,
-      sidebarDepth: 2,
-      children: [
-        'tech_ops_introduction',
-        'incident_management'
-      ]
-    },
-    {
-      title: groupB,
-      collapsable: true,
-      sidebarDepth: 2,
-      children: [
-        'settlement_management_introduction'
-      ]
-    }
-  ]
-}*/
-
-/*function getSidebarTechOps (groupB) {
-  return [
-    {
-      title: groupB,
-      collapsable: false,
-      sidebarDepth: 2,
-      children: [
-        '',
-        'incident_management'
-      ]
-    }
-  ]
-}*/
