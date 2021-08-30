@@ -23,7 +23,7 @@ The Mojaloop Support Triage team is responsible for the evaluation and resolutio
 
 1. An incident ticket is raised in the Hub Operator's Service Desk tool by a Hub L1 Support Engineer, as per the [incident management process](incident-management.md).
 1. The ticket is escalated to the Hub L2/L3 team for in-depth investigation and analysis, as required.
-1. The Hub L2/L3 team evaluate if the behavior is a new bug or a known issue, and whether a bug ticket/record already exists. If it is a known bug and a Mojaloop Support ticket already exists, then the L1 engineer must update the existing ticket with new details and information, and the priority and impact may be adjusted accordingly. The L1 engineer must communicate this back to the reporter/client DFSP (as referred to in point 6). New bugs will follow the rest of the process below.
+1. The Hub L2/L3 team evaluate if the behavior is a new bug or a known issue, and whether a bug ticket/record already exists. If it is a known bug and a Mojaloop Support ticket already exists, then the L1 engineer must update the existing ticket with new details and information, and the priority and impact/severity (level of impact on the Hub or to its users) may be adjusted accordingly. The L1 engineer must communicate this back to the reporter/client DFSP (as referred to in point 6). New bugs will follow the rest of the process below.
 1. The Hub L2/L3 team confirm that the Production issue can be reproduced in lower environments running the same version as the Production (PRD) environment. That is, the bug is not a user error or an environmental issue.
 1. The Hub L3 team may escalate to the Hub Technical Operations Manager, and report the bug via the Mojaloop Support Service Desk tool, adding all details of their analysis (including clear steps to reproduce the bug, the expected behavior, the actual behavior and any log files and details from the L2/L3 investigations), and referencing the identifier of the incident ticket created in Step 1 for easy tracking. 
 1. Response/acknowledgement/communication is sent back to the client DFSP within the agreed timelines.
@@ -50,24 +50,6 @@ Deployments into Hub environments are the responsibility of the Hub Operator's t
 * For new defects identified, the release/change can be rolled back depending on severity. This can be decided by the deployment team. In the case of a roll-back, regression tests must be executed to confirm that the previous working version is stable on the environment and the bug reported as part of the post-deployment report.
 * The bug is captured via the Mojaloop Support Service Desk tool and will be handled via the process described above.
 
-## Prioritization of bugs
-
-The prioritization of bugs is the responsibility of Subject Matter Experts (SMEs) in the Mojaloop Support Triage team. 
-
-All bugs are evaluated based on the expected behavior of the system and the actual behavior identified. The operational impact and the urgency of the bug must be captured by the Hub Operator's Operations team in order for this to be considered by the Triage team in the prioritization.
-
-Every bug is evaluated against the Product roadmap and backlog.
-
-New features or enhancement requests are channelled to the Product team and not handled by this process. This is communicated back to the requester via the Operations team.
-
-::: tip
-Priority is the order in which the bug will be fixed. The higher the priority, the sooner the bug will be resolved. \
-\
-Severity is the level of impact on the Hub or to its users. \
-\
-These two factors work hand in hand. For example, a cosmetic bug like a typo on a webpage will likely be ranked as low severity but could be a quick and easy fix and ranked high priority. Hence, it is important to set these values with due consideration.
-:::
-
 ## Escalation process
 
 If there is any discrepancy between severity, priority or the client's (DFSP's) expectations and the resolution plan provided by the Mojaloop Support team, the [incident management escalation matrix](incident-management-escalation-matrix.md) governs what happens next. Accordingly, the incident will be set as priority P1 or any other lower priority type and stakeholders will be informed.
@@ -85,6 +67,24 @@ Information from triage discussions and from the Product Delivery team must be s
 The Product Manager who is assigned the bug, must ensure that cross-referencing and tracking is in place to ensure the flow of information required or produced by the Product Delivery team's evaluation. 
 
 The Product Manager who is assigned the bug, must determine and communicate the resolution plan back to the Mojaloop Support team/engineer, via the ticket only.
+
+### Prioritization of bugs
+
+The prioritization of bugs is the responsibility of Subject Matter Experts (SMEs) in the Mojaloop Support Triage team. 
+
+All bugs are evaluated based on the expected behavior of the system and the actual behavior identified. The operational impact and the urgency of the bug must be captured by the Hub Operator's Operations team in order for this to be considered by the Triage team in the prioritization.
+
+Every bug is evaluated against the Product roadmap and backlog.
+
+New features or enhancement requests are channelled to the Product team and not handled by this process. This is communicated back to the requester via the Operations team.
+
+::: tip
+Priority is the order in which the bug will be fixed. The higher the priority, the sooner the bug will be resolved. \
+\
+Severity is the level of impact on the Hub or to its users. \
+\
+These two factors work hand in hand. For example, a cosmetic bug like a typo on a webpage will likely be ranked as low severity but could be a quick and easy fix and ranked high priority. Hence, it is important to set these values with due consideration.
+:::
 
 ## Process flowchart
 
