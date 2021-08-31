@@ -97,7 +97,17 @@ module.exports = {
           children: [
             'Role-based-access-control'
           ]
-        }      
+        },
+        {  
+          title: 'Onboarding Guide for the Hub Operator',
+          collapsable: true,
+          sidebarDepth: 2,
+          children: [
+            'onboarding-introduction',
+            'business-onboarding',
+            'technical-onboarding',
+          ]
+        }       
       ]
     }
   },
