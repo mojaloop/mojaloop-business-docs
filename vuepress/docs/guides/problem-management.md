@@ -10,6 +10,8 @@ The problem management procedure ensures that:
 * queue of unresolved problems is visible and reported
 * problems are properly prioritized and handled in the appropriate sequence
 * resolution provided meets the requirements of the agreed upon service level agreement (SLA)
+* **Resolution of root cause issues or problems is done**
+
 
 ## Identifying problems
 
