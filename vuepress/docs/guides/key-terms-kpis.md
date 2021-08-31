@@ -68,14 +68,14 @@ The MTTR clock starts ticking when the repairs start and it goes on until operat
 
 **Mean Time To Recovery:** Mean Time To Recovery is a measure of the time between the point at which the failure is first discovered until the point at which the service returns to operation. So, in addition to repair time, testing period, and return to normal operating condition, it captures failure notification time and diagnosis.
 
-**Old Incident Backlog:** Number of open incidents older than 28 days (or any other given time frame) relative to all open incidents, as a percentage.
+**Old Incident Backlog:** Number of open incidents older than 28 days (or any other given time frame) relative to all open incidents.
 
 **Percentage Of Incidents Solved Within Deadline/Target:** Number of incidents closed within the allowed duration time frame, relative to the number of all incidents closed in a given time period. A duration time frame is applied to each incident when it is received, and sets a limit on the amount of time available to resolve the incident. The applied duration time frame is derived from the agreements made with the customer about resolving incidents.
 
-**Percentage Of Incidents Solved Within SLA Time:** Total number of incidents resolved within SLA time, divided by the total number of incidents, as a percentage.
+**Percentage Of Incidents Solved Within SLA Time:** Total number of incidents resolved within SLA time, divided by the total number of incidents.
 
 **Percentage Of Outage Due To Incidents:** Percentage of outage (unavailability) due to incidents, relative to the service hours.
 
-**Percentage Of Overdue Incidents:** Number of overdue incidents (not closed and not solved within the established time frame) relative to the number of open (not closed) incidents, as a percentage.
+**Percentage Of Overdue Incidents:** Number of overdue incidents (not closed and not solved within the established time frame) relative to the number of open (not closed) incidents.
 
 **Percentage Of Repeated Incidents:** Percentage of incidents that can be classified as a repeat incident, relative to all reported incidents within the measurement period. A repeat incident is an incident that has already occurred (multiple times) in the measurement period.
