@@ -10,7 +10,9 @@ The processes described in this section represent best practices and act as reco
 The process proposed here applies to bugs identified in the Hub Operator's Production environment, and new features or enhancements are outside its scope. However, to facilitate business conversations, Hub Operators can submit requests for new features or enhancements and those will be passed on to the Product teams in the community.
 :::
 
-The Mojaloop Support Triage team is responsible for the evaluation and resolution planning of each bug raised in the Hub Operator's Production (**What if it is a lab or a sandbox that the hub operator is running?**) environment. The Triage team has the following members: 
+There needs to be a specific team that is responsible for the evaluation and resolution planning of each bug raised in the various environments (Production, Staging, QA, Dev, and so on). It can be a Support team or a QA/Development team. Within the remainder of this section, this team is referred to as the "Mojaloop Support Triage team".
+
+The Triage team has the following members: 
 
 * Mojaloop Product Manager (core Mojaloop)
 * Product Manager of extensions or other components implemented in the Hub - Payment Manager, PortX, and so on
@@ -32,7 +34,7 @@ The Mojaloop Support Triage team is responsible for the evaluation and resolutio
 
 1. The Mojaloop Support team review, allocate a team member as owner, and acknowledge receipt of the bug. 
 1. Following an initial review of the issue raised, the Mojaloop Support team member forwards the issue to the Triage team for further evaluation. \
-The review of the ticket is conducted to a) establish good understanding of the issue raised, including the severity level and priority set by the client DFSP(**Should this be the priority set by the Hub operator?**); b) confirm completeness of the information provided, including log files, clear description, steps to reproduce, screenshots, and so on. 
+The review of the ticket is conducted to a) establish good understanding of the issue raised, including the severity level and priority set by the Hub Operator; b) confirm completeness of the information provided, including log files, clear description, steps to reproduce, screenshots, and so on. 
 1. The Triage team evaluate the bug: enhancements/new feature requests are passed on to the community Product teams. Operational impact, severity, and priority are reviewed and the bug resolution is assigned to the relevant Product Manager. For details on prioritization, see [Prioritization of bugs](#prioritization-of-bugs).
 1. The Product Manager clones the bug into their Product Delivery team's product backlog, which links both issues for reference and progress tracking. The Product Manager also reviews and sets priority against other items in their product backlog.
 1. The Mojaloop Support Engineer assigned to the Mojaloop Support bug ticket monitors the cloned ticket and handles all communication between the Product Manager and the Hub Operator on the progress of the bugs, including sharing any remediation steps (for example, for the Hub to apply a workaround or suggesting an alternative way of using the affected functionality). Each subsequent update from the Product Delivery team should also be shared in the Product Manager bug ticket for visibility to the Hub Operator. The Product Manager assignee must remain the owner of the Product Manager bug ticket until the bug is resolved.
@@ -52,7 +54,7 @@ Deployments into Hub environments are the responsibility of the Hub Operator's t
 
 ## Escalation process
 
-If there is any discrepancy between on priority assigned or the client's (DFSP's(**Hub Operator**)) expectations and the resolution plan provided by the Mojaloop Support team, the [incident management escalation matrix](incident-management-escalation-matrix.md) governs what happens next. Accordingly, the incident will be set as priority P1 or any other lower priority type and stakeholders will be informed.
+If there is any discrepancy between the priority assigned or the client's (Hub Operator's) expectations and the resolution plan provided by the Mojaloop Support team, the [incident management escalation matrix](incident-management-escalation-matrix.md) governs what happens next. Accordingly, the incident will be set as priority P1 or any other lower priority type and stakeholders will be informed.
 
 The Hub Operator Program Manager and the Mojaloop Support Team Lead must be informed immediately.
 
