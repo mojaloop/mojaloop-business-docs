@@ -31,7 +31,7 @@ Standard development and QA practices – followed by the Mojaloop Development/P
     * List of changed components/services
     * List of user stories and bugs in the release
     * Highlight of any fundamental (breaking) changes impacting any functionality, API solution, or system architecture
-* Deployment runbook created, with deployment and rollback instructions including environment variables and deployment prerequisites.
+* Deployment runbook created, with deployment and rollback instructions including environment variables, database update scripts and deployment prerequisites.
 * Maintenance of regression test definitions, baseline test results from Mojaloop OSS, and Scheme-specific validation criteria (tests) added on top of them.
 * Maintenance of a knowledge base of any new or significant changes to functionality, products, architecture, and so on, regarding Mojaloop OSS and other components, as well as customizations done for the Scheme. The knowledge base acts as the basis of knowledge handover to the Operations team. This handover includes full review of the deployment runbook and other release artifacts, such as release packages and database scripts, which will help the Operations team greatly in day-to-day operations, validation, debugging of issues, and maintenance.
 
