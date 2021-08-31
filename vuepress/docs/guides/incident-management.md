@@ -110,14 +110,14 @@ Incident resolution may include any of the following actions:
 
 Based on the complexity of the incident, it may have to be broken down into sub-tasks or tasks. Tasks are typically created when an incident resolution requires the contribution of multiple technicians from various departments.
 
-While the incident is being processed, the Support Engineer needs to ensure the Service Level Agreement is not breached. An SLA is the acceptable time within which an incident needs a response (response SLA) or resolution (resolution SLA). SLAs can be assigned to incidents based on their parameters like category, requester, impact, urgency, and so on. In cases where an SLA is about to be breached or has already been breached, the incident can be escalated functionally or hierarchically to ensure that it is resolved at the earliest.
+While the incident is being processed, the Support Engineer needs to ensure the Service Level Agreement is not breached. An SLA is the acceptable time within which an incident needs a response (response SLA) or resolution (resolution SLA). SLAs can be assigned to incidents based on their parameters like service category, requester, impact, urgency, and so on. In cases where an SLA is about to be breached or has already been breached, the incident can be escalated functionally or hierarchically to ensure that it is resolved at the earliest.
 
 An incident is considered resolved when the L1/L2/L3 Support Team has come up with a temporary workaround or a permanent solution for the issue. Workarounds may be:
 
 * instructions provided to the customer on how to complete their work using an alternative method
 * temporary fixes that assist a system to work as expected but which do not resolve the issue permanently
 
-Workarounds need to be documented and communicated to the Service Desk so they can be added to the Knowledge Base. (It is good practice to maintain a repository of Knowledge Base articles, which describe the workaround or resolution steps of incidents that occurred in the past.) This will ensure that workarounds are accessible to the Service Desk to facilitate resolution during future recurrences of the incident.
+Workarounds need to be documented and communicated to the Service Desk so they can be added to the Knowledge Base. (It is good practice to maintain a repository of Knowledge Base articles, which describe the workaround or resolution steps of incidents that occurred in the past). This will ensure that workarounds are accessible to the Service Desk to facilitate resolution during future recurrences of the incident.
 
 ### Step 4: Escalate
 
@@ -155,9 +155,9 @@ The following table provides guidance as to how to classify the severity of an i
 <td><p>Severity 1</p></td>
 <td><ul>
 <li><p>Extensive impact to the business, Production system outage, normal operation is not possible.</p></li>
-<li><p>Any incident that resulted in a major outage of the Hub, including connectivity of multiple partners.</p></li>
+<li><p>Any incident that resulted in a major outage of the Hub, including connectivity of multiple partners/DFSPs.</p></li>
 <li><p>Any incident that presents major financial risks and has contractual implications.</p></li>
-<li><p>A security incident with a major impact on the privacy of the Hub, partners, or customer data.</p></li>
+<li><p>A security incident with a major impact on the privacy or availability of the Hub, partners/DFSPs, or customer data.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -190,6 +190,8 @@ Key:
 * Severity 4 = Minor
 
 The severity code assigned to an incident will determine the solution time and will be used by the Service Desk to assign resources to the request.
+
+**--START - delete this section? --**
 
 In addition to severity, in some cases the priority of an incident may also have to be considered. Priority is assigned by the Hub Operator (rather than the client) and is the order in which the incident will be fixed. The higher the priority, the sooner the incident will be resolved. Consider the following example: a cosmetic bug like a typo on a webpage will likely be ranked as low severity but could be a quick and easy fix and ranked high priority. Hence, it is important to give severity and priority due consideration.
 
@@ -226,6 +228,8 @@ The following table provides guidance as to how to assign priority to an inciden
 </tr>
 </tbody>
 </table>
+
+**--END - delete this section? --**
 
 ## Security incidents
 
@@ -610,17 +614,17 @@ This is the first point of contact (Support Level 1) for requesters or end users
 * Verify the resolution with the end user and collect feedback while updating the tickets.
 * Monitor feedback and surveys related to the actions that L1 took to resolve the issue for the purpose of analyzing the quality of service offered.
 
-### Level 2 Team (Application, Infrastructure, and Security Support L2) (Customer Support Team)
+### Level 2 Team (Application, Infrastructure, Security and Business Operations Support L2) (Customer Support Team)
 
 *Roles*
 
-This support function is made up of engineers with advanced knowledge of the Hub. The L2 Team is expected to provide in-depth troubleshooting, technical analysis, and support to resolve incidents reported. They usually receive more complex requests from end users; they also receive requests in the form of escalations from the L1 Team.
+This support function is made up of engineers or Business operations Subject Matter Experts (SMEs) with advanced knowledge of the Hub. The L2 Team is expected to provide in-depth troubleshooting, technical analysis, transaction analysis and support to resolve incidents reported. They usually receive more complex requests from end users; they also receive requests in the form of escalations from the L1 Team.
 
 *Responsibilities*
 
 * Carry out incident diagnosis.
 * Document the steps followed to resolve the incident and submit Knowledge Base articles. (For every incident, the Support Team updates the Knowledge Base. The purpose of Knowledge Base articles is to enable end users and Support personnel to resolve issues on their own.)
-* Handle intermediate incidents, for example, incidents related to Applications, Infrastructure, Log Analysis, and so on.
+* Handle intermediate incidents, for example, incidents related to Applications, Infrastructure, Log Analysis, Transactions Analysis and so on.
 * If the incident is resolved, confirm the resolution with the end user.
 * Support DFSP onboarding.
 
@@ -634,7 +638,7 @@ This level is usually comprised of Specialist Engineers who have advanced knowle
 
 * Perform deep analysis and/or reproduce the issue in a test environment in order to diagnose the issue properly and to test the solution.
 * Interpret and analyze the code and data using information triaged from L1 and L2.
-* If unresolved, escalate the incident to L4 for identifying the underlying issue or to external vendors as applicable.
+* If unresolved, escalate the incident to "L4" support partners to identify the underlying issue or to external vendors, DFSPs or Settlement Bank (transactions queries or transfer reports) as applicable.
 * Provide subject matter expertise.
 * Document the incident and update the Knowledge Base. (For every incident, the Support Team updates the Knowledge Base. The purpose of Knowledge Base articles is to enable end users and Support personnel to resolve issues on their own.)
 
@@ -653,11 +657,11 @@ The Service Manager monitors the effectiveness of the process. The Service Manag
 * Align customer expectations with the SLAs by being the interface between customers and the Operations team.
 * Identify incidents that need to be reviewed and carry out the review.
 
-### Process Owner: Director/Manager of Technical Operations
+### Process Owner: Technical Operations Manager
 
 *Role*
 
-This is the owner of the process followed for managing incidents. This role also acts as a coordinator between teams and organizations. The Manager of Technical Operations analyzes, modifies, and improves the process to ensure it best serves the interests of the organization.
+This is the owner of the process followed for managing incidents. This role also acts as a coordinator between teams and organizations. The Technical Operations Manager analyzes, modifies, and improves the process to ensure it best serves the interests of the organization.
 
 *Responsibilities*
 
@@ -671,7 +675,7 @@ This is the owner of the process followed for managing incidents. This role also
 
 ## Outputs of the incident management process
 
-The incident management process produces the following outputs. Note that the only mandatory output is the Root Cause Analysis (RCA), and all other outputs listed below might feed into the RCA.
+The incident management process produces the following outputs. Note that the only mandatory output for Security or S1 incidents is the Root Cause Analysis (RCA), and all other outputs listed below might feed into the RCA.
 
 * Resolved or closed incidents. This is the most desired outcome of the incident management process. The closed incident record contains accurate details of the incident attributes and the steps taken for resolution or workaround.
 * Requests for Change (RFC).
@@ -680,7 +684,7 @@ The incident management process produces the following outputs. Note that the on
 * RCA document complying to the RCA template.
 * Restored service.
 * Updated Knowledge Base database.
-* Notification through various channels (email, call, and so on) on the initiation, resolution, and closure of an S1 incident to various stakeholders.
+* Notification through various channels (Service Desk, email, call, and so on) on the initiation, resolution, and closure of an S1 incident to various stakeholders.
 * Updated Daily Operation Report and management report to ascertain the decisions made with regards to service improvements, resource allocation/reallocation.
 * Accurately recorded service and/or component outage details (for example, start, end, duration, outage classification, and so on).
 
@@ -688,6 +692,6 @@ The incident management process produces the following outputs. Note that the on
 
 The incident management process interfaces with a number of other processes, feeding into and impacting each other:
 
-* **Change Management process**: The objective of the change management process is to ensure that standardized methods and procedures are used for efficient and prompt handling of all changes, in order to minimize the impact of change-related incidents upon service quality, and consequently improve the day-to-day operations of the organization.
-* **Release Management process**: Release and deployment management is defined as the process of managing, planning, and scheduling the rollout of IT services, updates, and releases to the production environment. The primary goal of this process is to ensure that the integrity of the live environment is protected and that the correct components are released.
+* **Change Management process**: The objective of the change management process is to ensure that standardized methods and procedures are used for efficient and prompt handling of all changes, in order to minimize the impact of change-related incidents upon service availability or quality, and consequently improve the day-to-day operations of the organization.
+* **Release Management process**: Release and deployment management is defined as the process of managing, planning, and scheduling the rollout of IT services, updates, and releases to the production environment. The primary goal of this process is to ensure that the integrity of the live environment is protected and that the correct components and vlidated features are released for customer use.
 * **Incident Communication process**: Incident communication is the process of alerting users that a service is experiencing some type of outage or degraded performance. This is especially important for services where 24/7 availability is expected. Incident communication is important for all partners, customers, and their customers.
