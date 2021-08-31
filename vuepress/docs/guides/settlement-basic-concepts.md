@@ -2,52 +2,57 @@
 
 This section collects key concepts and elements of the settlement management process.
 
-## Liquidity account
+## Liquidity cover
 
-As DFSPs perform transfers on their users' behalf, only e-money is debited/credited between them. To transfer actual funds, the Hub sets up a contractual agreement with a partner settlement bank, who carries out settlement instructions issued by the Hub. All participant DFSPs must maintain an account, called "liquidity account" (holding DFSPs' settlement liquidity), at the settlement bank. 
+As described in the [Introduction](settlement-management-introduction.md), one of the characteristics of a real-time payments system is that creditor DFSPs are required to disburse funds to their customers before they are reimbursed by the debtor DFSP. To mitigate the risk that a creditor DFSP will not receive the funds that it is due, Mojaloop requires that debtor DFSPs should provide credible evidence that they have sufficient good funds to meet the obligations they incur as a consequence of transacting in the system.
 
-These bank accounts are dedicated to the settlement of transfers operated via the Hub, and may not be used for any other purpose. Once open, the liquidity account must be pre-funded with a contractually agreed value to cover the transfers expected during upcoming settlement periods ([settlement windows](#settlement-window)). 
+This credible evidence is called *liquidity cover*. The Mojaloop system does not stipulate what forms it should take; and, for any given DFSP, it may take multiple forms. It might be:
 
-In addition, each DFSP might be required to open an intermediary business account at the settlement bank even if their principal business account is held elsewhere, due to the specific nature of a liquidity account and its ability to participate in transactions beyond the settlement bank itself.
+- funds deposited in an account over which the Mojaloop Hub has some control
+- a line of credit from another financial institution
+- collateral of some other kind
 
-DFSPs undertake to maintain a contractually agreed minimum level of liquidity in their account. These funds are separate from DFSPs' various other commercial banking arrangements. DFSPs have the capability to add/withdraw funds to/from their liquidity account into their existing business account(s), potentially held at another bank, though this is subject to the contractually agreed minimum balance.
+However, any liquidity cover used in a Mojaloop scheme must have the following characteristics:
 
-If a DFSP decides to leave the scheme, they are entitled to receive the balance of their liquidity account at the settlement bank. This is subject to confirmation by the Hub Operator that there are no unsettled transactions that the DFSP is a party to. If this is not the case, then the DFSP is not be able to leave the scheme until further settlement phases have been completed.
+- It must be capable of being converted into settlement payments *immediately* on demand from the Mojaloop scheme.
+- It must be attested to by reliable evidence in the Mojaloop scheme's possession.
+- It must not be convertible by the DFSP into other forms (for example, by withdrawing funds from a bank account, or drawing down funds from a line of credit) without the prior knowledge and approval of the Mojaloop scheme.
 
-Once the Hub Operator has confirmed that there are no unsettled transactions, they forward a request to the settlement bank to transfer the remaining balance of the DFSP's liquidity account to an account nominated by the DFSP.
+The liquidity cover attributed to a given DFSP is liquidity cover for a given settlement model and currency, and is attributable to the scheme as a whole. That is to say that Mojaloop does not allow participants to maintain liquidity cover that is applicable only to their transfers with a specific DFSP or DFSPs.
+
+When a DFSP asks the Mojaloop Hub to make a transfer, the Mojaloop Hub checks that the debtor DFSP has sufficient liquidity cover to guarantee that the transfer can be settled if it completes successfully. It does this by comparing the DFSP's total good funds against the sum of the following items:
+
+1. The sum of transfers which have been completed but not yet settled, and to which the DFSP is *either* the creditor *or* the debtor party.
+1. The sum of transfers which have been started but which have not yet completed, and to which the DFSP is the debtor party.
+1. The amount of the proposed transfer.
+
+If the total of these three items is greater than the amount of good funds available to the debtor DFSP, then the transfer will be rejected by the Mojaloop Hub. Note that, in this arrangement, a DFSP's liquidity is credited with the effect of transfers where it is the beneficiary as soon as the transfer is completed, without needing to wait for the funds to be settled. Mojaloop does this to keep to a minimum the amount of liquidity that participants are required to maintain.
 
 ## Settlement model
 
-When a transaction is marked as completed, from the view point of the end user (the individual paying or receiving money), money has been transferred from one account to another in real time. However, from the point of view of the DFSP, the funds have not yet been transferred from the Payer's financial institution to the Payee's financial institution.
+Different schemes will want to settle funds between their participants in different ways. These will depend on who is operating the scheme, how much traffic there is through the scheme, and many other variables.
 
-Settlement is the process of transferring funds from one DSFP to another, so that the Payer's DFSP reimburses the Payee's DFSP for funds given to the Payee during the transaction. The scheme administrators define how settlement happens within the scheme, and this is referred to as the settlement model.
+Mojaloop is designed to support the industry standard ways of settling between participants. These are as follows:
 
-A settlement model specifies: 
+- Multilateral deferred net settlement
+- Bilateral deferred net settlement
+- Immediate gross settlement
+ 
+Settlements are *deferred net* if a number of transfers are settled together. Net settements (in which a number of transfers are settled together) are by definition deferred (since it takes time to construct a batch.)
 
-* how the Hub settles a given set of ledger entries 
-* how often settlement occurs
+Settlements are *gross* if each transfer is settled separately. Gross settlements may be immediate or deferred. They are *deferred* if approval for settlement from outside the Hub is required, and *immediate* if the Hub can proceed to settlement of a transfer without requiring any external approval. At present, Mojaloop only supports immediate gross settlements.
 
-The Hub supports two settlement models:
+Settlements are *bilateral* if each pair of participants settles with each other for the net of all transfers between them. Settlements are *multilateral* if each participant settles with the Hub for the net of all transfers to which it has been a party, no matter who the other party was.
 
-* Deferred Net Settlement model
-* Continuous Gross Settlement model
+A settlement model specifies a way in which a Mojaloop Hub will settle a set of transfers. In the simple case, there is only one settlement model and it settles all the transfers that are processed by the Hub. However, Mojaloop supports more than one settlement model for a single scheme. This allows, for instance, a scheme to define different settlement models for different currencies, or for different ledger account types.
 
-Deferred Net Settlement means the following:
-    
-* a group of transfers is settled together (see [Settlement window](#settlement-window))
-* each participant settles with the scheme for the net of its transfers that are included in the settlement (multilateral settlement)
-* settlement is actioned after a period of delay
-
-Continuous Gross Settlement means the following:
-
-* settlement is executed after each transfer is completed (therefore, [settlement windows](#settlement-window) do not exist in this model)
-* each participant settles separately with the other participants and the scheme is not a party to the settlement (bilateral settlement)
+If a scheme defines more than one settlement model, it is the responsibility of the scheme to ensure that a given transfer can only belong to a single settlement model. For example, suppose that a scheme defines a settlement model for all transfers that require currency conversion (defined as: all transfers where the source currency and the target currency are different from each other), and also a settlement model for all transfers where the source currency is Kenyan shillings (KES). In this case, a transfer which converted from Kenyan shillings to South African rand could potentially belong to both models.
 
 ## Settlement window
 
-A settlement window is a time period between two successive settlements. It has a start time and an end time, and any transfers that go through (and reach a `"COMMITTED"` state) during the time that the settlement window is open will be settled in bulk after the settlement window has closed.
+Every transfer that is completed in the Hub is assigned to the currently open settlement window. The settlement window is a way of grouping transfers together. Assigning transfers to a settlement window happens independently of the settlement models that are used to settle the transfers. This means that if a scheme has defined more than one settlement model, transfers that belong to the different settlement models will share a settlement window.
 
-Transfers that take place in the same settlement window are settled in batch after the end of the settlement window.
+There is no deterministic way of assigning transfers to a particular settlement window. When a scheme administrator creates a new settlement window, there is no way to tell in advance which transfers will be assigned to the new settlement window and which transfers will be assigned to the old settlement window.
 
 A settlement window can have the following states:
 
@@ -58,9 +63,15 @@ A settlement window can have the following states:
 
 Closing a settlement window automatically opens the next one.
 
-::: tip NOTE
-There are no settlement windows in the Continuous Gross Settlement model.
-:::
+### Settlements and settlement windows
+
+A Hub Administrator may request settlements for a given settlement model and for one or more settlement windows.
+
+If a scheme only has a single settlement model, then settling transfers for that model in a given settlement window will settle all the transfers in that window. If, on the other hand, a scheme has defined more than one settlement model, then settling transfers belonging to a particular settlement model for a given settlement window will mean that some of the transfers in that window have been settled, while others have not.
+
+It is particularly important to understand the implications of this where an Immediate Gross settlement model has been defined. In this case, individual transfers will be settled as soon as they have been completed. If the scheme only has an Immediate Gross settlement model, then all transfers will be settled as they are completed, and the settlement window will become irrelevant. If, on the other hand, the scheme mixes Gross and Net settlement models, or if the scheme has defined more than one Net settlement model, then it is possible for a given settlement window to contain some transfers which have been settled and some which have not been settled; and, in the case of transfers which are settled by a Gross settlement model, for transfers which have been settled to appear even in a currently open settlement window. This creates potential complications in defining the overall status of a settlement window.
+
+Mojaloop deals with this situation by always assigning the settlement window a state which is the minimum state of the transfers within it. *Minimum state* is defined by the sequence of settlement window states given above. So, for instance, if a settlement window contains transfers which have already been settled (because they are settled Gross) and other transfers whose settlement process has not yet started, then the settlement window's state will be `OPEN`. If a settlement window has been closed, and it contains transfers which belong to two different settlement models, one of which is being settled (and whose state is therefore `PENDING_SETTLEMENT`) and the other is not (and whose state is therefore `CLOSED`,) the overall state of the settlement window will be `CLOSED`.
 
 ## Liquidity management (Net Debit Cap)
 
