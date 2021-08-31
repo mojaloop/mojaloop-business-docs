@@ -8,7 +8,9 @@ The processes described in this section represent best practices and act as reco
 
 ## Release components and environments
 
-When releasing new code from development to production, the code is taken through a series of testing activities in various environments. The recommended environment setup comprises of multiple environments all serving different purposes, as depicted in the diagram below.
+When accepting new releases from Mojaloop Open Source for Switch services and other components that are needed, the releases are taken through a series of testing activities in progressively higher environments, starting with development/QA environments and ending with production-level testing.
+
+The recommended environment setup comprises of multiple environments all serving different purposes, as depicted in the diagram below.
 
 ![Recommended environment setup](/release_mgmt.png)
 
@@ -30,7 +32,8 @@ Standard development and QA practices – followed by the Mojaloop Development/P
     * List of user stories and bugs in the release
     * Highlight of any fundamental (breaking) changes impacting any functionality, API solution, or system architecture
 * Deployment runbook created, with deployment and rollback instructions including environment variables and deployment prerequisites.
-* Handover/knowledge transfer of any new or significant changes to functionality, products, architecture, and so on, from the Product Delivery (= Development) team to the Operations team. This handover includes full review of the deployment runbook and other release artifacts, such as release packages and database scripts.
+* Maintenance of regression test definitions, baseline test results from Mojaloop OSS, and Scheme-specific validation criteria (tests) added on top of them.
+* Maintenance of a knowledge base of any new or significant changes to functionality, products, architecture, and so on, regarding Mojaloop OSS and other components, as well as customizations done for the Scheme. The knowledge base acts as the basis of knowledge handover to the Operations team. This handover includes full review of the deployment runbook and other release artifacts, such as release packages and database scripts, which will help the Operations team greatly in day-to-day operations, validation, debugging of issues, and maintenance.
 
 ## Mojaloop releases
 
@@ -65,10 +68,10 @@ Bugs and hotfixes are handled in the following way:
 
 ## Environments and QA strategy
 
-In order to validate the interoperability or integration of a newly-deployed Mojaloop release with extensions/other products, a temporary environment is required to be set up. This allows the Mojaloop Support team (a team dedicated to running Support services for the technical operations of a Mojaloop Hub) to carry out the deployment and testing of Mojaloop releases against the latest versions of other products. 
+In order to validate a deployment of a newly released Mojaloop version against the latest other products (extensions/additional components), an environment is to be set up by the Scheme with all the components needed along with the specific configuration that the Scheme uses. This allows the QA/validation and/or Mojaloop Support teams (a team dedicated to running Support services for the technical operations of a Mojaloop Hub) to carry out the deployment and testing of Mojaloop releases against the latest versions of other products.
 
 ::: tip NOTE
-The temporary environment that the Mojaloop Support team use for validation should follow a standard infrastructure. This standard infrastructure may differ from the infrastructure that the Hub Operator uses. The Operator must either ensure they have up-to-date information about the differences at all times, or choose to set up their infrastructure so it is fully in sync with the Mojaloop Support team's infrastructure standards.
+The environment set up by the Mojaloop Support team for validation should follow a standard infrastructure, replicating or simulating a corresponding production setup as much as possible, so that any issues, bugs can be identified early in the process. A production setup typically includes API gateways, DMZs, cluster setup based on security zones, along with all the required components and customizations (including Scheme Rules) done by the Scheme. The Hub Operator must ensure that their production infrastructure is fully in sync with the Mojaloop Support team's infrastructure standards.
 ::: 
 
 Following the successful deployment and validation of a release on the standard infrastructure and architecture, and after successfully running the latest version of Mojaloop and other products, the release is approved and can be shared/made available (via the Support Team's client server/repo). The Hub team can then schedule the deployment into the Hub Operator's (potentially bespoke) environment. 
