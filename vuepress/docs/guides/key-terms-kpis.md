@@ -27,7 +27,7 @@ This section acts as a glossary of Technical Operations terms and provides defin
 
 **Role:** A set of responsibilities, activities, and authorities granted to a person or team. Roles are used to assign owners to the various incident management processes, and to define responsibilities for the activities in the detailed process definitions.
 
-**Root cause analysis (RCA):** RCA is a collective term that describes a wide range of approaches, tools, and techniques used to uncover causes of incidents. It is called at each urgent incident, and every time an incident occurs more than once.
+**Root cause analysis (RCA):** RCA is a collective term that describes a wide range of approaches, tools, and techniques used to uncover causes of incidents. It is called at each high priority incident, and every time an incident occurs more than once.
 
 **Service Level Agreement (SLA):** An agreement between an IT service provider and a customer. The SLA describes the IT service, documents service level targets, and specifies the responsibilities of the IT service provider and the customer.
 
