@@ -19,7 +19,6 @@ This section acts as a glossary of Technical Operations terms and provides defin
 
 **Incident record/ticket:** A record containing the details of an incident. Each incident record (also known as a ticket) documents the lifecycle of a single incident. 
 
-**-- Start - Delete section on Priority? -- see Severity ** 
 **Priority:** A category used to identify the relative importance of an incident or change. Priority is used to identify required times for actions to be taken.  
 
 **Release management:** Release management is the process of managing, planning, scheduling, implementing, and controlling a software build through different stages and environments, with the goal of delivering features to customers or end users.
