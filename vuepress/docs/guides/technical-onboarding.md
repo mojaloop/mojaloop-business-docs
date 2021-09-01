@@ -19,7 +19,7 @@ Within the context of the Mojaloop Financial Service Provider Interoperability (
 1. Agreeing the transfer (quote or agreement phase)
 1. Executing the transfer (transfer phase)
 
-For further details on each of these phases, see **Module 2: Mojaloop in greater detail** of [Mojaloop training course](https://learn.mojaloop.io/) **DFSP-101**. <question: is there a Hub course equivalent?>
+For further details on each of these phases, see **Module 2: Mojaloop in greater detail** of [Mojaloop training course](https://learn.mojaloop.io/) **DFSP-101**.
 
 These three phases correspond to the key resources of the Mojaloop FSPIOP API:
 
