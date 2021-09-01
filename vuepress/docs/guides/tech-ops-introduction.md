@@ -20,6 +20,8 @@ A quick overview of the environments managed by the Hub Operator is provided bel
 
 - **User Acceptance Testing (UAT)**: Testing environment for user acceptance and regression testing to validate new releases.
 
+- **Sandbox (SBX)**: Testing environment to validate DFSP connectivity on both API and security requirements.
+
 - **Staging (STG)**: Pre-production environment that mirrors production as closely as possible. Validation of new releases and DFSP integration.
 
 - **Production (PRD)**: Production environment compatible with production release.
