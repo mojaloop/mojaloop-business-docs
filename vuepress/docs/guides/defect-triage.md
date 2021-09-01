@@ -56,7 +56,7 @@ Deployments into Hub environments are the responsibility of the Hub Operator's t
 
 If there is any discrepancy between the priority assigned or the client's (Hub Operator's) expectations and the resolution plan provided by the Mojaloop Support team, the [incident management escalation matrix](incident-management-escalation-matrix.md) governs what happens next. Accordingly, the incident will be set as priority P1 or any other lower priority type and stakeholders will be informed.
 
-The Hub Operator Program Manager and the Mojaloop Support Team Lead must be informed immediately.
+The Mojaloop Support Team Lead and the Hub Operator Program Manager must be informed immediately. The Hub Operator Program Manager is a manager at the Hub organization who is responsible for translating the Scheme's business needs into technical operations directives.
 
 ## Ownership and responsibility
 
