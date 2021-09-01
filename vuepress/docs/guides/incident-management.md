@@ -117,7 +117,7 @@ An incident is considered resolved when the L1/L2/L3 Support Team has come up wi
 * instructions provided to the customer on how to complete their work using an alternative method
 * temporary fixes that assist a system to work as expected but which do not resolve the issue permanently
 
-Workarounds need to be documented and communicated to the Service Desk so they can be added to the Knowledge Base. (It is good practice to maintain a repository of Knowledge Base articles, which describe the workaround or resolution steps of incidents that occurred in the past). This will ensure that workarounds are accessible to the Service Desk to facilitate resolution during future recurrences of the incident.
+Workarounds need to be documented and communicated to the Service Desk so they can be added to the Knowledge Base. (It is good practice to maintain a repository of Knowledge Base articles, which describe the workaround or resolution steps of incidents that occurred in the past.) This will ensure that workarounds are accessible to the Service Desk to facilitate resolution during future recurrences of the incident.
 
 ### Step 4: Escalate
 
@@ -191,8 +191,6 @@ Key:
 
 The severity code assigned to an incident will determine the solution time and will be used by the Service Desk to assign resources to the request.
 
-**--START - delete this section? --**
-
 In addition to severity, in some cases the priority of an incident may also have to be considered. Priority is assigned by the Hub Operator (rather than the client) and is the order in which the incident will be fixed. The higher the priority, the sooner the incident will be resolved. Consider the following example: a cosmetic bug like a typo on a webpage will likely be ranked as low severity but could be a quick and easy fix and ranked high priority. Hence, it is important to give severity and priority due consideration.
 
 The following table provides guidance as to how to assign priority to an incident.
@@ -228,8 +226,6 @@ The following table provides guidance as to how to assign priority to an inciden
 </tr>
 </tbody>
 </table>
-
-**--END - delete this section? --**
 
 ## Security incidents
 
@@ -618,13 +614,13 @@ This is the first point of contact (Support Level 1) for requesters or end users
 
 *Roles*
 
-This support function is made up of engineers or Business operations Subject Matter Experts (SMEs) with advanced knowledge of the Hub. The L2 Team is expected to provide in-depth troubleshooting, technical analysis, transaction analysis and support to resolve incidents reported. They usually receive more complex requests from end users; they also receive requests in the form of escalations from the L1 Team.
+This support function is made up of engineers or Business Operations Subject Matter Experts (SMEs) with advanced knowledge of the Hub. The L2 Team is expected to provide in-depth troubleshooting, technical analysis, transaction analysis, and support to resolve incidents reported. They usually receive more complex requests from end users; they also receive requests in the form of escalations from the L1 Team.
 
 *Responsibilities*
 
 * Carry out incident diagnosis.
 * Document the steps followed to resolve the incident and submit Knowledge Base articles. (For every incident, the Support Team updates the Knowledge Base. The purpose of Knowledge Base articles is to enable end users and Support personnel to resolve issues on their own.)
-* Handle intermediate incidents, for example, incidents related to Applications, Infrastructure, Log Analysis, Transactions Analysis and so on.
+* Handle intermediate incidents, for example, incidents related to Applications, Infrastructure, Log Analysis, Transactions Analysis, and so on.
 * If the incident is resolved, confirm the resolution with the end user.
 * Support DFSP onboarding.
 
