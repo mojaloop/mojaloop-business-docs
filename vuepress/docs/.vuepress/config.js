@@ -106,6 +106,7 @@ module.exports = {
             'onboarding-introduction',
             'business-onboarding',
             'technical-onboarding',
+            'details-of-connecting-to-mojaloop',
           ]
         }       
       ]
