@@ -26,7 +26,7 @@ The **Clear** option allows you to remove any date filters already applied.
     * **Closed**: The settlement window is closed. It is not accepting any additional transfers and all new transfers are being allocated to a new, open settlement window.
     * **Pending**: The settlement window is closed, but the settlement window still needs to be settled. A window can only be settled once the settlement bank has confirmed that all the participant DFSPs that engaged in transfers in the settlement window have settled their payments.
     * **Settled**: The settlement bank has confirmed that all the affected DFSPs have settled their obligations towards one another. Following confirmation, the Hub Operator has settled the settlement window.
-    * **Aborted**: <question: when would a settlement window be aborted?>
+    * **Aborted**: The settlement window was part of a settlement that got aborted. It is possible to add the aborted window to a new settlement. <!--question: is this OK?-->
     * **Clear**: Allows you to remove any window state filters already applied.
 * **Clear Filters** button: Allows you to remove all filters you applied.
 
