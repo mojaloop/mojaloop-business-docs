@@ -93,7 +93,7 @@ Once the settlement window is closed, then Positions are adjusted based on the s
 
 ## Multilateral Net Settlement Position
 
-<question: shall we call this Multilateral Net Settlement Position or Net Settlement Amount?>
+<!--question: shall we call this Multilateral Net Settlement Position or Net Settlement Amount?-->
 
 The Multilateral Net Settlement (MLNS) Position defines the amount that a DFSP "owes" or "is owed" to/from other DFSPs within a specific settlement window. 
 
@@ -103,7 +103,7 @@ The Multilateral Net Settlement Position is calculated when a settlement window 
 
 To facilitate DFSP reconciliation and settlement at the settlement bank, the Hub provides various settlement reports.
 
-<question: do we want to talk about reports?>
+<!--question: do we want to talk about reports?-->
 
 ## Finance Portal
 
