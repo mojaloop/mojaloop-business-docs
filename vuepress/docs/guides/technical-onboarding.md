@@ -27,7 +27,7 @@ These three phases correspond to the key resources of the Mojaloop FSPIOP API:
 * **Quotes service**: Requesting a quote and exchanging cryptographic proof to prepare and secure the transfer. A quote is a contract between a Payer DFSP and Payee DFSP for a particular financial transaction before the transaction is performed. It guarantees the agreement set by the Payer and Payee DFSPs about the Payer, the Payee, and transfer amount, and is valid during the lifetime of a quote and transfer of a specified financial transaction.
 * **Transfers service**: Executing the transaction as per the agreed details and cryptographic proof.
 
-DFSPs can choose to implement the asynchronous Mojaloop version of these API services, or a simplified, synchronous, Mojaloop-compliant version of them - leveraging the [Mojaloop-SDK](https://github.com/mojaloop/sdk-scheme-adapter) or [Payment Manager OSS](https://pm4ml.github.io/documents/payment_manager_oss/latest/index.html).
+DFSPs can choose to implement the asynchronous Mojaloop version of these API services, or a simplified, synchronous, Mojaloop-compliant version of them - leveraging the [Mojaloop-SDK](https://github.com/mojaloop/sdk-scheme-adapter) or [Payment Manager OSS](https://pm4ml.github.io/documents/payment_manager_oss/latest/core_connector_rest/introduction.html).
 
 While the DFSP is carrying out offline development work, the Hub Operator's role consists in answering ad-hoc questions around the specifics of the API, or - depending on the open-source tool chosen and the agreed deployment model - can even extend to doing some of the development too.
 
