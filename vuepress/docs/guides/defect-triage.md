@@ -23,7 +23,7 @@ The Triage team has the following members:
 
 *Hub Operator steps:*
 
-1. An incident ticket is raised in the Hub Operator's Service Desk tool by a Hub L1 Support Engineer, as per the [incident management process](incident-management.md).
+1. An incident ticket is raised in the Hub Operator's [Service Desk](key-terms-kpis.md#key-terms) tool by a Hub L1 Support Engineer, as per the [incident management process](incident-management.md).
 1. The ticket is escalated to the Hub L2/L3 team for in-depth investigation and analysis, as required.
 1. The Hub L2/L3 team evaluates if the behavior is a new bug or a known issue, and whether a bug ticket/record already exists. If it is a known bug and a Mojaloop Support ticket already exists, then the L1 engineer must update the existing ticket with new details and information, and the priority and impact/severity (level of impact on the Hub or to its users) may be adjusted accordingly. The L1 engineer must communicate this back to the reporter/client DFSP (as referred to, in point 6). New bugs will follow the rest of the process below.
 1. The Hub L2/L3 team confirms that the Production issue can be reproduced in lower environments running the same version as the Production (PRD) environment. That is, the bug is not a user error or an environmental issue.

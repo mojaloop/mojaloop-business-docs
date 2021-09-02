@@ -93,17 +93,17 @@ Once the settlement window is closed, then Positions are adjusted based on the s
 
 ## Multilateral Net Settlement Position
 
-<question: shall we call this Multilateral Net Settlement Position or Net Settlement Amount?>
-
 The Multilateral Net Settlement (MLNS) Position defines the amount that a DFSP "owes" or "is owed" to/from other DFSPs within a specific settlement window. 
 
 The Multilateral Net Settlement Position is calculated when a settlement window is closed and it reflects the sum total of the transfer amounts sent and received by the DFSP. Only finalized transfers are taken into account (those with a `"COMMITTED"` state). It is calculated for each DFSP that transacted in the settlement window.
 
 ## Settlement reports
 
-To facilitate DFSP reconciliation and settlement at the settlement bank, the Hub provides various settlement reports.
+To facilitate DFSP reconciliation and settlement at the settlement bank, the Hub provides various settlement reports. A Scheme can choose to have several different reports for different purposes. Below are some examples:
 
-<question: do we want to talk about reports?>
+* DFSP Settlement Report: A report issued to a DFSP when settlement has been initiated. It provides the DFSP's bilateral settlement position with each DFSP they transacted with (either as a Payer DFSP or Payee DFSP) in the settlement window(s) being settled. It also provides the Multilateral Net Settlement Position of the DFSP (the sum total of the transfer amounts sent and received by the DFSP in the settlement window(s)).
+* Settlement Bank Report: A report issued to the settlement bank when settlement has been initiated. It provides the bilateral settlement position of each DFSP against every other DFSP that transacted in the settlement window(s) being settled. It also provides the Multilateral Net Settlement Position of each DFSP (the sum total of the transfer amounts sent and received by the DFSP).
+* DFSP Settlement Result Report: A report issued to a DFSP when settlement has been finalised. It provides details about the balance of the DFSP's liquidity account, and the money movements arising from the closure of the settlement window.
 
 ## Finance Portal
 
