@@ -37,7 +37,9 @@ Mojaloop is designed to support the industry standard ways of settling between p
 - Multilateral deferred net settlement
 - Bilateral deferred net settlement
 - Immediate gross settlement
- 
+
+The meaning of the component terms of these settlement types is as follows.
+
 Settlements are *deferred net* if a number of transfers are settled together. Net settements (in which a number of transfers are settled together) are by definition deferred (since it takes time to construct a batch.)
 
 Settlements are *gross* if each transfer is settled separately. Gross settlements may be immediate or deferred. They are *deferred* if approval for settlement from outside the Hub is required, and *immediate* if the Hub can proceed to settlement of a transfer without requiring any external approval. At present, Mojaloop only supports immediate gross settlements.
@@ -75,27 +77,34 @@ Mojaloop deals with this situation by always assigning the settlement window a s
 
 ## Liquidity management (Net Debit Cap)
 
-Participant DFSPs are responsible for managing their liquidity at the settlement bank. When a participant's obligations exceed the funds it has available for liquidity cover, then transactions are declined by the Hub, and therefore fail.
+As described above, Mojaloop requires participants to pre-fund transfers where they are the debit party by providing credible evidence to the Mojaloop Hub that they can meet all their current settlement demands. There may, however, be circumstances in which a participant does not want all of its liquidity cover to be used as cover for transfers. For instance, a participant might be a recipient in a remittance channel and therefore an overall net creditor; or a participant might deposit extra funds to cover periods when their accounts are not open to receive funds.
 
-When pre-funding their liquidity account, DFSPs define the maximum amount that they can "owe" to other DFSPs, this is called the Net Debit Cap (NDC). The NDC acts as a limit or a cap placed on a DFSP's funds available for transacting, and it can never exceed the balance of the liquidity account. This is required to ensure that a DFSP's liabilities can be met with funds immediately available to the settlement bank.
+To cover these possibilities, Mojaloop allows either participants or Hub Administrators to reserve part of their available liquidity cover, so that only part of it can be used to provide liqidity cover for transfers. This is called the Net Debit Cap (NDC). The NDC acts as a limit or a cap placed on a DFSP's funds available for transacting, and it can never exceed the balance of the liquidity account. This is required to ensure that a DFSP's liabilities can be met with funds immediately available to the settlement bank.
 
-The [Position](#position) is continuously checked against the Net Debit Cap ((TransferAmount + Position) < = NDC) and if a transfer would cause the Position amount to exceed the NDC amount, the transfer is blocked.
+When calculating whether or not a transfer is covered by available liquidity, the Hub will take into account any restriction on the amount of available funds specified by the Net Debit Cap.
 
 ## Position
 
-The Position of a DFSP reflects – at a given point in time – the sum total of the transfer amounts sent and received by the DFSP. The Position is the sum of all outgoing transactions minus incoming transactions since the beginning of the settlement window, as well as any provisional transfers that have not yet been settled.
+The Position of a DFSP reflects the total unsettled obligations of a DFSP for a given settlement model at a given point in time: that is to say, the amount of funds that a DFSP will eventually be required to settle with the scheme. A DFSP's Position for a given settlement model is the net of the following elements:
 
-For the Payer DFSP, this sum total includes transfer amounts that are pending and have not been finalized (committed) yet (that is, transfers with the `"RESERVED"` state _will_ be taken into account). Note that if an abort or timeout happens, the affected transfers will not complete. For the Payee DFSP, the sum total includes only `"COMMITTED"` amounts. 
+1. All completed but unsettled transfers that belong to the settlement model and where the DFSP is the debtor party.
+2. All completed but unsettled transfers that belong to the settlement model and where the DFSP is the creditor party.
+3. All transfers that have been requested but have not yet completed which belong to the settlement model and where the DFSP is the debtor party.
 
-Each attempted outgoing transfer results in the Position being recalculated by the Hub in real time, which, in turn, is compared to the [Net Debit Cap](#liquidity-management-net-debit-cap). 
+For the Payer DFSP, this sum total includes transfer amounts that are pending and have not yet been completed. Note that if an abort or timeout happens, the affected transfers will not complete and the reservation for that transfer will be removed.
 
-Once the settlement window is closed, then Positions are adjusted based on the settlement – the Position changes to the net amount of the transfers that were not initiated or not yet fulfilled when the settlement window was closed.
+The Position is the total position across all settlement windows that have not yet been settled. The amount of a participant's position only changes when some of the transfers which make up its position are settled.
 
-## Multilateral Net Settlement Position
+## Net Settlement Positions
 
-The Multilateral Net Settlement (MLNS) Position defines the amount that a DFSP "owes" or "is owed" to/from other DFSPs within a specific settlement window. 
+As described above, a deferred net settlement can be either multilateral or bilateral. When a Hub Administrator requests a settlement, the Hub will calculate how much each participant owes, or is owed, as a consequence of the transactions that are to be settled. The transactions to be settled are defined as all transactions which:
 
-The Multilateral Net Settlement Position is calculated when a settlement window is closed and it reflects the sum total of the transfer amounts sent and received by the DFSP. Only finalized transfers are taken into account (those with a `"COMMITTED"` state). It is calculated for each DFSP that transacted in the settlement window.
+- Belong to the settlement window(s) that are to be settled.
+- Belong to the settlement model that is being settled.
+
+If the settlement is *multilateral*, then a DFSP will receive only one figure as the amount it owes, or is owed, as a consequence of the settlement. This figure is the net of all the transactions to be settled.
+
+If the settlement is *bilateral*, then a DFSP may receive multiple figures as the amount it owes, or is owed, as a consequence of the settlement. Each figure represents the net of the DFSP's transactions with a particular DFSP. The net of all these values will be equal to the overall figure which it would owe, or be owed, in a multilateral net settlement.
 
 ## Settlement reports
 
