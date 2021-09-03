@@ -17,7 +17,7 @@ It is important to define a business process around settlement management. The f
 <tbody>
 <tr class="odd">
 <td><p>1</p></td>
-<td><p>The Hub Operator <a href="managing-windows.html#closing-a-settlement-window">closes the settlement window using the Finance Portal</a>.</p></td>
+<td><p>The Hub Operator <a href="settling.html">closes the settlement window and initiates settlement for select windows using the Finance Portal</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>2</p></td>
@@ -50,7 +50,7 @@ It is important to define a business process around settlement management. The f
 </tr>
 <tr class="odd">
 <td><p>9</p></td>
-<td><p>The Hub Operator <a href="managing-windows.html#settling-a-settlement-window">settles the settlement window using the Finance Portal</a>.</p></td>
+<td><p>The Hub Operator <a href="settling.html">finalizes the settlement using the Finance Portal</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>10</p></td>

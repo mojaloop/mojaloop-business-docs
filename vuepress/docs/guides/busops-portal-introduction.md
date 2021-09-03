@@ -8,9 +8,10 @@ The Finance Portal is labelled as "Business Operations Portal" on the portal use
 
 The portal provides functionality to:
 
-* [manage (close and settle) settlement windows](managing-windows.md)
-* [check settlement details](checking-settlement-details.md)
-<!--* download settlement reports-->
+* [search for settlement windows and check settlement window details](managing-windows.md)
+* [close and settle settlement windows](settling.md)
+* [settle settlements](settling.md)
+* [search for settlements and check settlement details](checking-settlement-details.md)
 * [monitor DFSP financial details such as Balance, current Position, Net Debit Cap, percentage of NDC used](monitoring-dfsp-financial-details.md)
 * [update a DFSP's Net Debit Cap](updating-ndc.md)
 * [record deposits to or withdrawals from a DFSP's liquidity account](recording-funds-in-out.md)

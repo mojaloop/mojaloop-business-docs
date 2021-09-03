@@ -31,13 +31,25 @@ The following table lists all available functionalities, the navigation paths wh
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="managing-windows.html#closing-a-settlement-window">Close settlement windows</a></p></td>
+<td><p><a href="managing-windows.html">View settlement window details</a></p></td>
 <td><p><strong>Settlement</strong> &gt; <strong>Settlement Windows</strong></p></td>
 <td><p>✓</p></td>
 <td><p>✓</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="managing-windows.html#settling-a-settlement-window">Settle settlement windows</a></p></td>
+<td><p><a href="settling.html#closing-a-settlement-window">Close settlement windows</a></p></td>
+<td><p><strong>Settlement</strong> &gt; <strong>Settlement Windows</strong></p></td>
+<td><p>✓</p></td>
+<td><p>✓</p></td>
+</tr>
+<tr class="even">
+<td><p><a href="settling.html#settling-a-closed-settlement-window">Settle settlement windows</a></p></td>
+<td><p><strong>Settlement</strong> &gt; <strong>Settlement Windows</strong></p></td>
+<td><p>✓</p></td>
+<td><p>✓</p></td>
+</tr>
+<tr class="even">
+<td><p><a href="settling.html#finalizing-a-settlement">Finalize settlement</a></p></td>
 <td><p><strong>Settlement</strong> &gt; <strong>Settlement Windows</strong></p></td>
 <td><p>✓</p></td>
 <td><p>✓</p></td>
@@ -48,14 +60,6 @@ The following table lists all available functionalities, the navigation paths wh
 <td><p>✓</p></td>
 <td><p>✓</p></td>
 </tr>
-<!--<tr class="even">
-<td><p>Download settlement reports</p></td>
-<td><p><strong>Settlement</strong> &gt; <strong>Settlements</strong><br />
-<br />
-<strong>NOTE:</strong> This feature will be added in a future version of the portal.</p></td>
-<td><p>✓</p></td>
-<td><p>✓</p></td>
-</tr>-->
 <tr class="odd">
 <td><p><a href="monitoring-dfsp-financial-details.html">View DFSP financial details</a></p></td>
 <td><p><strong>Participants</strong> &gt; <strong>DFSP Financial Positions</strong></p></td>

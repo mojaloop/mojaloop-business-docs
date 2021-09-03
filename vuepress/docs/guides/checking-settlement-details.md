@@ -34,6 +34,7 @@ The following details are shown:
 * **Total Value**: The total value of transactions within the settlement batch.
 * **Open Date**: The date and time when the settlement was created in the Hub.
 * **Last Action Date**: The date and time when the last action was taken on the settlement in the Hub (for example, funds have been reserved, funds have been committed).
+* **Action**: **Finalize** button. Allows you to finalize a settlement. This button is only displayed for Pending Settlements. For details about finalizing a settlement, see [Settling](settling.md#finalizing-a-settlement).
 
 To view details for a particular settlement, click the settlement in the results list. The **Settlement Details** pop-up window is displayed.
 
@@ -46,11 +47,6 @@ The following additional details are shown:
 * **Debit**: Aggregated debit amount resulting from the transfers that the DFSP engaged in.
 * **Credit**: Aggregated credit amount resulting from the transfers that the DFSP engaged in.
 
-To view further details for a DFSP, click **View Net Positions**. The **Multilateral Net Settlement Position** pop-up window is displayed.
-
-![](/mlns_position_popup.png)
-
-The following additional details are shown:
-
-* **Debit**: List of transfers with transfer amounts that are recorded as a debit for the DFSP.
-* **Credit**: List of transfers with transfer amounts that are recorded as a credit for the DFSP.
+::: tip NOTE
+At the time of writing, the information that clicking the **View Net Positions** button should display is not available. It will be added in a future version of the portal. 
+:::

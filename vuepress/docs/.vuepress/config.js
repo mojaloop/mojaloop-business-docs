@@ -84,6 +84,7 @@ module.exports = {
             'settlement-business-process',
             'accessing-the-portal',
             'managing-windows',
+            'settling',
             'checking-settlement-details',
             'monitoring-dfsp-financial-details',
             'recording-funds-in-out',
