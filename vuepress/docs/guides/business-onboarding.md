@@ -1,4 +1,4 @@
-# Business onboarding for DFSPs
+# Business onboarding of DFSPs
 
 The onboarding journey for DFSPs comprises steps that happen outside the Mojaloop Hub. They are related to the business side of onboarding, and are useful for the Hub Operator to be aware of. 
 
