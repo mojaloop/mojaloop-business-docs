@@ -6,6 +6,10 @@ Release management handles the processes around managing, planning, scheduling, 
 The processes described in this section represent best practices and act as recommendations for organizations fulfilling a Hub Operator role.
 :::
 
+::: tip NOTE
+This section references a "Mojaloop Support team": a team dedicated to running Support services for the technical operations of a Mojaloop Hub. Note that this team can be either an insourced or an outsourced unit, depending on the level of expertise or capacity within your organization. If you decide to outsource Support functions, there are organizations within the Mojaloop community that provide different levels of Support as a service. (For more information and referrals, contact the Mojaloop Foundation.)
+:::
+
 ## Release components and environments
 
 When accepting new releases from Mojaloop Open Source for Switch services and other components that are needed, the releases are taken through a series of testing activities in progressively higher environments, starting with development/QA environments and ending with production-level testing.
