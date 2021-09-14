@@ -90,4 +90,4 @@ These two factors work hand in hand. For example, a cosmetic bug like a typo on 
 
 ## Process flowchart
 
-![Defect triage process](/defect_triage.png)
+<img src="/defect_triage.png" width="70%" height="70%" />

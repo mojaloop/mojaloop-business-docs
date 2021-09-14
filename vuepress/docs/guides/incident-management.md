@@ -20,7 +20,9 @@ Throughout this section, the terms "client", "customer", "end user", and "user" 
 
 The following figure defines the process flow and key concepts of incident management in a single image.
 
-![Incident management in a single image](/incident_mgmt_single_image.png)
+<img src="/incident_mgmt_single_image.png" width="75%" height="75%" />
+
+<!--![Incident management in a single image](/incident_mgmt_single_image.png)-->
 
 ## Process boundaries
 

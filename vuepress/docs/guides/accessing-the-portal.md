@@ -2,9 +2,7 @@
 
 On accessing the portal, you are prompted to log in. Enter your credentials on the login page.
 
-<img src="/portal_login.png" width="50%" height="50%" />
-
-<!--![Finance Portal login](/portal_login.png)-->
+<img src="/portal_login.png" width="40%" height="40%" />
 
 The portal implements role-based access control, meaning that the role you have determines the range of portal functionalities available to you. Currently, the following roles exist:
 
