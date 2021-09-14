@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /mojaloop_logo_med.png
-tagline: Documentation for the BizOps Framework
+tagline: Mojaloop Business Operations Framework for Hub Operators
 actionText: Getting Started →
 actionLink: /guides/index.html
 #features:
