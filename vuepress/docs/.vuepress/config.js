@@ -16,10 +16,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#00a3ff' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
+
+  theme: 'titanium',
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
@@ -29,14 +31,65 @@ module.exports = {
   themeConfig: {
     repo: '',
     editLinks: false,
-    /*docsDir: 'mojaloop-business-docs/vuepress/docs',*/
     docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
+    editLinkText: 'Edit this page on GitHub',
+    smoothScroll: true,
+    lastUpdated: true,
+    logo: '/mojaloop_logo_med.png',
     nav: [
       {
-        text: 'Guides',
-        link: '/guides/',
+        text: 'Scheme Choices',
+        items: [
+          {
+            text: 'Platform Operating Guideline Template',
+            link: '/guides/platform-operating-guideline.html',
+          },
+          {
+            text: 'Scheme Business Rules Template',
+            link: '/guides/scheme-business-rules.html',
+          },
+          {
+            text: 'Scheme Key Choices',
+            link: '/guides/scheme-key-choices.html',
+          },
+          {
+            text: 'Scheme Participation Agreement Template',
+            link: '/guides/scheme-participation-agreement.html',
+          },
+          {
+            text: 'Uniform Glossary Template',
+            link: '/guides/scheme-uniform-glossary.html',
+          },
+        ]
+      },
+      {
+        text: 'Hub Operations',
+        items: [
+          {
+            text: 'Technical Operations Guide',
+            link: '/guides/tech-ops-introduction.html',
+          },
+          {
+            text: 'Settlement Management Guide',
+            link: '/guides/settlement-management-introduction.html',
+          },
+          {
+            text: 'Guide to Finance Portal v2',
+            link: '/guides/busops-portal-introduction.html',
+          },
+          {
+            text: 'Roled-Based Access Control',
+            link: '/guides/Role-based-access-control.html',
+          },
+          {
+            text: 'Onboarding Guide for the Hub Operator',
+            link: '/guides/onboarding-introduction.html',
+          },
+        ]
+      },
+      {
+        text: 'Mojaloop',
+        link: 'https://mojaloop.io/'
       }
       /*{
         text: 'Config',
@@ -49,6 +102,46 @@ module.exports = {
     ],
     sidebar: {
       '/guides/': [
+        {
+          title: 'Platform Operating Guideline Template',
+          collapsable: true,
+          sidebarDepth: 2,
+          children: [
+            'platform-operating-guideline',
+          ]
+        },
+        {
+          title: 'Scheme Business Rules Template',
+          collapsable: true,
+          sidebarDepth: 2,
+          children: [
+            'scheme-business-rules',
+          ]
+        },
+        {
+          title: 'Scheme Key Choices',
+          collapsable: true,
+          sidebarDepth: 2,
+          children: [
+            'scheme-key-choices',
+          ]
+        },
+        {
+          title: 'Scheme Participation Agreement Template',
+          collapsable: true,
+          sidebarDepth: 2,
+          children: [
+            'scheme-participation-agreement',
+          ]
+        },
+        {
+          title: 'Uniform Glossary Template',
+          collapsable: true,
+          sidebarDepth: 2,
+          children: [
+            'scheme-uniform-glossary',
+          ]
+        },
         {
           title: 'Technical Operations Guide',
           collapsable: true,
