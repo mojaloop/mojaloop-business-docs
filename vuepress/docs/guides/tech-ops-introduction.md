@@ -16,7 +16,7 @@ The following procedures need to be in place:
 
 A quick overview of the environments managed by the Hub Operator is provided below:
 
-- **Quality Assurance (QA)**: Non-production software development environment where Mojaloop OSS code is merged with customizations. Gives developers fast test feedback on new code submissions. Digital Financial Service Providers (DFSPs) do not interact with this environment. Developer and QA access only.
+- **Development**: Non-production software development environment where Mojaloop OSS code is merged with customizations. Gives developers fast test feedback on new code submissions. Digital Financial Service Providers (DFSPs) do not interact with this environment. Developer and QA access only.
 
 - **User Acceptance Testing (UAT)**: Testing environment for user acceptance and regression testing to validate new releases.
 
