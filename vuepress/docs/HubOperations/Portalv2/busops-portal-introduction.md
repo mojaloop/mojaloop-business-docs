@@ -1,4 +1,4 @@
-# Introduction
+# Introduction – Guide to Finance Portal v2
 
 This guide is aimed at the Operator of a Mojaloop Hub and provides information about the Finance Portal, which facilitates the management of settlement-related processes on a daily basis.
 
