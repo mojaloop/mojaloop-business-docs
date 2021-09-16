@@ -41,11 +41,11 @@ The &quot;User Account Lifecycle&quot; defines the collective management process
 The Onboarding process will have some activities involving user creation both at DFSP end and at the Hub. These will be as follows:
 
 1. Hub: The following users will be created
-  1. Hub Operators
-  2. Hub Administrators
+  1.1 Hub Operators
+  1.2. Hub Administrators
 2. DFSP
-  1. DFSP Operators
-  2. DFSP administrators (only applicable to Payment manager).
+  2.1 DFSP Operators
+  2.2 DFSP administrators (only applicable to Payment manager).
 
 ## Segregation of Duties
 
