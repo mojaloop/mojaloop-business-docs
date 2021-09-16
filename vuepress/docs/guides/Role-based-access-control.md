@@ -1,8 +1,129 @@
-# Access Control
+# RBAC Context  [WIP]
+
+An individual who needs to access the various Mojaloop Hub management portals can be registered and an &quot;account&quot; generated, which can be used to access various aspects of an operational instance of a Mojaloop Hub and to provide a basis for auditing that access by tying activities to the original registration. For the purposes of this document, an &quot;account&quot; is a digital identity, a means of authenticating (linking) the person asserting that identity to the original registration, and a set of attributes, which will include - among other things - a set of access rights, or rights that are enabled through the possession of those attributes.
+
+### RBAC Design
+
+The RBAC design for a hub operator, outlines the security control points that should be considered or extended in order to mitigate risk within a typical Mojaloop hub operations organisation. Some control points are business processes and organisational structure related, some control points are technical relating to the identification, authentication and authorisation layers, and some control points require monitoring. All three should be considered to create accountability and mitigate risk.
+
+### Audit
+
+Audit would need to work collaboratively with the business and the IT teams to Segregate these duties wherever possible and assign an appropriate mitigation control in cases wherein it is not feasible to do so. In addition, these controls would need to be monitored on a quarterly basis and the results need to be reported to senior management.
+
+Some contextual definitions include
+
+1. **Action** : a distinct event triggered by a user that results in:
+
+- Creation of a data asset
+- Reading or accessing of a data asset
+- Update or effecting changes to the state of a data asset
+- Delete or the removal of a data asset from an application or database.
+
+1. **Permission** : authority to perform a specific action in the context of an application or service
+2. **Role** : applications, actions and data access required to perform the tasks related to a single role
+3. **User - role relationship** : The role (roles) assigned to each user that defines the permissions they have
+
+## Users, actions and roles in a Mojaloop context
+
+Mojaloop will have 2 Broad categories of users:
+
+1. Human – These are hub and DFSP users who through various interfaces will interact with Mojaloop. DFSP users will interact with Mojaloop through the Payment Manager and portals that will be made available during the onboarding process.
+2. Non-human – These will automate the business processes and automate tasks that would otherwise be done by a human. These will communicate via API calls that will affect actions to fulfil business requirements.
+
+The context of this document will focus on Human users only.
+
+## User Lifecycle Management
+
+The &quot;User Account Lifecycle&quot; defines the collective management processes for every user account. These processes can be broken down into Creation, Review/Update, and Deactivation—or &quot;CRUD&quot;. If any organization utilizes IT resources of any kind, they rely on user accounts to access them.
+
+## Onboarding
+
+The Onboarding process will have some activities involving user creation both at DFSP end and at the Hub. These will be as follows:
+
+1. Hub: The following users will be created
+  1. Hub Operators
+  2. Hub Administrators
+2. DFSP
+  1. DFSP Operators
+  2. DFSP administrators (only applicable to Payment manager).
+
+## Segregation of Duties
+
+Segregation of Duties focuses on mitigating the risk of internal fraud by setting boundaries between roles assigned to an employee, and between the conflict of interest that may result from an employee&#39;s responsibilities, ensuring no single user can have end to end functional control of a business process and its data. It requires more than one individual to create, process and complete an action.
+
+### Principle of least privilege
+
+RBAC uses the security principle of least privilege. Least privilege means that a user has precisely the amount of privilege that is necessary to perform a job. The aim of this is to minimize the likelihood of issuing a user with excess permissions to complete actions in Mojaloop ecosystem.
+
+### Zero Trust Mojaloop Implementation
+
+A zero trust network is one in which no person, device, or network enjoys inherent trust. All trust, which allows access to information, must be earned, and the first step of that is demonstrating valid identity. A system needs to know who you are, confidently, before it can determine what you should have access to.
+
+Mojaloop&#39;s inherent design will implement a Zero Trust approach in its architecture and deployment requiring all entities that interact to first authenticate themselves, then seek authorization to access and process data depending on the role they belong to.
+
+### Process of Segregation Of Duties determination
+
+1. Define user management workflows and processes. These are all business processes that make up Mojaloop business actions in Mojaloop. Examples include Onboarding.
+2. Rationalise all User security access requirements for Applications of Mojaloop as outlined in the table below:
+  2.1 Define business and application functions for users and APIs
+  2.2 Define role profiles
+  2.3 Define function &amp; competence profiles
+  2.4 Gather a list of applicable SOD conflicts by defining segregation of duties roles
+  2.5 Role profile matrix table (with example data):
+
+| **Roles and Permissions**  **Matrix** | Hub Users | Administrator | Standard Maker User | Standard Checker User | Standard Read Only | DFSP Users | Administrator | Standard Maker User | Standard Checker User | Standard Read Only |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Onboarding Roles | X | | | | | | | | | |
+| Create User Account | X | | | | | | | | | |
+| Create DFSP Profile | X | | | | | | | | | |
+| Create DFSP User | X | | | | | | | | | |
+|
+| **Finance Portal** |
+| View Reports | | | X | X | X | | | X | X | X |
+| Platform Configuration | | | | | | | | | | |
+|
+
+3. Reconfigure any conflicting roles
+  3.1 Business approvals
+  3.2 Maker checker user creation
+4. Periodic System Access & User Authorisation reporting
+5. Separation of IT-security and Operational IT security that will support user management activities
+
+## Best Practices for RBAC and Mojaloop Identity Management
+
+1. All user ids should be unique and have a unique format that can be correlated in the hub but not meaningful to outsiders.
+2. DFSP Users will not have access to any administrative role Hub
+3. All non-human users must be restricted from logging on to the application front ends.
+4. DFSP users will be trained on the roles and best practices
+5. Enforce automated user provisioning and life cycle management.
+6. Classify actions performed in Mojaloop to identify business risky actions that require additional controls.
+7. Additional controls to mitigate RBAC risks can include:
+  7.1 Multifactor authentication (MFA)
+  7.2 Audit logging with alerts
+  7.3 Auto user profile deactivation / disabling
+8. Mojaloop will monitor user inactivity and disable inactive users over a specified period
+9. Enforce centralised policy enforcement across identities e.g. Password policy, login policies, MFA, risk based authentication etc.
+10. Identify and closely monitor privileged identities that have permissions to perform sensitive actions. The following apply to privileged users:
+  10.1 Advanced privileges must be requested for and approved on a case-by-case basis;
+  10.2 Administrators should have their privileged permissions for the minimum time possible;
+  10.3 Administrators should only have the permissions required to complete a specific task;
+  10.4 Membership in administrative groups must be reviewed regularly;
+  10.5 Enforce multi-factor authentication for administrative users;
+  10.6 Keep access logs, audits, and set-up real-time notifications when access is activated.
+11. Mojaloop will configure audit logs and alerts for all user actions in Mojaloop. Where possible explore identity analytics via applicable open source tools.
+
+## Automated Identity Management and RBAC Control
+
+The tools preferred for user and identity management in a Mojaloop deployment are:
+
+1. **KeyCloak Identity Management engine** – Store and process API authentication controls as well as act as API gateway.
+2. **WSO2 Identity management engine** – Store and process user role profiles and broker self onboarding of DFSP users.
+
+-------
 
 ## Context
 
-An individual who needs to access the various Mojaloop Hub management portals can be registered and an “account” generated, which can be used to access various aspects of an operational instance of a Mojaloop Hub and to provide a basis for auditing that access by tying activities to the original registration. For the purposes of this document, an “account” is a digital identity, a means of authenticating (linking) the person asserting that identity to the original registration, and a set of attributes, which will include - among other things - a set of access rights, or rights that are enabled through the possession of those attributes. 
+An individual who needs to access the various Mojaloop Hub management portals can be registered and an “account” generated, which can be used to access various aspects of an operational instance of a Mojaloop Hub and to provide a basis for auditing that access by tying activities to the original registration. For the purposes of this document, an “account” is a digital identity, a means of authenticating (linking) the person asserting that identity to the original registration, and a set of attributes, which will include - among other things - a set of access rights, or rights that are enabled through the possession of those attributes.
 
 The registration process involves identity verification, background checking, and so on. The individual is then issued with credentials - a login account ID/digital identity and at least one authentication method, which may include a password and two-factor authentication (2FA).
 
@@ -12,19 +133,19 @@ The scope of this document is not limited to Mojaloop Hub operators. It also add
 
 ### 2FA considerations
 
-Be aware that 2FA via a mobile phone may be inappropriate for some roles, since highly sensitive roles may require that mobile phones are locked away while the individual is “on shift”. This will necessitate other 2FA methods, such as key fobs.
+It should be noted that 2FA via a mobile phone may be inappropriate for some roles, since highly sensitive roles may require that mobile phones are locked away while the individual is “on shift”. This will necessitate other 2FA methods, such as key fobs.
 
 ### Role-Based Access Control
 
-The Mojaloop Hub uses a Role-Based Access Control (RBAC) method. A user with an account that allows access to the Hub will have roles associated with that account, which define what they can do once they have authenticated themselves and been logged in.
+The Mojaloop Hub uses a Role-Based Access Control (RBAC) method. A user with an account that allows access to the Hub will have roles associated with that account, which define what they can do once they are authenticated themselves and are logged in.
 
 Many roles apply to multiple portals, however, some roles may be specific to individual portals.
 
-Care should be taken when assigning multiple roles to an account, or multiple accounts to an individual natural person. This is due to the potential that arises for the circumvention of controls. Part of the purpose of RBAC is to ensure that more than one person must be in the authorization chain for important actions, so reducing the vulnerabilities around bad actors.
+Care should be taken when assigning multiple roles to an account, or multiple accounts to an individual natural person. This is due to the potential that arises for the circumvention of controls. Part of the purpose of RBAC is to ensure that more than one person must be in the authorization chain for important actions, thereby reducing the vulnerabilities around bad actors.
 
 ## Mojaloop ecosystem portals
 
-The Mojaloop ecosystem offers a number of portals, which support varying degrees of access control and RBAC. These are split into two groups: 
+The Mojaloop ecosystem offers a number of portals, which support varying degrees of access control and RBAC. These are split into two groups:
 
 - Hub portals, which are related to the operation of the Hub itself
 - Payment Manager portals, which relate to the management of a specific DFSP’s connection to the Hub
@@ -36,7 +157,7 @@ In the Mojaloop Hub environment, RBAC is implemented through a combination of to
 The Hub itself has the following portals:
 
 - **Hub Operator onboarding:**
-Currently there is no bundled Identity and Access Management (IAM) solution for Hub operators, though the function is partly filled through the use of WSO2. Development work is under way to develop a comprehensive IAM solution based around Ory and Keycloak. This will see an admin operator created alongside the deployment of the Hub, which acts as a first foundational step in this area.
+Currently there is no bundled Identity and Access Management (IAM) solution for Hub operators, though the function is partly filled through the use of WSO2. Development work is underway to develop a comprehensive IAM solution based around Ory and Keycloak. This will see an admin operator created alongside the deployment of the Hub, which acts as a first foundational step in this area.
 - **Finance Portal:** It has two principal functions: the management of settlement operations, and the management of the liquidity position of individual DFSPs (and related to this, their Net Debit Cap (NDC) value).
 Access to the Finance Portal is currently limited to a simple username/password access control function.
 - **Participant lifecycle:** Controlling and configuring access to the Hub by DFSPs.
@@ -57,7 +178,7 @@ The access controls around either single or bulk payments are not therefore disc
 
 ## Payment Manager for integration
 
-Payment Manager is currently the primary mechanism for integrating a DFSP to a Mojaloop Hub. Whereas the Hub is singular in a scheme, there is a separate instance of Payment Manager for each DFSP. The portals offered by Payment Manager must therefore be secured by means of RBAC to limit access to authorized representatives of the DFSP.
+Payment Manager is currently one of the primary mechanisms for integrating DFSPs to a Mojaloop Hub. Whereas the Hub is singular in a scheme, there is a separate instance of Payment Manager for each DFSP. The portals offered by Payment Manager must therefore be secured by means of RBAC to limit access to authorized representatives of the DFSP.
 
 In the Payment Manager environment, RBAC is implemented solely through Keycloak.
 
