@@ -29,15 +29,17 @@ The following documents are part of the project:
 
 # Table Of Content
 
-[1 - Participation Application and Agreement](#1-participation-application-and-agreement)
+[1 - Participation Application and Agreement](#_1-participation-application-and-agreement)
     
-[1.1 - Applicable Law](#11-applicable-law)
+[1.1 - Applicable Law](#_1-1-applicable-law)
 
-[1.2 - Signature Block: Applicant and Scheme](#12-signature-block-applicant-and-scheme)
+[1.2 - Signature Block: Applicant and Scheme](#_1-2-signature-block-applicant-and-scheme)
 
 # 1. Participation Application and Agreement
 
-_<ul>Note: the goal of this document is to have it contain the minimal necessary provisions to evidence a DFSP's application to join the Scheme and abide by its Business Rules. In particular, future changes to the Business Rules should not result in a need to re-sign or amend this agreement.</ul>_
+::: tip NOTE
+The goal of this document is to have it contain the minimal necessary provisions to evidence a DFSP's application to join the Scheme and abide by its Business Rules. In particular, future changes to the Business Rules should not result in a need to re-sign or amend this agreement.
+:::
 
 The undersigned organization ("_Applicant_") hereby applies for participation in the \[Scheme\], a \[a legal form of company\] organized and existing under the laws of \[define\] and if accepted by \[Scheme\] agrees that Applicant's participation in the Scheme will be subject to the following terms and conditions. This Application and Agreement is dated \_\_\_\_\_\_\_\_\_\_\_\_\_\_and shall become effective and binding upon the Applicant as of the date shown below when signed on behalf of the \[Scheme\] (the "*Effective Date*"). From the Effective Date, Applicant shall be called a "*Participant*." Applicant acknowledges that this Participation Application and Agreement is supported by adequate mutual consideration. Terms not defined in this Application and Agreement will have the meanings as set forth in the Business Rules, as defined below.
 
@@ -61,7 +63,7 @@ The undersigned organization ("_Applicant_") hereby applies for participation in
 
     - Information Submissions. Applicant warrants and represents that all information submitted to the Scheme in support of this Participation Application and Agreement is correct and complete as of the date of this application.
 
-## 1.1 Applicable Law.
+## 1.1 Applicable Law
 
 - Choice of Law. This Application and Agreement and the Business Rules shall be construed and applied in accordance with the laws of \[specify\] and not by provisions of such laws which would determine which jurisdiction's laws would apply in the absence of this choice of law provision.
 

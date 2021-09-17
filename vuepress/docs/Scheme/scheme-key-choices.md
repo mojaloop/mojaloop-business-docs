@@ -39,35 +39,35 @@ Although this document is written as a contribution to the Mojaloop community, t
 
 ## **Choices Described in this Document**
 
-[1 - Choice: Ownership of Scheme](#1-choice-ownership-of-scheme)
+[1 - Choice: Ownership of Scheme](#_1-choice-ownership-of-scheme)
 
-[2 - Choice: Participation in the Scheme](#2-choice-participation-in-the-scheme)
+[2 - Choice: Participation in the Scheme](#_2-choice-participation-in-the-scheme)
 
-[3 - Choice: Relationship of Scheme to Platform](#3-choice-relationship-of-scheme-to-platform)
+[3 - Choice: Relationship of Scheme to Platform](#_3-choice-relationship-of-scheme-to-platform)
 
-[4 - Choice: Scope of Scheme Rules and Scheme Rules Authority](#4-choice-scope-of-scheme-rules-and-scheme-rules-authority)
+[4 - Choice: Scope of Scheme Rules and Scheme Rules Authority](#_4-choice-scope-of-scheme-rules-and-scheme-rules-authority)
 
-[5 - Choice: Use Cases](#5-choice-use-cases)
+[5 - Choice: Use Cases](#_5-choice-use-cases)
 
-[6 - Choice: QR Codes](#6-choice-qr-codes)
+[6 - Choice: QR Codes](#_6-choice-qr-codes)
 
-[7 - Choice: Payments Addressing](#7-choice-payments-addressing)
+[7 - Choice: Payments Addressing](#_7-choice-payments-addressing)
 
-[8 - Choice: Interparticipant Settlement](#8-choice-interparticipant-settlement)
+[8 - Choice: Interparticipant Settlement](#_8-choice-interparticipant-settlement)
 
-[9 - Choice: Tiered Access](#9-choice-tiered-access)
+[9 - Choice: Tiered Access](#_9-choice-tiered-access)
 
-[10 - Choice: Scheme Fees and End User Pricing](#10-choice-scheme-fees-and-end-user-pricing)
+[10 - Choice: Scheme Fees and End User Pricing](#_10-choice-scheme-fees-and-end-user-pricing)
 
-[11 - Choice: Brand Management](#11-choice-brand-management)
+[11 - Choice: Brand Management](#_11-choice-brand-management)
 
-[12 - Choice: Scheme Connections to Other Schemes](#12-choice-scheme-connections-to-other-schemes)
+[12 - Choice: Scheme Connections to Other Schemes](#_12-choice-scheme-connections-to-other-schemes)
 
-[13 - Choice: Scheme Use by Other FSP's](#13-choice-scheme-use-by-other-fsps)
+[13 - Choice: Scheme Use by Other FSPs](#_13-choice-scheme-use-by-other-fsps)
 
-[14 - Choice: Scheme Risk Management Standards](#14-choice-scheme-risk-management-standards)
+[14 - Choice: Scheme Risk Management Standards](#_14-choice-scheme-risk-management-standards)
 
-[15 - Choice: Exception Management](#15-choice-exception-management)
+[15 - Choice: Exception Management](#_15-choice-exception-management)
 
 ## 1. Choice: Ownership of Scheme
 
@@ -81,7 +81,7 @@ The Scheme is the entity that writes the rules for the payment system. As such, 
 
 The association model maximizes DFSP control of the Scheme and may encourage DFSPs to join and use the scheme. A government or central-bank controlled scheme may make regulatory supervision of DFSPs more effective and may make decision-making simpler: a government body may be willing to make infrastructure decisions that are for the good for the ecosystem as a whole, rather than optimizing individual DFSP benefits. A commercial entity may be faster to implement a new system and may be more effective in some situations in creating a sustainable operating model.
 
-### 1.1 Level One Alignment -- Scheme Ownership
+### 1.1 Level One Alignment — Scheme Ownership
 
 Any of these ownership structures can deliver on the goals of L1P and financial inclusion. The Level One Design Principles suggest "self-governance by DFSPs" (the first model) as a preferred design, based on a belief that participation in governance can increase DFSP commitment to the scheme. Other designs can work, however, as long as the Scheme and its members have some form of participatory governance and operate with transparency and open communications.
 
@@ -97,7 +97,7 @@ The global card networks, notably Visa and MasterCard, started as association mo
 
 Mojaloop and L1P use the term "DFSP" (Digital Financial Services Provider) to mean any entity within the jurisdiction in which the payment system operates that is licensed in some manner to provide end-user transaction accounts which hold funds, and which can be used to make and receive payments. This definition includes bank, other depository financial institutions, and eMoney issuers (sometimes referred to as Mobile Money Operators).
 
-There are myriad other ecosystem participants who do not hold end-user transaction accounts: these include processors, aggregators, and some types of payments services providers. The relationship of these entities to the scheme and to DFSPs is discussed in "Choice: Scheme Use by Other FSP's".
+There are myriad other ecosystem participants who do not hold end-user transaction accounts: these include processors, aggregators, and some types of payments services providers. The relationship of these entities to the scheme and to DFSPs is discussed in [Choice: Scheme Use by Other FSPs](#_13-choice-scheme-use-by-other-fsps).
 
 The question of participation is twofold: first, which categories of DFSPs are supported by the Scheme, and secondly, what is the process by which DFSPs are allowed to participate. The term "open loop" is used to refer to a structure in which multiple DFSPs join and use the scheme to exchange transactions (interoperate). But an "open loop" scheme can either be one in which any DFSP in a supported category is eligible to join the scheme, or one in which participation is limited, and managed by invitation. An applicant DFSP may face certain eligibility criteria (size, financial health, etc.) before being admitted to the Scheme.
 
@@ -141,7 +141,10 @@ There is no single Level One Principle that argues in favor of one of these mode
 
 ### 4.1 Scope
 
-Scheme rules vary widely in scope from scheme to scheme. All cover the essential elements of scheme participation, party obligations, and the mechanics of interoperability. But many schemes go much further in terms of defining how DFSPs make payments services available to their customers, and under which terms. Two areas here are worthy of note: - Some schemes specify elements of the end-user experience. Examples of this include the card networks specifying card physical parameters and design requirements. Some systems (for example, Peru\'s BIM) specify how the mobile phone interface appears to a consumer. Other systems (for example, India\'s UPI) go so far as to provide the SKD\'s and API\'s that define what the end-user app can functionally do. Some systems may require that a DFSP receiving a credit-push transaction must post it to a customer\'s account within a specified amount of time - Some schemes also specify elaborate liability provisions on interoperable transactions. These provisions may vary according to use case and particular attributes of a transaction. For example, in the card networks, liability may pass from the card issuer to the merchant acquirer if the merchant terminal does not meet certain specifications.
+Scheme rules vary widely in scope from scheme to scheme. All cover the essential elements of scheme participation, party obligations, and the mechanics of interoperability. But many schemes go much further in terms of defining how DFSPs make payments services available to their customers, and under which terms. Two areas here are worthy of note: 
+
+- Some schemes specify elements of the end-user experience. Examples of this include the card networks specifying card physical parameters and design requirements. Some systems (for example, Peru\'s BIM) specify how the mobile phone interface appears to a consumer. Other systems (for example, India\'s UPI) go so far as to provide the SKD\'s and API\'s that define what the end-user app can functionally do. Some systems may require that a DFSP receiving a credit-push transaction must post it to a customer\'s account within a specified amount of time 
+- Some schemes also specify elaborate liability provisions on interoperable transactions. These provisions may vary according to use case and particular attributes of a transaction. For example, in the card networks, liability may pass from the card issuer to the merchant acquirer if the merchant terminal does not meet certain specifications.
 
 ### 4.2 Rules Authority
 
@@ -151,7 +154,7 @@ As described above, the scheme is the entity that writes the rules for the payme
 
 - Scheme Authority with DFSP Participation. In this model, rules authority rests with the scheme entity, but some degree of formal or informal participation by DFSPs is included: this can either be formal (standing committees that meet to consider rule changes, rules amendment commentary periods specified in the rules, etc.) or informal (scheme representatives meet and/or request written feedback on proposed rules changes).
 
-### 4.3 L1P Alignment -- Rules Scope and Authority
+### 4.3 L1P Alignment — Rules Scope and Authority
 
 There are two relevant Level One principles: one is for participatory governance, and the other is the mandate to deliver a low-cost system. Level One also recognizes the importance of a system that is convenient and easy for end-user customers to use, particularly poor consumers and merchants. Considerations therefore include:
 
@@ -187,7 +190,7 @@ An implementing scheme will choose its own primary and secondary use cases, and 
 
 - Any rules that are written specific to a use case or secondary use case need to be systemically detectable (by labelling or inference) if the rule will be automatically applied: this is particularly important for business-case-specific interchange fees. How this is done should be part of the business documentation, in the Operating Guidelines.
 
-### 5.1 L1P Alignment -- Use Cases
+### 5.1 L1P Alignment — Use Cases
 
 There are two considerations here. One significant issue is the relationship between high volumes in a payment system and the ability to deliver ultra-low-cost processing fees to participating DFSPs. Almost all retail payments systems support multiple use cases, including those which started with a single use case. The card networks are an excellent example of this: started to support point of sale purchases, they now support online purchases, bill payment, salary payments, and B2B payments. Payment processing is a scale business: the more volume, the lower the unit costs can be. Level One strongly supports a payment system being used for multiple use cases: ideally, all retail (e.g. excluding large value B2B) use cases in a country.
 
@@ -231,15 +234,15 @@ Any scheme implementing credit-push payments needs to specify how the payer and 
 
 The Open API specification and the Mojaloop reference code support a wide range of different address types: mobile number, bank account, national ID, aliases ("Quickshop\@abc"), etc.
 
-### 7.1 L1P Alignment -- Payments Addressing 
+### 7.1 L1P Alignment — Payments Addressing 
 
 Secure, easy payment addressing relates to two important concepts in Level One: convenience for the end-user and "openness". The latter is particularly important to enable competition and rapid scaling of a payment system. As schemes (Level One and otherwise) worldwide struggle to determine how to best solve the question of payments addressing, a few best practices appear to be emerging:
 
-- Although the use of the mobile number, in particular, as an address has an obvious appeal, there appears to be a trend to use aliases -- identifiers with no additional meaning. This is demonstrated in India with the UPI system and in Australia's new real-time system, where the identifier is referred to as the PAYID.
+- Although the use of the mobile number, in particular, as an address has an obvious appeal, there appears to be a trend to use aliases — identifiers with no additional meaning. This is demonstrated in India with the UPI system and in Australia's new real-time system, where the identifier is referred to as the PAYID.
 
 - Identifier portability is desirable, both from the perspective of user convenience and as a mechanism to avoid "DFSP lock-in".
 
-- As mentioned above, the directory needs to ensure uniqueness of the payment address within the payment system: any given address can only map to a single DFSP. However, a single DFSP transaction account can have multiple payment addresses which route to it. DFSPs have the opportunity to create value-added services for their customers, in which they differentiate the treatment of transactions routed to them via different payment addresses (subject, of course, to overall scheme business rules.)
+- As mentioned above, the directory needs to ensure uniqueness of the payment address within the payment system: any given address can only map to a single DFSP. However, a single DFSP transaction account can have multiple payment addresses which route to it. DFSPs have the opportunity to create value-added services for their customers, in which they differentiate the treatment of transactions routed to them via different payment addresses (subject, of course, to overall scheme business rules).
 
 ## 8. Choice: Interparticipant Settlement
 
@@ -263,19 +266,19 @@ Payment schemes need to determine how participant DFSPs will settle their financ
 
 - Discretionary components of the net debit camp may be defined by the scheme. There are two types of these. A scheme discretionary component may add to, or subtract from, an individual DFSP's net debit cap. An addition can be used to create a safety margin; a subtraction can be used to extend overdraft capabilities to the DFSP. In the latter case, responsibility for the overdraft needs to be clearly agreed upon between the scheme and the settlement bank.
 
-### 8.1 L1P Alignment -- Interparticipant Settlement
+### 8.1 L1P Alignment — Interparticipant Settlement
 
-Level One has a clear principle calling for same day settlement. Other than that, the most important considerations are how a given scheme will manage risk and costs for DFPS -- liquidity costs in particular. This is a rapidly evolving area in payment systems, and it is expected that different schemes will make different choices. In general, it can be observed that automation supports scale, and that prefunding and multiple windows support low risk and low cost.
+Level One has a clear principle calling for same day settlement. Other than that, the most important considerations are how a given scheme will manage risk and costs for DFPS — liquidity costs in particular. This is a rapidly evolving area in payment systems, and it is expected that different schemes will make different choices. In general, it can be observed that automation supports scale, and that prefunding and multiple windows support low risk and low cost.
 
 The Mojaloop reference code supports a variety of different settlement mechanisms.
 
 ## 9. Choice: Tiered Access
 
-Legacy retail payment systems (and wholesale systems) generally support tiered access -- the ability of smaller institutions to access the system through correspondent relationships with larger institutions. This has been considered necessary as smaller institutions frequently had difficulty in meeting either the settlement obligations of full participation or the technical (particularly security) obligations of full participation.
+Legacy retail payment systems (and wholesale systems) generally support tiered access — the ability of smaller institutions to access the system through correspondent relationships with larger institutions. This has been considered necessary as smaller institutions frequently had difficulty in meeting either the settlement obligations of full participation or the technical (particularly security) obligations of full participation.
 
 In countries with eMoney Issuance licenses (or with other non-bank or non-traditional DFSPs, or transaction account providers) the question becomes whether or not these non-traditional providers access the system directly or through a relationship with a traditional bank: in these cases, it is generally the settlement, and not the technical, issue in question.
 
-### 9.1 L1P Alignment -- Tiered Access
+### 9.1 L1P Alignment — Tiered Access
 
 There is no single Level One principle which would direct a scheme on how to handle this issue. There are, however, both cost and risk issues to consider:
 
@@ -287,7 +290,7 @@ There is no single Level One principle which would direct a scheme on how to han
 
 - Another factor to consider is particular to countries with eMoney Issuance or other non-traditional DFSP providers. Under the L1P principle of DFSP involvement in governance decisions, it may be that asking eMoney Issuers to access a system "under" a bank participant may leave these DFSPs in a "second tier" position with respect to governance: this is arguably undesirable, and particularly in cases, which appear relevant in some countries, where the eMoney Issuers have a higher transaction volume than do their sponsoring banks.
 
-Note this section does not discuss access to the system by other FSPs: that is addressed in Choice: Scheme Use by Other FSPs.
+Note this section does not discuss access to the system by other FSPs: that is addressed in [Choice: Scheme Use by Other FSPs](#_13-choice-scheme-use-by-other-fsps).
 
 ## 10. Choice: Scheme Fees and End User Pricing
 
@@ -323,7 +326,7 @@ One of the most important Level One concepts is to have an ultra-low-cost platfo
 
 Should a scheme brand be used? Should the same brand be used for all use cases? Or should the only brand used be the brand of the DFSP who is offering a service to its customers? Not surprisingly, this is an issue that has been debated in payments systems through the years.
 
-### 11.1 L1P Alignment -- Brand
+### 11.1 L1P Alignment — Brand
 
 Level One has a clear design principle supporting a common brand: this is predicated on making the service understandable and easy to use for both consumers and merchants. A common scheme brand may be used in conjunction with DFSP brands: "Use DFSP SuperPay (DFSP brand) with XPay (Scheme brand) to pay your bills."
 
@@ -337,13 +340,13 @@ In legacy payment systems, this type of connection is rare on a scheme-to-scheme
 
 Mojaloop as a technology is designed to allow system-to-system connectivity. Schemes implementing Mojaloop systems will need to consider the balance between striking scheme-to-scheme business agreements (with concurrent technical connections) and/or allowing DFSPs in their scheme to connect to other schemes or DFSPs bilaterally.
 
-### 12.1 L1P Alignment -- Connections to Other Schemes
+### 12.1 L1P Alignment — Connections to Other Schemes
 
 The relevant L1P principles here are low cost and "openness". The Mojaloop code in particular has the potential to turn cross-border transactions from ones that are governed by complex relationships (as in the case of traditional correspondent banking) into ones which are competed for in an open, interconnected marketplace. Schemes will need to evaluate the merits of this (arguably promoting lower costs) with the risks of dominance by major institutions. Scheme-to-scheme business arrangements may have a beneficial "level the playing field" characteristics. Hybrid relationships are also possible. This is an evolving area of the payment industry, and one where considerable variety of arrangements are both possible and likely.
 
-## 13. Choice: Scheme Use by Other FSP's
+## 13. Choice: Scheme Use by Other FSPs
 
-A successful L1P aligned scheme will be used by many enterprises -- merchants, billers, government agencies, etc. as well as individual people. There will also be a wide range of other FSPs (Financial Services providers) which are not DFSP's: in other words, which do not hold customer transaction accounts. This includes payments services providers: aggregators, merchant services providers, various DFSP processors, etc., all of which may want to connect to and use the scheme.
+A successful L1P aligned scheme will be used by many enterprises — merchants, billers, government agencies, etc. as well as individual people. There will also be a wide range of other FSPs (Financial Services providers) which are not DFSP's: in other words, which do not hold customer transaction accounts. This includes payments services providers: aggregators, merchant services providers, various DFSP processors, etc., all of which may want to connect to and use the scheme.
 
 As described in the "participation" choice above, a Level One aligned scheme includes as direct, settling participants only the entities that hold the end-user transaction accounts: the accounts that are debited and credited as a result of the interoperable transaction.
 
@@ -351,7 +354,7 @@ Other entities may physically connect to the platform under a variety of busines
 
 Definitional note: we are purposefully not using the term "PSP" (Payment Service Provider) here, as in various jurisdictions this term is used to include transaction account providers, in some cases, and non-transaction account providers in other cases. As a further comment, in many countries today entities such as aggregators hold financial accounts at banks or eMoney Issuers and use those accounts to receive money from customers and disburse money to other customers. In this role, the aggregator is a customer of a DFSP (the bank or eMoney Issuer) and is also acting as a Financial Services Provider. It may be that these aggregators in the future will not need to intermediate the financial transaction, but instead provide directions that lead to direct transfer of funds, through the scheme, from one customer's transaction account to another's.
 
-### 13.1 L1P Alignment -- Use by Other FSPs
+### 13.1 L1P Alignment — Use by Other FSPs
 
 The principles here are, again, low cost and openness. Level One would encourage new players to be able to use and access the scheme, as long as their actions are controlled by the scheme in order to ensure safety and financial stability.
 
@@ -365,7 +368,7 @@ The question for a scheme is the balance between defining these standards itself
 
 - Require DFSPs, the Platform and third parties to follow referenced national or global standards for risk management and security
 
-### 14.1 L1P Alignment- Risk Management Standards
+### 14.1 L1P Alignment — Risk Management Standards
 
 The Level One does not address which choice above is the better. But the concepts of a safe system for consumers to use, and a low-cost system clearly apply here. Some considerations:
 
@@ -394,7 +397,7 @@ Exception processing includes a wide variety of non-standard transactions and in
 
 Schemes have important choices to make about how involved the scheme, and its Business Rules, are in defining how scheme participants handle these exceptions. Legacy payment systems show us a wide variety of models which are used, from systems where the scheme and Business Rules have minimal involvement in handling of exception processing (checking, most ACH systems) to systems where the scheme and its Business Rules are extensively involved (most card networks). Real-time retail payment systems worldwide are generally only in the early stages of deciding on how to handle these matters.
 
-### 15.1 L1P Alignment -- Exception Processing
+### 15.1 L1P Alignment — Exception Processing
 
 There are two very important Level One design principles that relate to this.
 
