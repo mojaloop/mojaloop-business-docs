@@ -1,13 +1,13 @@
-# RBAC Context  [WIP]
+# RBAC Context 
 The Mojaloop Hub uses a Role-Based Access Control (RBAC) method for mitigating risk.
 
-## What is RBAC Design?
+## What is RBAC and how to design for it?
 
 Role-based access control (RBAC) is a method of restricting network access based on the roles of individual users within an enterprise. RBAC lets employees have access rights only to the information they need to do their jobs and prevents them from accessing information that doesn't pertain to them.
 
 The RBAC design for a hub operator, outlines the security control points that should be considered or extended in order to mitigate risk within a typical Mojaloop hub operations organisation. Some control points are business processes and organisational structure related, some control points are technical relating to the identification, authentication and authorisation layers, and some control points require monitoring. All three should be considered to create accountability and mitigate risk.
 
-This document covers the RBAC design by:
+This document covers:
 1. RBAC Overview.<br>
 Where we discuss RBAC principles and organsational structures.
 2. Technical implementation of the RBAC controls.<br>
