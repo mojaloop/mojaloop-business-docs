@@ -36,7 +36,7 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | Term   | Definition                                                                                      |
 | :----- | :---------------------------------------------------------------------------------------------- | 
 | Access Channel | Places or capabilities that are used to initiate or receive a payment. Access channels can include bank branch offices, ATMs, terminals at the POS, agent outlets, mobile phones, and computers. |
-| Account Lookup | A process that determines the DFSP responsible for a Transaction Account |
+| Account Lookup | A process that determines the DFSP responsible for a Transaction Account. |
 | Account Lookup System | Account Lookup System is an abstract entity used for retrieving information regarding in which FSP an account, wallet or identity is hosted. The Account Lookup System itself can be hosted in its own server, as part of a financial switch, or in the different FSPs. |
 | Account Validation | A status provided by a Quote Response API Call: a Payee DFSP indicates that an account is available to be credited with a proposed transfer amount. |
 | Active User | A term used by many providers in describing how many of their account holders are frequent users of their service. |
@@ -45,10 +45,10 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | Agent | An entity authorized by the provider to handle various functions such as customer enrollment, cash-in and cash-out using an agent till. |
 | Agent Outlet | A physical location that carries one or more agent tills, enabling it to perform enrollment, cash-in and cash-out transactions for customers on behalf of one or more providers. National law defines whether an agent outlet may remain exclusive to one provider.Agent outlets may have other businesses and support functions. |
 | Agent Till | An agent till is a provider-issued registered "line", either a special SIM card or a POS machine, used to perform enrollment, cash-in and cash-out transactions for clients. National law dictates which financial service providers can issue agent tills. |
-| Agent-Initiated Cash-In | A Use Case defined in the API Specifications document |
-| Agent-Initiated Cash-Out | A Use Case defined in the API Specifications document |
+| Agent-Initiated Cash-In | A Use Case defined in the API Specifications document. |
+| Agent-Initiated Cash-Out | A Use Case defined in the API Specifications document. |
 | Aggregator | A specialized form of a merchant services provider, who typically handles payments transactions for a large number of small merchants. Scheme rules often specify what aggregators are allowed to do. |
-| Alias | A Payee Identifier that is mapped to a Payee DFSP and Transaction Account Number |
+| Alias | A Payee Identifier that is mapped to a Payee DFSP and Transaction Account Number. |
 | Anti-Money Laundering (AML) | Anti-Money Laundering refers to Applicable Law and, to the extent expressly adopted by the Scheme, good practice guidance, t regarding mitigation of money laundering risks. |
 | API | Application Programming Interface: a technical interface implemented by a software protocol that allows systems to interact with each other via standard structures, without requiring a user system to know the internal implementation details of the system with which it is interacting. |
 | Applicable Law | All treaties, conventions, laws, regulations, directives, official guidance or directives of a Regulatory Authority to the extent that they are binding, respectively, upon the Scheme, the Scheme or a Participant with regard to the Scheme\'s Services. |
@@ -56,27 +56,27 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | Application Program Interface (API) | A method of communication to allow interaction and sharing of data between different software or Technical Protocols. |
 | Arbitration | The use of an arbitrator, rather than courts, to resolve disputes. |
 | Associated Documents | The set of documents listed in Appendix A of these Rules. |
-| ATM-Initiated Cash-Out via OTP | A Use Case defined in the API Specifications document |
+| ATM-Initiated Cash-Out via OTP | A Use Case defined in the API Specifications document. |
 | Attribute | A characteristic of a Transaction, it being understood that specific rules may apply to Transactions with specific Attributes. |
 | Authentication | The process of ensuring that a person or a transaction is valid for the process (account opening, transaction initiation, and so on) being performed. |
 | Authorization | The permission given by the Payer or entity to make a Payment. |
 | Authorized /institution entity | Non-financial institutions that have followed the appropriate authorization by State Bank and/or relevant regulatory authorities to partake in the provisioning of mobile financial services. |
-| B2P | Business to Person; a Bulk Payment Secondary Use Case |
+| B2P | Business to Person; a Bulk Payment Secondary Use Case. |
 | Bank | A chartered financial system within a country that has the ability to accept deposits and make and receive payments into customer accounts. |
 | Bank Account | A Transaction Account offered by a Bank. |
-| Bank Account Identifier | A type of Payee Identifier |
+| Bank Account Identifier | A type of Payee Identifier. |
 | Bank Accounts and Transaction Services | A transaction account held at a bank. This account may be accessible by a mobile phone, in which case it is sometimes referred to as \"mobile banking\". |
-| Bank to Bank | A P2P Secondary Use Case |
-| Bank to Wallet | A P2P Secondary Use Case |
+| Bank to Bank | A P2P Secondary Use Case. |
+| Bank to Wallet | A P2P Secondary Use Case. |
 | Bank-Led Model| A reference to a system in which banks are the primary providers of digital financial services to end users.National law may require this.|
 | Basic Phone | Minimum device required to use digital financial services. |
-| Bill Payment | A P2B Secondary Use Case |
+| Bill Payment | A P2B Secondary Use Case. |
 | Biometric Authentication | The use of a physical characteristic of a person (fingerprint, IRIS, and so on) to authenticate that person. |
 | Blacklist| A list or register of entities (registered users) that are being denied/blocked from a particular privilege, service, mobility, access or recognition. |
 | Blockchain | A technology that creates distributed architectures. In payments systems, often a reference to a shared ledger that records and validates Transactions.
-| Blockchain | The technology underlying bitcoin and other cryptocurrencies---a shared digital ledger, or a continually updated list of all transactions. |
-| Brand | A word and/or mark approved by the Scheme for use by Participants . |
-| Bulk Disbursement | A Use Case defined in the API Specifications document |
+| Blockchain | The technology underlying bitcoin and other cryptocurrencies - a shared digital ledger, or a continually updated list of all transactions. |
+| Brand | A word and/or mark approved by the Scheme for use by Participants. |
+| Bulk Disbursement | A Use Case defined in the API Specifications document. |
 | Bulk Payment | A Payment from a single Payer to multiple Payees, for example cash transfer programs from a government or NGO to a set of beneficiaries. |
 | Bulk upload service | A service allowing the import of multiple transactions per session, most often via a bulk data transfer file which is used to initiate payments.Example: salary payment file. |
 | Business | Entity such as a public limited or limited company or corporation that uses mobile money as a service; for example, making and accepting bill payments and disbursing salaries. |
@@ -98,9 +98,9 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | Cross-FX Transfer | Transfer involving multiple currencies including a foreign exchange calculation. |
 | Current Position | A Participant\'s current net position in the Position Ledger for a given Currency. |
 | Customer | The Customer of the system. The term is used for both the Payer and the Payee. Individuals, merchants, billers, governments, and other enterprises are all customers. Sometimes refered to as end-users. |
-| Customer-Initiated Cash-Out | A Use Case defined in the API Specifications document |
-| Customer-Initiated Purchase | A Use Case defined in the API Specifications document |
-| Customer-Initiated Purchase via QR | A Use Case defined in the API Specifications document |
+| Customer-Initiated Cash-Out | A Use Case defined in the API Specifications document. |
+| Customer-Initiated Purchase | A Use Case defined in the API Specifications document. |
+| Customer-Initiated Purchase via QR | A Use Case defined in the API Specifications document. |
 | DFSP (Digital Financial Services Provider) | A financial services provider that is licensed by a regulatory authority to provide Transaction Accounts which hold customer funds and are used to make and receive Payments. DFSPs have relationships with consumers, merchants, and other enterprises, and provide digital financial services to End Users. Used interchangably with FSP (Financial Services Provider). |
 | Digital | Electronic communications between two individuals or entities that can occur on various electronic devices (e.g., mobile, tablet, computer). |
 | Digital Liquidity | A practice of keeping value in Digital form, rather than exchanging the Digital value for cash (physical form). |
@@ -110,12 +110,12 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | Dispute Resolution | A process specified by a provider or by the rules of a payment scheme to resolve issues between end users and providers, or between an end user and its counter party. |
 | Domestic | Describes a Transaction between two DFSPs domiciled in the same country. |
 | eMoney | Digital funds or value owned by a Transaction Account holder on a payment device such as chip, prepaid card, mobile phone, or on a computer system. National regulation specifies what types of DFSPs can issue eMoney. |
-| eMoney Issuer | A DFSP licensed in the country to act as an eMoney Issuer |
+| eMoney Issuer | A DFSP licensed in the country to act as an eMoney Issuer. |
 | End User | The customer of a DFSP. The customer may be a consumer, a merchant, a government, or another form of enterprise. |
 | End-User Fees | Fees assessed by a DFSP to their en-end user customer. |
 | Enterprise | Any non-individual person who is a customer of a DFSP: includes Merchants, Billers, Government Agencies, and other enterprises. |
 | Escrow or Trust Account | An account held by a Non-Bank DFSP at a bank; normally a regulatory requirement to protect consumer deposits at the DFSP. |
-| Exceptions | Transactions that are erroneous or fraudulent |
+| Exceptions | Transactions that are erroneous or fraudulent. |
 | FATF | The Financial Action Task Force is an intergovernmental organization to combat money laundering and to act on terrorism financing.|
 | Feature Phone | A mobile telephone without significant computational capabilities. |
 | Fees | The payments assessed by a provider to their end user. This may either be a fixed fee, a percent-of-value fee, or a mixture. |
@@ -127,40 +127,40 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | Float | This term can mean a variety of different things. In banking, float is created when one party\'s account is debited or credited at a different time than the counterparty to the transaction. eMoney, as an obligation of a non-bank provider, is sometimes referred to as float. |
 | Fraud | Criminal use of digital financial services to take funds from another individual or business, or to damage that party in some other way. |
 | Fraud Risk Management | Tools to manage providers\' risks, and at times user\'s risks (for example, for merchants or governments) in providing and/or using DFS services. |
-| FSP | The entity that provides a digital financial service to an end user (either a consumer, a business, or a government.) Used interchangably with DFSP (Digital Financial Services Provider) |
+| FSP | The entity that provides a digital financial service to an end user (either a consumer, a business, or a government.) Used interchangably with DFSP (Digital Financial Services Provider). |
 | Fulfilled Transfer | A transfer that has been accepted by the Payee DFSP and recorded as complete by the Scheme. Once a transfer has been recorded as complete by the Scheme, the Payer is obliged to honour the transaction when it appears in a Settlement. |
 | Fulfillment | In the Interledger protocol, a secret that is the preimage of a SHA-256 hash, used as a condition on a transfer. The preimage is required in the commit message to trigger the transfer to be committed. |
 | FX | Foreign Exchange. |
-| G2P | A Bulk Payment Secondary Use Case |
+| G2P | A Bulk Payment Secondary Use Case. |
 | Governance | The collection of management approaches, decisions, and oversight functions within the Scheme. Scheme Governance can set the tone for everything that occurs in the Scheme. |
 | Government Agency | Any Transaction Account Holder which is some kind of government agency or department. |
 | Government Payments Acceptance Services | Services which enable governments to collect taxes and fees from individuals and businesses. |
 | Gross Settlement | A method of settling financial obligations among DFSPs and a Scheme. Gross Settlement processes each Transaction individually. The details of the Gross Settlement model are specified in Scheme rules. Gross Settlement contrasts to Net Settlement. |
 | Hub | A term that may be used for the entity that operates the Platform on behalf of the Scheme. |
-| Identifier Service | The way in which the Account Lookup Process works for a given type of Identifier |
+| Identifier Service | The way in which the Account Lookup Process works for a given type of Identifier. |
 | Identity | A credential of some sort that identifies an end user. National identities are issued by national governments. In some countries a financial identity is issued by financial service providers. |
 | Immediate Funds Transfer | A digital payment which is received by the payee almost immediately upon the payer having initiated the transaction. |
 | Interchange | A structure within some payments schemes which requires one provider to pay the other provider a fee on certain transactions. Typically used in card schemes to effect payment of a fee from a merchant to a consumer\'s card issuing bank. |
 | Interledger | The Interledger protocol is a protocol for transferring monetary value across multiple disconnected payment networks using a choreography of conditional transfers on each network. |
 | International Remittance | Making and receiving payments to another person in another country. |
 | Interoperability | The ability of an Customer with a Transaction Account with one Participant to exchange a transaction with an Customer who has a Transaction Account with a different Participant. |
-| Interoperability Service for Transfers (IST) | A switch |
+| Interoperability Service for Transfers (IST) | A switch. |
 | Irrevocable | A transaction that cannot be \"called back\" by the payer; an irrevocable payment, once received by a payee, cannot be taken back by the payer. |
 | Know Your Customer (KYC) | Regulatory requirements for a DFSP to establish the Identity and activities of an End User or entity, both before opening a Transaction Account and over time. |
-| Ledger | A record kept of trasnactions |
-| Level One Project | An initiative of the Bill & Melinda Gates Foundation to promote financial inclusion |
+| Ledger | A record kept of transactions. |
+| Level One Project | An initiative of the Bill & Melinda Gates Foundation to promote financial inclusion. |
 | Liability | A legal obligation of one party to another; required by either national law, payment scheme rules, or specific agreements by providers. Some scheme rules transfer liabilities for a transaction from one provider to another under certain conditions. |
 | License | The license granted to an Applicant by the Scheme upon acceptance of the Scheme Participation Agreement, which permits the Participant to participate in the Scheme and to use Scheme Property in accordance with the Rules. |
 | Liquidity | The availability of liquid assets to support an obligation. Banks and non-bank providers need liquidity to meet their obligations. Agents need liquidity to meet cash-out transactions by consumers and small merchants. |
 | Loans | Means by which end users can borrow money. |
 | Merchant | An enterprise which sells goods or services and receives payments for such goods or services. |
 | Merchant Acquisition | The process of enabling a merchant for the receipt of electronic payments. |
-| Merchant Category Codes | A categorization set by a Scheme to differentiate among enterprise customers |
-| Merchant ID | A type of Payee Identifier |
+| Merchant Category Codes | A categorization set by a Scheme to differentiate among enterprise customers. |
+| Merchant ID | A type of Payee Identifier. |
 | Merchant Service Provider | A provider (bank or non-bank) who supports merchants or other payments acceptors requirements to receive payments from customers. The term \"acquirer\" is used specifically in connection with acceptance of card payments transactions. |
-| Merchant-Initiated Purchase | A Use Case defined in the API Specifications document |
-| Merchant-Initiated Purchase via POS/OTP | A Use Case defined in the API Specifications document|
-| Merchant-Initiated Purchase via QR | A Use Case defined in the API Specifications document |
+| Merchant-Initiated Purchase | A Use Case defined in the API Specifications document. |
+| Merchant-Initiated Purchase via POS/OTP | A Use Case defined in the API Specifications document. |
+| Merchant-Initiated Purchase via QR | A Use Case defined in the API Specifications document. |
 | Microfinance Institution (MFI) | An entity that offers financial services to Low Income populations. Almost all MFIs give loans to their members, and many offer insurance, deposit and other services. MFI's are considered DFSPs in a Level One System if they provide Transaction Accounts to their customers. MFI's who are not DFSPs may connect directly to a Level One Platform, through a relationship with a DFSP. Scheme rules will specify how such MFI's may interact with the Platform. |
 | Mobile Network Operator (MNO) | An enterprise which sells mobile phone services, including voice and data communication. |
 | Money Transfer Operator | A specialized provider of DFS who handles domestic and/or international remittances. |
@@ -169,8 +169,8 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | National Identity Document | A credential that identifies an End User. National Identity Documents are issued by national governments. |
 | Near Field Communication | A communication technology used within payments to transmit payment data from an NFC equipped mobile phone to a capable terminal. |
 | Net Debit Cap | A value that the Platform uses in determining whether a Payer DFSP can send a Request for Transfer, as defined in the Scheme Operating Rules. |
-| Net Debit Cap Margin | A value set by a scheme which increases or decreases the Net Debit Cap of a participant |
-| Net Position | A value in a scheme participant\'s ledger, reflecting the net of obligations owed |
+| Net Debit Cap Margin | A value set by a scheme which increases or decreases the Net Debit Cap of a participant. |
+| Net Position | A value in a scheme participant\'s ledger, reflecting the net of obligations owed. |
 | Net Settlement | A type of settlement that nets the position of a participant in a scheme, reflecting both obligations owed to and from other participants or the scheme. |
 | Non-Bank | An entity that is not a chartered bank, but which is providing financial services to end users. The requirements of non-banks to do this, and the limitations of what they can do, are specified by national law. |
 | Non-Bank-Led Model | A reference to a system in which non-banks are the providers of digital financial services to end users. Non-banks typically need to meet criteria established by national law and enforced by regulators. |
@@ -179,24 +179,24 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | Notification | Notice to a payer or payee regarding the status of transfer. |
 | Off-Us Payments | Payments made in a multiple-participant system or scheme, where the payer\'s provider is a different entity as the payee\'s provider. |
 | On-Us Payments | Payments made in a multiple-participant system or scheme, where the payer\'s provider is the same entity as the payee\'s provider. |
-| Online Purchase | A P2B Secondary Use Case |
-| Open API Specification | The Open API for FSP Interoperability specificaiton |
+| Online Purchase | A P2B Secondary Use Case. |
+| Open API Specification | The Open API for FSP Interoperability specification. |
 | Open-Loop | A payment system or scheme designed for multiple providers to participate in. Payment system rules or national law may restrict participation to certain classes of providers. |
 | Operating Rules | Rules written by a scheme which bind scheme participants. Sometimes called \"Business Rules\". |
 | Operations Risk Management | Tools to manage providers\' risks in operating a DFS system. |
 | Operator | An entity that provides and/or manages the Platform of a payments system. |
 | Organization | An entity such as a business, charity or government department that uses mobile money as a service; for example, taking bill payments, making bill payments and disbursing salaries. |
-| OTP | OTP is a credential which by definition can only be used once. It is generated and later validated by the same FSP for automatic approval. The OTP is usually tied to a specific Payer in a Payment. The generated OTP is usually a numeric between 4 and 6 digits. |
+| OTP | One-time Passcode. OTP is a credential which by definition can only be used once. It is generated and later validated by the same FSP for automatic approval. The OTP is usually tied to a specific Payer in a Payment. The generated OTP is usually a numeric between 4 and 6 digits. |
 | Over The Counter Services | Services provided by agents when one end party does not have an eMoney account: the (remote) payer may pay the eMoney to the agent\'s account, who then pays cash to the non- account holding payee. |
-| P2P | A Use Case defined in the API Specifications document |
+| P2P | A Use Case defined in the API Specifications document. |
 | Participant | A provider who is a member of a payment scheme, and subject to that scheme\'s rules. |
-| Participant Discretionary Net Debit Cap Margin | A value set by a participant which decreases their Net Debit Cap |
+| Participant Discretionary Net Debit Cap Margin | A value set by a participant which decreases their Net Debit Cap. |
 | Participation Agreement | An agreement entered into between each Participant and a Scheme. |
-| Participation Fees | Fees for participation in a payment scheme (sometimes called membership fees) |
-| Parties Query | An API Call to the Scheme Directory Service by which a Payer DFSP requests the identifier of the DFSP to which a payee identifier is registered |
+| Participation Fees | Fees for participation in a payment scheme (sometimes called membership fees). |
+| Parties Query | An API Call to the Scheme Directory Service by which a Payer DFSP requests the identifier of the DFSP to which a payee identifier is registered. |
 | Parties Query Response | The response from the Scheme Directory Service to a Parties Query. |
 | Partner Bank | Financial institution supporting the FSP and giving it access to the local banking ecosystem. |
-| Party | An entity which is using Scheme Services directly or indirectly |
+| Party | An entity which is using Scheme Services directly or indirectly. |
 | Party Identifier | An item of information which uniquely identifies an Customer in an Interoperability implementation. |
 | Party Identifier Type | An enumeration which distinguishes different types of Party Identifier. The full range of Party Identifier Types is given in the Open API Specification; the subset of Party Identifier Types supported by any given Schema are given in its Operating Rules. |
 | Payee | The recipient of electronic funds in a payment transaction. |
@@ -205,25 +205,25 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | Payer DFSP | The Participant who sends a Transfer. |
 | Payment | An exchange of funds, credentials, and other necessary information to complete obligation between End Users. A Transfer is a Payment. |
 | Payment Device | Payment device is the abstract notion of an electronic device, other than the Payer's own device, that is capable of letting a Payer accept a transaction through the use of a credential (some kind of OTP).Examples of (Payment) Devices are ATM and POS. |
-| Payment System | A broad term to describe the overall system, including the Scheme, Scheme Services, and Scheme Participants |
+| Payment System | A broad term to describe the overall system, including the Scheme, Scheme Services, and Scheme Participants. |
 | Payment System Operator | The entity that operates a payment system or scheme. |
 | Payments Service Provider (PSP) | A term used in two ways: generally, as any company involved in the provision of payments services (including DFSPs); or for a provider that offers branded products or services to End Users, including merchants. PSPs may connect directly to a Level One Platform, through a relationship with a DFSP. Scheme rules will specify how PSPs may interact with the Platform. |
 | Personal Information | Information related to any individual person, including Customers or employees of the Scheme or of a Participant from which the individual may be identified or recognized regardless of the form of such information. |
 | Platform | The set of operational capabilities, often including a Switch, that implement the exchange of Payments in a Level One aligned interoperable payment system. |
 | Platform | A term used to describe the software or service used by a provider, a scheme, or a switch to manage end user accounts and to send and receive payment transactions. |
-| Pooled Settlement Account | A bank account at the Bank, which is jointly owned by scheme participants |
-| Position Ledger | A ledger kept by the platform which records Provisional Settlement Entries and Final Settlement Entries for a Participant in a given Currency |
+| Pooled Settlement Account | A bank account at the Bank, which is jointly owned by scheme participants. |
+| Position Ledger | A ledger kept by the platform which records Provisional Settlement Entries and Final Settlement Entries for a Participant in a given Currency. |
 | Posting | The act of the provider of entering a debit or credit entry into the end user\'s account record. |
 | Processing Fees | Fees billed by the Scheme to Participants for Processing done by the Scheme Platform. |
 | Processor | An enterprise that manages, on an out-sourced basis, various functions for a DFSP. These functions may include transaction management, customer database management, and risk management. Processors may also do functions on behalf of payments systems, Schemes, or Switches. Processors may connect directly to a Level One Platform, acting on behalf of a DFSP. Scheme rules will specify how Processors may interact with the Platform. |
 | Provisional Debit | A record wtihin a scheme Position Ledger of a Transfer Request that has not been fulfilled; recorded only on the Payer DFSP\'s Position Ledger |
-| PSP | Payment Service Provider |
+| PSP | Payment Service Provider. |
 | Pull Payment | A type of Transaction originated by the Payee's DFSP. Direct Debits, checks, and card payments are all Pull Payments. Pull Payments can bounce or fail for insufficient funds unless a separate Authorization is done (e.g., cards). |
 | Push Payment | A type of Transaction initiated by the Payer DFSP. This is sometimes called a Credit Transfer. |
-| QR Code Purchase | A P2B Secondary Use Case |
+| QR Code Purchase | A P2B Secondary Use Case. |
 | Quick-Response (QR) Code | A method of encoding and visualizing data in machine-readable form. There are multiple QR models. |
 | Quote | A process by which a Payee DFSP acknowledges the validity of the Payee account to accept a transfer, and sets terms (and possibly fees) related to that transfer. |
-| Quote Request | A request by a Payer DFSP for data relating to a proposed Transfer |
+| Quote Request | A request by a Payer DFSP for data relating to a proposed Transfer. |
 | Quote Response | The response of a Payee DFSP to a Request for Quote. |
 | Real Time Gross Settlement (RTGS) | A settlement model which settles transfers on an individual, rather than a net, basis. |
 | Real Time Retail Payments (RTRP) | Retail Payments that are processed in real time (as initiated). |
@@ -255,7 +255,7 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | Services | Elements of the scheme platform which delivers interoperability capabilities to scheme participants. |
 | Settlement | A process by which Participants settle their obligations to each other and to the Scheme related to the exchange of Transactions as set out in the Settlement Operating Guidelines. |
 | Settlement Bank | A bank appointed by the Scheme to be a partner in managing the Settlement and in which each Participant shall have a bank account for the purpose of Settlement. |
-| Settlement Bank Account | The bank account held by a Participant at the Settlement Bank or at Bank agreed with the Settlement Bank , that is used for Settlement between the Scheme and the Participant. |
+| Settlement Bank Account | The bank account held by a Participant at the Settlement Bank or at Bank agreed with the Settlement Bank, that is used for Settlement between the Scheme and the Participant. |
 | Settlement Instruction | Means an instruction given to a settlement system by a settlement system participant or by a payment clearing house system operator on behalf of a Central Bank settlement system participant to effect settlement of one or more payment obligations, or to discharge any other obligation of one system participant to another system participant. |
 | Settlement Obligation | Means an indebtedness that is owed by one settlement system participant to another as a result of one or more settlement instructions. |
 | Settlement Window | A time period between two successive Net Settlements as scheduled in accordance with the Settlement Operating Guidelines. |
@@ -270,30 +270,30 @@ This is a glossary of terms used in the Mojaloop Business Community Document Pro
 | System | A term used to describe the Scheme, services, Platform, and Participants aligned with a Level One Project. |
 | Systemic Risk | In payments systems, the risk of collapse of an entire financial system or entire market, as opposed to risk associated with any one individual provider or end user. |
 | The Level One Project | An initiative of the Bill & Melinda Gates Foundation, within the Financial Services for the Poor program, that works to support countries or regions building interoperable, low-cost digital financial services systems to bring Low Income persons and merchants into the formal economy. |
-| Tiered Acess | A provision set in scheme rules which allows one DFSP to participate in the system under sponsorship of another DFSP |
-| Til Number Purchase |  A P2B Secondary Use Case |
+| Tiered Acess | A provision set in scheme rules which allows one DFSP to participate in the system under sponsorship of another DFSP. |
+| Til Number Purchase |  A P2B Secondary Use Case. |
 | Transaction | A set of related API Calls that are exchanged between Participants via the Scheme including a Transfer. |
-| Transaction Account |  A bank account or wallet offered a customer by a DFSP |
-| Transaction Account Holder | The customer of a DFSP who holds the Transaction Account provided by that DFSP |
-| Transaction Account Holder Type | A designation used to define whether or not the Transaction Account Holder is a Consumer, a Business, a Government Agency, or a Non-Profit Agency |
-| Transaction Account Type | A designation used to define a Transaction Account as either a Bank Account or an eMoney Wallet |
+| Transaction Account |  A bank account or wallet offered a customer by a DFSP. |
+| Transaction Account Holder | The customer of a DFSP who holds the Transaction Account provided by that DFSP. |
+| Transaction Account Holder Type | A designation used to define whether or not the Transaction Account Holder is a Consumer, a Business, a Government Agency, or a Non-Profit Agency. |
+| Transaction Account Type | A designation used to define a Transaction Account as either a Bank Account or an eMoney Wallet. |
 | Transaction Cost | The cost to a DFS provider of delivering a digital financial service. This could be for a bundle of services (for example, a \"wallet\") or for individual transactions. |
-| Transaction Fees | Fees for processing interoperable transactions set by a scheme |
+| Transaction Fees | Fees for processing interoperable transactions set by a scheme. |
 | Transfer | Generic term to describe any financial transaction where value is transferred from one account to another. |
 | Transfer Amount | The amount the Payer DFSP Transfers to a Payee DFSP using the Scheme. |
-| Transfer Request | A request by a Payer DFSP to make a Transfer |
-| Transfer Response | A Payee DFSP\'s response to a Transfer Request |
-| Trust Account | A means of holding funds for the benefit of another party.  eMoney Issuers are usually required by law to hold the value of end users\' eMoney accounts at a bank, typically in a Trust Account. This accomplishes the goals of funds isolation and funds safeguarding. |
+| Transfer Request | A request by a Payer DFSP to make a Transfer. |
+| Transfer Response | A Payee DFSP\'s response to a Transfer Request. |
+| Trust Account | A means of holding funds for the benefit of another party. eMoney Issuers are usually required by law to hold the value of end users\' eMoney accounts at a bank, typically in a Trust Account. This accomplishes the goals of funds isolation and funds safeguarding. |
 | Ubiquity | A term used to describe the ability to pay anyone and be paid by anyone. |
 | Unbanked | Unbanked people do not have a transaction account. Underbanked people may have a transaction account but do not actively use it. Underserved is a broad term referring to people who are the targets of financial inclusion initiatives. It is also sometimes used to refer to a person who has a transaction account but does not have additional DFS services. |
-| Uncovered Losses | Settlement Obligations that are not met by the responsible DFSP and are not discharged using collateral or other mechanisms |
+| Uncovered Losses | Settlement Obligations that are not met by the responsible DFSP and are not discharged using collateral or other mechanisms. |
 | Use Case | A term used to describe the purpose of the Payment. Specific Business Rules or Operating Guidelines may apply to Use Cases. |
 | User ID | A unique identifier of a user. This may be an MSISDN, bank account, some form of DFSP-provided ID, national ID, and so on. In a transaction, money is generally addressed to a user ID and not directly to an account ID. |
 | USSD | A communication technology that is used to send text between a mobile phone and an application program in the network. |
 | Value-Added Services | Services or products provided to End Users that End Users will pay to use or access, often used in coordination with Adjacencies. |
 | Voucher | A monetary value instrument commonly used to transfer funds to customers (Payees) who do not have an account at the Payer\'s FSP. This could be Payees with no account or account at another FSP. |
-| Wallet | A Transaction Account offered to customers by electronic money issuers |
-| Wallet to Bank | A P2P Secondary Use Case |
-| Wallet to Wallet | A P2P Secondary Use Case |
+| Wallet | A Transaction Account offered to customers by electronic money issuers. |
+| Wallet to Bank | A P2P Secondary Use Case. |
+| Wallet to Wallet | A P2P Secondary Use Case. |
 | Whitelist | A list or register of entities (registered users) that are being provided a particular privilege, service, mobility, access or recognition, especially those that were initially blacklisted. |
 | Women's Economic Empowerment (WEE): | Increasing women's access and rights to economic resources through decent work opportunities, property and assets, Financial Inclusion, and Platforms. |

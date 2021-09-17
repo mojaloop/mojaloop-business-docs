@@ -19,7 +19,9 @@
     "gitbook-plugin-variables": "1.1.0",
     "svgexport": "0.3.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "vuepress-theme-titanium": "^4.9.0"
+  },
   "scripts": {
     "run": "npm run gitbook:serve",
     "start": "npm run gitbook:serveNoReload",

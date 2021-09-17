@@ -29,7 +29,7 @@ The following documents are part of the project:
 
 ## **Introduction**
 
-A Scheme implementing a Level One aligned system, including those using Mojaloop reference code in the platform, will need to write Business Rules for the Scheme. A template for those Business Rules is included in this project. The Business Rules introduce the concept of Associated Documents, which are part of the Business Rules and have the same force -- DFSPs signing the Business Rules are also bound to follow provisions in Associated Documents.
+A Scheme implementing a Level One aligned system, including those using Mojaloop reference code in the platform, will need to write Business Rules for the Scheme. A template for those Business Rules is included in this project. The Business Rules introduce the concept of Associated Documents, which are part of the Business Rules and have the same force — DFSPs signing the Business Rules are also bound to follow provisions in Associated Documents.
 
 The Platform Operating Guideline is an important Associated Document that describes how the Scheme Platform will operate, and specifies the obligations and responsibilities of the Scheme, the Platform Operator, and the DFSPs.
 
@@ -37,67 +37,67 @@ This document is a template for such a Platform Operating Guideline. Many provis
 
 The Business Rules template that is part of this project can be used independent of a scheme's choice of platform. This Platform Operating Guideline is more specific to the use of Mojaloop as a platform.
 
-## **Table of Contents -- Platform Operating Guideline Template**
+## **Table of Contents — Platform Operating Guideline Template**
 
-[1 - About This Document](#1-about-this-document)
+[1 - About This Document](#_1-about-this-document)
 
-[1.1 - Scheme Services](#11-scheme-services)
+[1.1 - Scheme Services](#_1-1-scheme-services)
 
-[1.2 - Open API Specification](#12-open-api-specification)
+[1.2 - Open API Specification](#_1-2-open-api-specification)
 
-[1.3 - Scheme Use Cases](#13-scheme-use-cases)
+[1.3 - Scheme Use Cases](#_1-3-scheme-use-cases)
 
-[1.4 - Scheme Supported Identifiers](#14-scheme-supported-identifiers)
+[1.4 - Scheme Supported Identifiers](#_1-4-scheme-supported-identifiers)
 
-[2 - The Account Lookup Service](#2-the-account-lookup-service)
+[2 - The Account Lookup Service](#_2-the-account-lookup-service)
 
-[2.1 - Description of the Account Lookup Service](#21-description-of-the-account-lookup-service)
+[2.1 - Description of the Account Lookup Service](#_2-1-description-of-the-account-lookup-service)
 
-[2.2 - Party Request](#22-party-request)
+[2.2 - Party Request](#_2-2-party-request)
 
-[2.3 - Parties Query](#23-parties-query)
+[2.3 - Parties Query](#_2-3-parties-query)
 
-[2.4 - Parties Query Response](#24-parties-query-response)
+[2.4 - Parties Query Response](#_2-4-parties-query-response)
 
-[3 - The Quote Service](#3-the-quote-service)
+[3 - The Quote Service](#_3-the-quote-service)
 
-[3.1 - Description of the Quote Service](#31-description-of-the-quote-service)
+[3.1 - Description of the Quote Service](#_3-1-description-of-the-quote-service)
 
-[3.2 - Quote Request](#32-quote-request)
+[3.2 - Quote Request](#_3-2-quote-request)
 
-[3.3 - Quote Response](#33-quote-response)
+[3.3 - Quote Response](#_3-3-quote-response)
 
-[4 - The Transfer Service](#4-the-transfer-service)
+[4 - The Transfer Service](#_4-the-transfer-service)
 
-[4.1 - Description of the Transfer Service](#41-description-of-the-transfer-service)
+[4.1 - Description of the Transfer Service](#_4-1-description-of-the-transfer-service)
 
-[4.2 - Transfer Request](#42-transfer-request)
+[4.2 - Transfer Request](#_4-2-transfer-request)
 
-[4.3 - Request to Pay](#43-request-to-pay)
+[4.3 - Request to Pay](#_4-3-request-to-pay)
 
-[5 - The Settlement Service](#5-the-settlement-service)
+[5 - The Settlement Service](#_5-the-settlement-service)
 
-[5.1 - Transfer Settlement](#51-transfer-settlement)
+[5.1 - Transfer Settlement](#_5-1-transfer-settlement)
 
-[5.2 - Fee Settlement: Processing Fees](#52-fee-settlement:-processing-fees)
+[5.2 - Fee Settlement: Processing Fees](#_5-2-fee-settlement-processing-fees)
 
-[5.3 - Fee Settlement: Interchange Fees](#53-fee-settlement:-interchange-fees)
+[5.3 - Fee Settlement: Interchange Fees](#_5-3-fee-settlement-interchange-fees)
 
-[6 - The Scheme Management Service](#6-the-scheme-management-service)
+[6 - The Scheme Management Service](#_6-the-scheme-management-service)
 
-[6.1 - Description of the Scheme Management Service](#61-description-of-the-scheme-management-service)
+[6.1 - Description of the Scheme Management Service](#_6-1-description-of-the-scheme-management-service)
 
-[6.2 - The Registration Process](#62-the-registration-process)
+[6.2 - The Registration Process](#_6-2-the-registration-process)
 
-[6.3 - DFSP Customer Service](#63-dfsp-customer-service)
+[6.3 - DFSP Customer Service](#_6-3-dfsp-customer-service)
 
-[6.4 - Scheme System Management](#64-scheme-system-management)
+[6.4 - Scheme System Management](#_6-4-scheme-system-management)
 
-[7 - The Fraud Management Service](#7-the-fraud-management-service)
+[7 - The Fraud Management Service](#_7-the-fraud-management-service)
 
-[8 - Appendix: Scheme Supported Use Cases and System Parameters](#8-appendix:-scheme-supported-use-cases-and-system-parameters)
+[8 - Appendix: Scheme Supported Use Cases and System Parameters](#_8-appendix-scheme-supported-use-cases-and-system-parameters)
 
-[9 - Appendix: Merchant Category Codes](#9-appendix:-merchant-category-codes)
+[9 - Appendix: Merchant Category Codes](#_9-appendix-merchant-category-codes)
 
 ## 1. About This Document
 
@@ -121,7 +121,7 @@ These Platform Operating Guidelines specify operational and technical requiremen
 
 ### 1.2 Open API Specification
 
-Scheme protocols are based on the operational and data models defined in the specifications document "Open API for FSP Interoperability Specification" version 1.0 dated \[xx\]. Where **the** Scheme departs from this specification, such departures are documented here and will supersede the relevant sections of that document. The Scheme may update the version used by issuing an Operational Bulletin.
+Scheme protocols are based on the operational and data models defined in the specifications document "Open API for FSP Interoperability Specification" version 1.0 dated \[xx\]. Where the Scheme departs from this specification, such departures are documented here and will supersede the relevant sections of that document. The Scheme may update the version used by issuing an Operational Bulletin.
 
 ### 1.3 Scheme Use Cases
 
@@ -131,19 +131,21 @@ Some rules and operational specifications vary by Use Cases and Secondary Use Ca
 
 The Scheme supports certain Identifiers, or payment addresses, for use in making Transfers. The Identifier identifies the Payee whose Transaction Account is credited for the Transfer. Supported Scheme Identifiers are listed in an Appendix to the Business Rules.
 
-    _For each scheme supported identifier, this document should specify what the identifier is and how it is resolved (how it is determined which Payee DFSP is responsible for the transaction account associated with that identifier._
+For each scheme supported identifier, this document should specify what the identifier is and how it is resolved (how it is determined which Payee DFSP is responsible for the transaction account associated with that identifier.
 
 #### 1.4.1 Example: The MSISDN Identifier 
 
-    _Each scheme will have its own guidelines for each identifier; the provisions below could vary significantly depending on choices made._
+Each scheme will have its own guidelines for each identifier; the provisions below could vary significantly depending on choices made.
 
 - MSISDN's are mobile numbers which are globally unique. MSISDN's are the Transaction Account Identifier for DFPSs who are Mobile Network Operators and who are providing Transaction Accounts to their customers.
 
 - Use of the MSISDN as a Payee Identifier is limited to Transaction Accounts provided by DFSPs who are the Mobile Network Operator responsible for that MSISDN.
 
-    _Note: if MSISDN's are used for other Transaction Accounts, they are aliases, and a separate protocol for resolving them must be specified._
+::: tip NOTE
+If MSISDN's are used for other Transaction Accounts, they are aliases, and a separate protocol for resolving them must be specified.
+:::
 
--   A Party Request for an MSISDN is resolved by a MSISDN directory service determined by the Scheme. The Scheme may specify directory service maintenance obligations for Mobile Network Operator DFSPs from time to time.
+- A Party Request for an MSISDN is resolved by a MSISDN directory service determined by the Scheme. The Scheme may specify directory service maintenance obligations for Mobile Network Operator DFSPs from time to time.
 
 #### 1.4.2 Example: The Bank Account Number Identifier 
 
@@ -225,7 +227,7 @@ Schemes may wish to enable Scheme ID's
 
 The Scheme may wish to provide some mechanism for porting a Scheme ID from one DFSP to another.
 
-The following sections describe each service and the obligations and responsibilities of stakeholders. Each service consists of processes: most of the processes are linked to specific API calls specified in the "Open API Specification" section of this document.
+The following sections describe each service and the obligations and responsibilities of stakeholders. Each service consists of processes: most of the processes are linked to specific API calls specified in the [Open API Specification](#_1-2-open-api-specification) section of this document.
 
 ## 2. The Account Lookup Service
 
@@ -450,15 +452,17 @@ Scheme rules will need to account for provisions and procedures in the event of 
 
 ### 5.2 Fee Settlement: Processing Fees
 
-This section is not yet written
+This section is not yet written.
 
 ### 5.3 Fee Settlement: Interchange Fees
 
-This section is not yet written
+This section is not yet written.
 
 ## 6. The Scheme Management Service
 
-Note: there is a parallel Platform Operator Service that is necessary for the operation of the platform which is not described in this document.
+::: tip NOTE
+There is a parallel Platform Operator Service that is necessary for the operation of the platform which is not described in this document.
+:::
 
 ### 6.1 Description of the Scheme Management Service
 
@@ -503,7 +507,7 @@ Note: there is a parallel Platform Operator Service that is necessary for the op
 _This section has not yet been written, but is expected to include the
 following sections:_
     
-1. _Description of the Fraud Management Utility -- Purpose and Scope_
+1. _Description of the Fraud Management Utility — Purpose and Scope_
 
 2. _The Shared Transaction Database_
 
@@ -519,7 +523,7 @@ following sections:_
 
 ## 8. Appendix: Scheme Supported Use Cases and System Parameters
 
-_This is the same table as appears in the Business Rules document, but it has added the systemic codes necessary for the Platform to recognize a transaction as belonging to a given use case or secondary use case. A scheme would only define Secondary Use Cases if it wanted to write rules and/or specify fees that are unique to that Secondary Use Case_
+_This is the same table as appears in the Business Rules document, but it has added the systemic codes necessary for the Platform to recognize a transaction as belonging to a given use case or secondary use case. A scheme would only define Secondary Use Cases if it wanted to write rules and/or specify fees that are unique to that Secondary Use Case._
 
 _This table is an example of a table of Use Cases and Secondary Use Cases that a scheme might support._
 

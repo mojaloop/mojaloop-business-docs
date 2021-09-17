@@ -39,37 +39,37 @@ Scheme Business Rules Template
 
 ## **Table of Contents**
 
-[1 - About These Scheme Business Rules](#1-about-these-scheme-business-rules)
+[1 - About These Scheme Business Rules](#_1-about-these-scheme-business-rules)
 
-[2 - Scheme Goals](#2-scheme-goals)
+[2 - Scheme Goals](#_2-scheme-goals)
 
-[3 - Participation in Scheme](#3-participation-in-scheme)
+[3 - Participation in Scheme](#_3-participation-in-scheme)
 
-[4 - Scheme Business Rules](#4-scheme-business-rules)
+[4 - Scheme Business Rules](#_4-scheme-business-rules)
 
-[5 - Responsibilities and Obligations of the Scheme](#5-responsibilities-and-obligations-of-the-scheme)
+[5 - Responsibilities and Obligations of the Scheme](#_5-responsibilities-and-obligations-of-the-scheme)
 
-[6 - Participant Responsibilities and Obligations of Participants](#6-participant-responsibilities-and-obligations-of-participants)
+[6 - Participant Responsibilities and Obligations of Participants](#_6-participant-responsibilities-and-obligations-of-participants)
 
-[7 - Liability - Allocation of Responsibilities](#7-liability---allocation-of-responsibilities)
+[7 - Liability - Allocation of Responsibilities](#_7-liability-allocation-of-responsibilities)
 
-[8 - Security, Risk Management, and Data Confidentiality](#8-security-risk-management-and-data-confidentiality)
+[8 - Security, Risk Management, and Data Confidentiality](#_8-security-risk-management-and-data-confidentiality)
 
-[9 - Scheme Platform and Services](#9-scheme-platform-and-services)
+[9 - Scheme Platform and Services](#_9-scheme-platform-and-services)
 
-[10 - Exception Management](#10-exception-management)
+[10 - Exception Management](#_10-exception-management)
 
-[11 - Appendix: Associated Documents](#11-appendix-associated-documents)
+[11 - Appendix: Associated Documents](#_11-appendix-associated-documents)
 
-[12 - Appendix: Onboarding and Exit Processes](#12-appendix-onboarding-and-exit-processes)
+[12 - Appendix: Onboarding and Exit Processes](#_12-appendix-onboarding-and-exit-processes)
 
-[13 - Appendix: Scheme Services](#13-appendix-scheme-services)
+[13 - Appendix: Scheme Services](#_13-appendix-scheme-services)
 
-[14 - Appendix: Scheme Supported Use Cases](#14-appendix-scheme-supported-use-cases)
+[14 - Appendix: Scheme Supported Use Cases](#_14-appendix-scheme-supported-use-cases)
 
-[15 - Appendix: Scheme Fee Schedule](#15-appendix-scheme-fee-schedule)
+[15 - Appendix: Scheme Fee Schedule](#_15-appendix-scheme-fee-schedule)
 
-[16 - Appendix: Risk Management, Security, Privacy, and Service Standards](#16-appendix-risk-management-security-privacy-and-service-standards)
+[16 - Appendix: Risk Management, Security, Privacy, and Service Standards](#_16-appendix-risk-management-security-privacy-and-service-standards)
 
 ## **A Guide to This Document**
 
@@ -77,9 +77,11 @@ Section Headings and bulleted entries underneath section headings are actual pro
 
 ## 1. About These Scheme Business Rules
 
-### 1.1 These are the Scheme Business Rules. 
+### 1.1 These are the Scheme Business Rules
 
-<ul><i>Note that the Mojaloop software can be used for bilateral exchanges among DFSPs, as well as within a Scheme structure that uses a switch. This document assumes the latter; that the Scheme is either providing, hiring, or otherwise arranging that interoperable transactions are exchanged through a switch. Some of the concepts in these rules apply only to this configuration; others would be useful in bilateral agreements as well.</i></ul>
+::: tip NOTE
+The Mojaloop software can be used for bilateral exchanges among DFSPs, as well as within a Scheme structure that uses a switch. This document assumes the latter; that the Scheme is either providing, hiring, or otherwise arranging that interoperable transactions are exchanged through a switch. Some of the concepts in these rules apply only to this configuration; others would be useful in bilateral agreements as well.
+:::
 
 ### 1.2 Scheme Ownership 
 
@@ -193,7 +195,7 @@ Section Headings and bulleted entries underneath section headings are actual pro
 
 - The Scheme should consider if it will guaranty to the Payee DFSP any Fulfilled Transfer made in accordance with these Rules
 
-<ul><mark><i>The Scheme should consider if it will guaranty to the Payee DFSP any Fulfilled Transfer made in accordance with these Rules</i></mark></ul>
+<ul><i>The Scheme should consider if it will guaranty to the Payee DFSP any Fulfilled Transfer made in accordance with these Rules.</i></ul>
 
 ### 5.2 Writing, Updating, and Maintaining the Rules
 
@@ -286,7 +288,7 @@ Section Headings and bulleted entries underneath section headings are actual pro
 
   - Acceptance of the Transfer will not put the Payee account into a status not permitted by Applicable Law or the Participant's account policies and agreements.
 
-  - The Payee Participant affirms, upon initiation of a Quote Response other than an error response, that the Payee account has been Validated -- it is open, in good standing, and able to accept the proposed Transfer Amount at that point in time.
+  - The Payee Participant affirms, upon initiation of a Quote Response other than an error response, that the Payee account has been Validated — it is open, in good standing, and able to accept the proposed Transfer Amount at that point in time.
 
 - The Payee Participant affirms, upon initiation of a Quote Response other than an error response, that a Transfer to the designated account complies at that point in time with applicable AML/CTF and KYC requirements.
 
@@ -354,7 +356,7 @@ Section Headings and bulleted entries underneath section headings are actual pro
 
 ### 8.2 Risk Management Policies
 
-<ul><i>This section assumes that the development of risk management policies by the Scheme and its participants will be evolving. This section contemplates that some of these policies will (eventually) be in the Rules; others will not</i></ul>
+<ul><i>This section assumes that the development of risk management policies by the Scheme and its participants will be evolving. This section contemplates that some of these policies will (eventually) be in the Rules; others will not.</i></ul>
 
 - Risk management policies and procedures may be stated in the Rules, in Associated Documents, or in other written policy documents created by the Scheme and distributed to Participants
 
