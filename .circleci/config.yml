@@ -32,6 +32,18 @@ defaults_docker_node: &defaults_docker_node
   docker:
     - image: node:10.15-alpine
 
+
+defaults_git_env_vars: &defaults_git_env_vars
+  name: setup environment vars
+  command: |
+    echo 'export GITBOOK_TARGET_BRANCH=$GITBOOK_TARGET_BRANCH' >> $BASH_ENV
+    echo 'export GITHUB_TOKEN=$GITHUB_TOKEN' >> $BASH_ENV
+    echo 'export GITHUB_PROJECT_USERNAME=$CIRCLE_PROJECT_USERNAME' >> $BASH_ENV
+    echo 'export GITHUB_PROJECT_REPONAME=$CIRCLE_PROJECT_REPONAME' >> $BASH_ENV
+    echo 'export GITHUB_TAG=$CIRCLE_TAG' >> $BASH_ENV
+    echo 'export GIT_CI_USER=$GIT_CI_USER' >> $BASH_ENV
+    echo 'export GIT_CI_EMAIL=$GIT_CI_EMAIL' >> $BASH_ENV
+
 defaults_git_identity_setup: &defaults_git_identity_setup
   name: Setup Git Identity
   command: |
@@ -75,6 +87,8 @@ jobs:
               py3-pip
 
             pip3 install awscli
+      - run:
+          <<: *defaults_git_env_vars
       - run:
           <<: *defaults_git_identity_setup
       - run:
