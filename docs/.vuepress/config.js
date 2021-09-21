@@ -9,6 +9,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
   description: description,
+  base: '/mojaloop-business-docs/',
 
   /**
    * Customize Markdown

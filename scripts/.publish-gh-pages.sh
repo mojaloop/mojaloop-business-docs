@@ -3,11 +3,8 @@
 export GIT_BRANCH=$(git branch | grep \* | cut -d ' ' -f2)
 echo "Publishing current branch: $GIT_BRANCH..."
 
-echo "Checking out vue-pages"
-git checkout vue-pages
-
 echo "Copying..."
-git pull mojaloop vue-pages --rebase
+# git pull mojaloop vue-pages --rebase
 
 echo "Install dependencies..."
 yarn
@@ -15,17 +12,17 @@ yarn
 echo "Build"
 yarn build
 
-echo "Staging general changes..."
-git add .
+echo "Switching to dist folder..."
+cd docs/.vuepress/dist
 
-echo "Staging distribution..."
-git add --force docs/.vuepress/dist
+echo "Iniitialising repo"
+git init
 
-echo "Staging versions..."
-git add --force website
+echo "Staging changes..."
+git add -A
 
 # commit
 git commit -a -m "Update vue-pages on github..."
 
-# push to the origin
-git push mojaloop vue-pages
+# push to the gh-pages
+git push -u -f git@github.com:mojaloop/mojaloop-business-docs.git master:vue-pages
