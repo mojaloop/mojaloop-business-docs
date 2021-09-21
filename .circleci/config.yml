@@ -36,7 +36,6 @@ defaults_docker_node: &defaults_docker_node
 defaults_git_env_vars: &defaults_git_env_vars
   name: setup environment vars
   command: |
-    echo 'export GITBOOK_TARGET_BRANCH=$GITBOOK_TARGET_BRANCH' >> $BASH_ENV
     echo 'export GITHUB_TOKEN=$GITHUB_TOKEN' >> $BASH_ENV
     echo 'export GITHUB_PROJECT_USERNAME=$CIRCLE_PROJECT_USERNAME' >> $BASH_ENV
     echo 'export GITHUB_PROJECT_REPONAME=$CIRCLE_PROJECT_REPONAME' >> $BASH_ENV
