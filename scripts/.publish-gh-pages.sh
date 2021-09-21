@@ -22,7 +22,7 @@ echo "Staging changes..."
 git add -A
 
 # commit
-git commit -a -m "Update vue-pages on github..."
+git commit -a -m "Publishing vue-pages on github..."
 
 # push to the gh-pages
 git push -u -f git@github.com:mojaloop/mojaloop-business-docs.git master:vue-pages
