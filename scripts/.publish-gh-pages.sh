@@ -28,4 +28,4 @@ git add --force website
 git commit -a -m "Update gh-pages on github..."
 
 # push to the origin
-git push mojaloop gh-pages
+# git push mojaloop gh-pages
