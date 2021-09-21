@@ -51,7 +51,7 @@ The latest version will automatically be loaded when access the website, with a 
 
 We deploy these docs automatically with CircleCI upon merges to the `master` branch.
 
-Go to: https://ref-arch-docs.moja-lab.live/ to see the live site!
+Go to: https://docs.mojaloop.io/mojaloop-business-docs/ to see the live site!
 
 The deploy script does not currently take versioning into account, but will in the future.
 
