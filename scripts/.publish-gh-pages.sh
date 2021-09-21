@@ -3,11 +3,11 @@
 export GIT_BRANCH=$(git branch | grep \* | cut -d ' ' -f2)
 echo "Publishing current branch: $GIT_BRANCH..."
 
-echo "Checking out gh-pages"
-git checkout gh-pages
+echo "Checking out vue-pages"
+git checkout vue-pages
 
 echo "Copying..."
-git pull mojaloop gh-pages --rebase
+git pull mojaloop vue-pages --rebase
 
 echo "Install dependencies..."
 yarn
@@ -25,7 +25,7 @@ echo "Staging versions..."
 git add --force website
 
 # commit
-git commit -a -m "Update gh-pages on github..."
+git commit -a -m "Update vue-pages on github..."
 
 # push to the origin
-# git push mojaloop gh-pages
+git push mojaloop vue-pages
