@@ -1,48 +1,31 @@
 {
   "name": "mojaloop-business-docs",
-  "version": "8.7.0",
+  "version": "9.0.0",
   "description": "Mojaloop Business Documentation GitBook Project",
-  "dependencies": {
-    "express": "4.17.1",
-    "gitbook-cli": "2.3.2",
-    "gitbook-plugin-back-to-top-button": "0.1.4",
-    "gitbook-plugin-changelog": "1.0.1",
-    "gitbook-plugin-collapsible-chapters": "0.1.8",
-    "gitbook-plugin-editlink": "1.0.2",
-    "gitbook-plugin-include": "0.1.0",
-    "gitbook-plugin-insert-logo": "0.1.5",
-    "gitbook-plugin-page-toc": "1.1.1",
-    "gitbook-plugin-plantuml-svg": "1.0.1",
-    "gitbook-plugin-swagger": "0.2.0",
-    "gitbook-plugin-theme-api": "1.1.2",
-    "gitbook-plugin-uml": "1.0.1",
-    "gitbook-plugin-variables": "1.1.0",
-    "svgexport": "0.3.2"
-  },
-  "devDependencies": {
-    "vuepress-theme-titanium": "^4.9.0"
-  },
+  "main": "index.js",
+  "contributors": [
+    "Vanda Illyes <vanda.illyes@modusbox.com>",
+    "Miguel de Barros <miguel.debarros@modusbox.com>"
+  ],
+  "repository": "https://github.com/mojaloop/mojaloop-business-docs",
   "scripts": {
-    "run": "npm run gitbook:serve",
-    "start": "npm run gitbook:serveNoReload",
-    "gitbook:install": "gitbook install",
-    "gitbook:build": "gitbook build",
-    "gitbook:serve": "gitbook serve --port 8989",
-    "gitbook:serveNoReload": "gitbook serve --no-live --port 8989",
-    "gitbook:export:pdf": "gitbook pdf ./",
-    "docker:build": "docker build --no-cache -t mojaloop/mojaloop-business-docs .",
-    "docker:push": "docker push mojaloop/mojaloop-business-docs",
-    "docker:run": "docker run --rm -it --name mojadoc -p 8989:8989 mojaloop/mojaloop-business-docs",
-    "express:run": "node index.js"
+    "dev": "vuepress dev docs --no-cache",
+    "build": "vuepress build docs",
+    "dep:check": "npx ncu -e 2",
+    "dep:update": "npx ncu -u",
+    "ci": "yarn install --frozen-lockfile"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mojaloop/mojaloop-business-docs.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mojaloop/mojaloop-business-docs/issues"
-  },
-  "homepage": "https://github.com/mojaloop/mojaloop-business-docs#readme"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "markdown-it": "^12.2.0",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-multimd-table": "^4.1.1",
+    "npm-check-updates": "^11.8.5",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-global-variables": "^0.2.0",
+    "vuepress-plugin-versioning": "^4.10.2",
+    "vuepress-theme-titanium": "^4.9.0"
+  }
 }
