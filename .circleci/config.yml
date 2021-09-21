@@ -32,6 +32,16 @@ defaults_docker_node: &defaults_docker_node
   docker:
     - image: node:10.15-alpine
 
+defaults_git_identity_setup: &defaults_git_identity_setup
+  name: Setup Git Identity
+  command: |
+    echo "Setting BASH_ENV..."
+    source $BASH_ENV
+    git config --global user.email "$GIT_CI_USER"
+    git config --global user.password "$GIT_CI_PASSWORD"
+    git config --global user.name "$GIT_CI_EMAIL"
+    git remote add $GITHUB_PROJECT_USERNAME https://$GIT_CI_USER:$GITHUB_TOKEN@github.com/$GITHUB_PROJECT_USERNAME/$GITHUB_PROJECT_REPONAME.git
+
 defaults_slack_announcement: &defaults_slack_announcement
   name: Slack announcement for tag releases
   command: |
@@ -65,6 +75,8 @@ jobs:
               py3-pip
 
             pip3 install awscli
+      - run:
+          <<: *defaults_git_identity_setup
       - run:
           name: run build and publish gh pages script
           command: ./scripts/.publish-gh-pages.sh
