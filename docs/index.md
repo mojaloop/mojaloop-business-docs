@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /mojaloop_logo_med.png
-tagline: Mojaloop Business Operations Framework for Hub Operators
+tagline: Mojaloop Business Documents for Schemes & Hub Operators
 actionText: Getting Started →
 actionLink: /guides/index.html
 #features:

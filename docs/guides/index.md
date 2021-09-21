@@ -1,6 +1,6 @@
-# About the Mojaloop BizOps Framework documents
+# About the Mojaloop Business documents
 
-Mojaloop BizOps Framework documents are presented in two main groups:
+Mojaloop Business documents are presented in two main groups:
 
 * [**Scheme Choices**](#scheme-choices): documents that provide assistance with defining scheme rules, operating guidelines, as well as key business and design choices
 * [**Hub Operations**](#hub-operations): guides that provide practical information about the various aspects of operating a Mojaloop Hub
