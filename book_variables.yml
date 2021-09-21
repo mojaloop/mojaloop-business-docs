@@ -1,9 +1,0 @@
-## INSTRUCTIONS
-# Insert variables to be loaded into Gitbook
-# They can be referenced via {{ book.importedVars.<variable_name> }} the following example
-#
-# ```markdown
-# This is the value of my variable {{ book.importedVars.<variable_name> }}
-#
-#```
-#
