@@ -76,6 +76,16 @@ jobs:
 
             pip3 install awscli
       - run:
+          name: setup environment vars
+          command: |
+            echo 'export GITBOOK_TARGET_BRANCH=$GITBOOK_TARGET_BRANCH' >> $BASH_ENV
+            echo 'export GITHUB_TOKEN=$GITHUB_TOKEN' >> $BASH_ENV
+            echo 'export GITHUB_PROJECT_USERNAME=$CIRCLE_PROJECT_USERNAME' >> $BASH_ENV
+            echo 'export GITHUB_PROJECT_REPONAME=$CIRCLE_PROJECT_REPONAME' >> $BASH_ENV
+            echo 'export GITHUB_TAG=$CIRCLE_TAG' >> $BASH_ENV
+            echo 'export GIT_CI_USER=$GIT_CI_USER' >> $BASH_ENV
+            echo 'export GIT_CI_EMAIL=$GIT_CI_EMAIL' >> $BASH_ENV
+      - run:
           <<: *defaults_git_identity_setup
       - run:
           name: run build and publish gh pages script
