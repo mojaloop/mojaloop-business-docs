@@ -1,6 +1,6 @@
 {
   "name": "mojaloop-business-docs",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "description": "Mojaloop Business Documentation GitBook Project",
   "main": "index.js",
   "contributors": [
