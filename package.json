@@ -5,7 +5,15 @@
   "main": "index.js",
   "contributors": [
     "Vanda Illyes <vanda.illyes@modusbox.com>",
-    "Miguel de Barros <miguel.debarros@modusbox.com>"
+    "Carol Coye Benson <carol@glenbrook.com>",
+	"David Shiyanbade <david.shiyanbade@modusbox.com>",
+	"John Muthiora <john.muthiora@modusbox.com>",
+	"Michael Richards <michael.richards@modusbox.com>",
+	"Miguel de Barros <miguel.debarros@modusbox.com>",
+	"Paul Baker <paul.baker@modusbox.com>",
+	"Paul Makin <paul.makin@modusbox.com>",
+	"Sam Kummary <sam@modusbox.com>",
+	"Victor Akidiva <victor.akidiva@modusbox.com>"
   ],
   "repository": "https://github.com/mojaloop/mojaloop-business-docs",
   "scripts": {
