@@ -1,4 +1,4 @@
-# RBAC Context  [WIP]
+# RBAC Context
 
 An individual who needs to access the various Mojaloop Hub management portals can be registered and an &quot;account&quot; generated, which can be used to access various aspects of an operational instance of a Mojaloop Hub and to provide a basis for auditing that access by tying activities to the original registration. For the purposes of this document, an &quot;account&quot; is a digital identity, a means of authenticating (linking) the person asserting that identity to the original registration, and a set of attributes, which will include - among other things - a set of access rights, or rights that are enabled through the possession of those attributes.
 
