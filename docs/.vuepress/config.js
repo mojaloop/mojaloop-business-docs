@@ -195,8 +195,10 @@ module.exports = {
             '/huboperations/portalv2/settling',
             '/huboperations/portalv2/checking-settlement-details',
             '/huboperations/portalv2/monitoring-dfsp-financial-details',
+            '/huboperations/portalv2/enabling-disabling-transactions',
             '/huboperations/portalv2/recording-funds-in-out',
-            '/huboperations/portalv2/updating-ndc'
+            '/huboperations/portalv2/updating-ndc',
+            '/huboperations/portalv2/searching-for-transfer-data'
           ]
         },
         {  

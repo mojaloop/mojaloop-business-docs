@@ -65,16 +65,28 @@ The following table lists all available functionalities, the navigation paths wh
 <td><p>✓</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="recording-funds-in-out.html">Record deposits to or withdrawals from DFSPs' liquidity accounts</a></p></td>
+<td><p><a href="enabling-disabling-transactions.html">Disable and re-enable transactions for a DFSP</a></p></td>
 <td><p><strong>Participants</strong> &gt; <strong>DFSP Financial Positions</strong></p></td>
 <td><p>✓</p></td>
 <td><p>✓</p></td>
 </tr>
 <tr class="odd">
+<td><p><a href="recording-funds-in-out.html">Record deposits to or withdrawals from DFSPs' liquidity accounts</a></p></td>
+<td><p><strong>Participants</strong> &gt; <strong>DFSP Financial Positions</strong></p></td>
+<td><p>✓</p></td>
+<td><p>✓</p></td>
+</tr>
+<tr class="even">
 <td><p><a href="updating-ndc.html">Update a DFSP’s Net Debit Cap</a></p></td>
 <td><p><strong>Participants</strong> &gt; <strong>DFSP Financial Positions</strong></p></td>
 <td><p>✓</p></td>
 <td><p>x</p></td>
+</tr>
+<tr class="odd">
+<td><p><a href="searching-for-transfer-data.html">Search for transfer data</a></p></td>
+<td><p><strong>Transfers</strong> &gt; <strong>Find Transfers</strong></p></td>
+<td><p>✓</p></td>
+<td><p>✓</p></td>
 </tr>
 </tbody>
 </table>
