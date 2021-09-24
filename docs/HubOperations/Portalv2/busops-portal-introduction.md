@@ -13,8 +13,10 @@ The portal provides functionality to:
 * [settle settlements](settling.md)
 * [search for settlements and check settlement details](checking-settlement-details.md)
 * [monitor DFSP financial details such as Balance, current Position, Net Debit Cap, percentage of NDC used](monitoring-dfsp-financial-details.md)
+* [disable and re-enable transactions for a DFSP](enabling-disabling-transactions.md)
 * [update a DFSP's Net Debit Cap](updating-ndc.md)
 * [record deposits to or withdrawals from a DFSP's liquidity account](recording-funds-in-out.md)
+* [search for transfer data](searching-for-transfer-data.md)
 
 ::: tip NOTE
 The Finance Portal currently only supports settlement processes that rely on the Deferred Net Settlement model.

@@ -1,6 +1,6 @@
 # Checking settlement window details
 
-The **Settlement Window Management** page allows you to:
+The **Settlement Windows** page allows you to:
 
 * search for settlement windows based on multiple search criteria
 * close an open settlement window
@@ -21,11 +21,11 @@ A settlement window is a time period between two successive settlements. It has 
 
 Transfers that take place in the same settlement window are settled in batch after the end of the settlement window.
 
-To access the **Settlement Window Management** page, go to **Settlement** > **Settlement Windows**.
+To access the **Settlement Windows** page, go to **Settlement** > **Settlement Windows**.
 
 ![Managing settlement windows](../../.vuepress/public/settlement_window_mgmt.png)
 
-The **Settlement Window Management** page provides a list of settlement windows that you can filter using various search criteria:
+The **Settlement Windows** page provides a list of settlement windows that you can filter using various search criteria:
 
 * **Date**: Provides a drop-down list of time ranges. The default value is **Today**. \
 \
