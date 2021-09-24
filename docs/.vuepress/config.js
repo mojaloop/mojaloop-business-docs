@@ -4,12 +4,11 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Mojaloop Business Operations Documentation',
+  title: 'Mojaloop Business Operations Documentation' ,
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: 'Mojaloop Business Operations Documentation set that can be used as templates by Schemes implementing Mojaloop',
-  host: 'localhost',
+  description: description,
   base: '/mojaloop-business-docs/',
 
   /**
@@ -85,23 +84,23 @@ module.exports = {
         items: [
           {
             text: 'Platform Operating Guideline Template',
-            link: '/scheme/platform-operating-guideline.html'
+            link: '/Scheme/platform-operating-guideline.html',
           },
           {
             text: 'Scheme Business Rules Template',
-            link: '/scheme/scheme-business-rules.html'
+            link: '/Scheme/scheme-business-rules.html',
           },
           {
             text: 'Scheme Key Choices',
-            link: '/scheme/scheme-key-choices.html'
+            link: '/Scheme/scheme-key-choices.html',
           },
           {
             text: 'Scheme Participation Agreement Template',
-            link: '/scheme/scheme-participation-agreement.html'
+            link: '/Scheme/scheme-participation-agreement.html',
           },
           {
             text: 'Uniform Glossary Template',
-            link: '/scheme/scheme-uniform-glossary.html'
+            link: '/Scheme/scheme-uniform-glossary.html',
           },
         ]
       },
@@ -110,23 +109,23 @@ module.exports = {
         items: [
           {
             text: 'Technical Operations Guide',
-            link: '/huboperations/techops/tech-ops-introduction.html'
+            link: '/HubOperations/TechOps/tech-ops-introduction.html',
           },
           {
             text: 'Settlement Management Guide',
-            link: '/huboperations/settlement/settlement-management-introduction.html'
+            link: '/HubOperations/Settlement/settlement-management-introduction.html',
           },
           {
             text: 'Guide to Finance Portal v2',
-            link: '/huboperations/portalv2/busops-portal-introduction.html'
+            link: '/HubOperations/Portalv2/busops-portal-introduction.html',
           },
           {
             text: 'Roled-Based Access Control',
-            link: '/huboperations/rbac/role-based-access-control.html'
+            link: '/HubOperations/RBAC/Role-based-access-control.html',
           },
           {
             text: 'Onboarding Guide for the Hub Operator',
-            link: '/huboperations/onboarding/onboarding-introduction.html'
+            link: '/HubOperations/Onboarding/onboarding-introduction.html',
           },
         ]
       },
@@ -138,49 +137,49 @@ module.exports = {
     sidebar: [
     {
       title: 'Scheme Guide',
-      path: '/scheme/platform-operating-guideline',
+      path: '/Scheme/platform-operating-guideline',
       collapsable: false, // optional, defaults to true
       sidebarDepth: 1,    // optional, defaults to 1
       children: [
-          '/scheme/platform-operating-guideline',
-          '/scheme/scheme-business-rules',
-          '/scheme/scheme-key-choices',
-          '/scheme/scheme-participation-agreement',
-          '/scheme/scheme-uniform-glossary'
+          '/Scheme/platform-operating-guideline',
+          '/Scheme/scheme-business-rules',
+          '/Scheme/scheme-key-choices',
+          '/Scheme/scheme-participation-agreement',
+          '/Scheme/scheme-uniform-glossary'
       ]
     },
     {
       title: 'Hub Operations Guide',
-      path: '/huboperations/techops/tech-ops-introduction',
+      path: '/HubOperations/TechOps/tech-ops-introduction',
       collapsable: false, // optional, defaults to true
       sidebarDepth: 1,    // optional, defaults to 1
       children: [
         {
           title: 'Technical Operations Guide',
           collapsable: true,
-          path: '/huboperations/techops/tech-ops-introduction',
+          path: '/HubOperations/TechOps/tech-ops-introduction',
           sidebarDepth: 2,
           children: [
-            '/huboperations/techops/tech-ops-introduction',
-            '/huboperations/techops/incident-management',
-            '/huboperations/techops/problem-management',
-            '/huboperations/techops/change-management',
-            '/huboperations/techops/release-management',
-            '/huboperations/techops/defect-triage',
-            '/huboperations/techops/key-terms-kpis',
-            '/huboperations/techops/incident-management-escalation-matrix',
-            '/huboperations/techops/service-level-agreements'
+            '/HubOperations/TechOps/tech-ops-introduction',
+            '/HubOperations/TechOps/incident-management',
+            '/HubOperations/TechOps/problem-management',
+            '/HubOperations/TechOps/change-management',
+            '/HubOperations/TechOps/release-management',
+            '/HubOperations/TechOps/defect-triage',
+            '/HubOperations/TechOps/key-terms-kpis',
+            '/HubOperations/TechOps/incident-management-escalation-matrix',
+            '/HubOperations/TechOps/service-level-agreements'
           ]
         },
         {
           title: 'Settlement Management Guide',
           collapsable: true,
-          path: '/huboperations/settlement/settlement-management-introduction',
+          path: '/HubOperations/Settlement/settlement-management-introduction',
           sidebarDepth: 2,
           children: [
-            '/huboperations/settlement/settlement-management-introduction',
-            '/huboperations/settlement/settlement-basic-concepts',
-            '/huboperations/settlement/ledgers-in-the-hub'
+            '/HubOperations/Settlement/settlement-management-introduction',
+            '/HubOperations/Settlement/settlement-basic-concepts',
+            '/HubOperations/Settlement/ledgers-in-the-hub',
           ]
         },
         {
@@ -188,37 +187,37 @@ module.exports = {
           collapsable: true,
           sidebarDepth: 2,
           children: [
-            '/huboperations/portalv2/busops-portal-introduction',
-            '/huboperations/portalv2/settlement-business-process',
-            '/huboperations/portalv2/accessing-the-portal',
-            '/huboperations/portalv2/managing-windows',
-            '/huboperations/portalv2/settling',
-            '/huboperations/portalv2/checking-settlement-details',
-            '/huboperations/portalv2/monitoring-dfsp-financial-details',
-            '/huboperations/portalv2/enabling-disabling-transactions',
-            '/huboperations/portalv2/recording-funds-in-out',
-            '/huboperations/portalv2/updating-ndc',
-            '/huboperations/portalv2/searching-for-transfer-data'
+            '/HubOperations/Portalv2/busops-portal-introduction',
+            '/HubOperations/Portalv2/settlement-business-process',
+            '/HubOperations/Portalv2/accessing-the-portal',
+            '/HubOperations/Portalv2/managing-windows',
+            '/HubOperations/Portalv2/settling',
+            '/HubOperations/Portalv2/checking-settlement-details',
+            '/HubOperations/Portalv2/monitoring-dfsp-financial-details',
+            '/HubOperations/Portalv2/enabling-disabling-transactions',
+            '/HubOperations/Portalv2/recording-funds-in-out',
+            '/HubOperations/Portalv2/updating-ndc',
+            '/HubOperations/Portalv2/searching-for-transfer-data'
           ]
         },
         {  
           title: 'Roled-Based Access Control',
           collapsable: true,
-          path: '/huboperations/rbac/role-based-access-control',
+          path: '/HubOperations/RBAC/Role-based-access-control',
           sidebarDepth: 2,
           children: [
-            '/huboperations/rbac/role-based-access-control'
+            '/HubOperations/RBAC/Role-based-access-control'
           ]
         },
         {  
           title: 'Onboarding Guide for the Hub Operator',
           collapsable: true,
-          path: '/huboperations/onboarding/onboarding-introduction',
+          path: '/HubOperations/Onboarding/onboarding-introduction',
           sidebarDepth: 2,
           children: [
-            '/huboperations/onboarding/onboarding-introduction',
-            '/huboperations/onboarding/business-onboarding',
-            '/huboperations/onboarding/technical-onboarding'
+            '/HubOperations/Onboarding/onboarding-introduction',
+            '/HubOperations/Onboarding/business-onboarding',
+            '/HubOperations/Onboarding/technical-onboarding',
           ]
         }       
       ]
@@ -230,16 +229,7 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    'versioning',
-    '@snowdog/vuepress-plugin-pdf-export',
-    ['vuepress-plugin-medium-zoom'],
-    [
-      '@vuepress/last-updated',
-      {
-        dateOptions: {
-          hours12: true,
-        },
-      }
-    ]
+    '@vuepress/plugin-medium-zoom',
+    'versioning'
   ]
 }
