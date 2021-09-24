@@ -194,8 +194,10 @@ module.exports = {
             '/HubOperations/Portalv2/settling',
             '/HubOperations/Portalv2/checking-settlement-details',
             '/HubOperations/Portalv2/monitoring-dfsp-financial-details',
+            '/HubOperations/Portalv2/enabling-disabling-transactions',
             '/HubOperations/Portalv2/recording-funds-in-out',
-            '/HubOperations/Portalv2/updating-ndc'
+            '/HubOperations/Portalv2/updating-ndc',
+            '/HubOperations/Portalv2/searching-for-transfer-data'
           ]
         },
         {  
