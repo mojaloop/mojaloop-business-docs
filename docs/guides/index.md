@@ -7,15 +7,15 @@ Mojaloop Business documents are presented in two main groups:
 
 ## Scheme Choices
 
-The [Platform Operating Guideline Template](/scheme/platform-operating-guideline.md) provides a template for describing how the Scheme Platform will operate, and for specifying the obligations and responsibilities of the Scheme, the Platform Operator, and the DFSPs.
+The [Platform Operating Guideline Template](/Scheme/platform-operating-guideline.md) provides a template for describing how the Scheme Platform will operate, and for specifying the obligations and responsibilities of the Scheme, the Platform Operator, and the DFSPs.
 
-The [Scheme Business Rules Template](/scheme/scheme-business-rules.md) provides a template for defining the Business Rules that govern the rights and responsibilities of participants in a Mojaloop scheme.
+The [Scheme Business Rules Template](/Scheme/scheme-business-rules.md) provides a template for defining the Business Rules that govern the rights and responsibilities of participants in a Mojaloop scheme.
 
-The [Scheme Key Choices](/scheme/scheme-key-choices.md) document describes and discusses some of the most significant business and design choices that affect both the technical implementation of Mojaloop and the Business Rules which the Scheme will write, and which Participant DFSPs will agree to follow.
+The [Scheme Key Choices](/Scheme/scheme-key-choices.md) document describes and discusses some of the most significant business and design choices that affect both the technical implementation of Mojaloop and the Business Rules which the Scheme will write, and which Participant DFSPs will agree to follow.
 
-The [Scheme Participation Agreement Template](/scheme/scheme-participation-agreement.md) provides a template of the Scheme Participation Agreement that contains the minimal necessary provisions to evidence a DFSP's application to join the Scheme and abide by its Business Rules.
+The [Scheme Participation Agreement Template](/Scheme/scheme-participation-agreement.md) provides a template of the Scheme Participation Agreement that contains the minimal necessary provisions to evidence a DFSP's application to join the Scheme and abide by its Business Rules.
 
-The [Uniform Glossary Template](/scheme/scheme-uniform-glossary.md) acts as a glossary of business terms. 
+The [Uniform Glossary Template](/Scheme/scheme-uniform-glossary.md) acts as a glossary of business terms. 
 
 ## Hub Operations
 
@@ -25,6 +25,6 @@ The [Settlement Management Guide](/huboperations/settlement/settlement-managemen
 
 The [Guide to Finance Portal v2](/huboperations/portalv2/busops-portal-introduction.md) is aimed at the Operator of a Mojaloop Hub and provides information about the Finance Portal, which facilitates the management of settlement-related processes on a daily basis.
 
-The [Roled-Based Access Control](/huboperations/rbac/role-based-access-control.md) document discusses the security mechanism employed to control access to various aspects of an operational instance of a Mojaloop Hub. 
+The [Roled-Based Access Control](/huboperations/rbac/Role-based-access-control.md) document discusses the security mechanism employed to control access to various aspects of an operational instance of a Mojaloop Hub. 
 
 The [Onboarding Guide for the Hub Operator](/huboperations/onboarding/onboarding-introduction.md) is aimed at the Operator of a Mojaloop Hub and provides information about the DFSP onboarding process. It provides a high-level overview of the onboarding journey that DFSPs take, acting as a checklist of onboarding activities.

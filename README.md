@@ -31,12 +31,6 @@ yarn run dev
 
 Run `yarn run build` to build the project to render the static vuepress site for a deployment.
 
-## Exporting the documents as pdf
-
-Run `yarn export` to generate a PDF file from the published html pages.
-
-This is generated using `vuepress-plugin-pdf-export` plugin: https://github.com/SnowdogApps/vuepress-plugin-pdf-export.
-
 ## Versioning
 
 To version the current `next` document version found in the `./docs` folder, run the following command
