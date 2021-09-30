@@ -72,10 +72,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
+    repo: 'https://github.com/mojaloop/mojaloop-business-docs',
+    docsBranch: 'master',
+    editLinks: true,
+    docsDir: 'docs',
     editLinkText: 'Edit this page on GitHub',
+    
     smoothScroll: true,
     lastUpdated: true,
     logo: '/mojaloop_logo_med.png',
